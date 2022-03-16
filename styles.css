@@ -1,0 +1,509 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: ps-font;
+    color: #fff;
+}
+
+body {
+    background-color: #000;
+}
+
+@font-face {
+    font-family: ps-font;
+    src: url("fonts/ps-tt-commons-variable-roman.woff2");
+}
+
+main {
+    width: 86.5%;
+}
+
+
+/* ---------------------- Pre-Header ---------------------- */
+.pre-header {
+    position: fixed;
+    top: 0;
+    background-color: #212121;
+    height: 90px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo a {
+    font-size: 0.875em;
+    color: #EDEADE;
+    letter-spacing: 4px;
+    font-weight: 800;
+    padding-left: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar-right img {
+    width: 20px;
+    height: 20px;
+    filter: invert(84%) sepia(89%) saturate(5922%) hue-rotate(189deg) brightness(122%) contrast(116%);
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+}
+
+#logo-image {
+    margin-right: 0;
+}
+
+.navbar-left a {
+    margin-right: 35px;
+    color: #f2f2f2;
+    font-weight: 900;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    margin-right: 5%;
+}
+
+.navbar-right a {
+    margin-left: 35px;
+    color: #f2f2f2;
+    font-weight: 900;
+}
+
+.navbar-right a:last-child {
+    border: 1px solid #f2f2f2;
+    border-radius: 2px;
+    outline: 1px solid transparent;
+    outline-offset: -2px;
+    padding: 13px 25px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    transition: 0.3s ease-in-out;
+}
+
+.navbar-right a:last-child:hover {
+    outline: 1px solid #f2f2f2;
+}
+
+/* ---------------------- Header ---------------------- */
+
+.header {
+    height: 630px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-image: url("images/hero-illustration.png");
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+    margin-top: 90px;
+}
+
+.header h1 {
+    font-size: 60px;
+    margin-top: 185px;
+    margin-bottom: 45px;
+}
+
+.header p {
+    font-size: 18px;
+}
+
+.header-buttons button {
+    padding-top: 14px;
+    padding-bottom: 14px;
+    width: 170px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 900;
+    cursor: pointer;
+    border: none;
+    color: #fff;
+    border-radius: 2px;
+}
+
+.header-buttons button:first-child {
+    margin-right: 15px;
+    background-image: linear-gradient(to right, rgba(240, 90, 40, 1.0), rgb(237, 30, 106));
+    transition: 0.3s ease-in-out;
+}
+
+.header-buttons button:first-child:hover {
+    background-image: linear-gradient(to right, rgba(237, 30, 106, 1.0), rgb(240, 90, 40));
+}
+
+.header-buttons button:last-child {
+    margin-left: 15px;
+    background-color: #000;
+    border: 1px solid #fff;
+    outline: 1px solid transparent;
+    outline-offset: -2px;
+    transition: 0.3s ease-in-out;
+}
+
+.header-buttons button:last-child:hover {
+    outline: 1px solid #fff;
+}
+
+.header span {
+    color: #aaa;
+    letter-spacing: 1px;
+    font-weight: 900;
+}
+
+.header-orgs {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 60%;
+    margin-top: 20px;
+}
+
+.header-buttons {
+    margin-top: 30px;
+    margin-bottom: 90px;
+}
+
+/* ---------------------- Trending Tech ---------------------- */
+
+.journey-line {
+    background-color: #000;
+    margin: 0px auto;
+    width: 0%;
+    height: 150px;
+    border-width: 3px;
+    border-style: solid;
+    border-image: linear-gradient( to bottom, #EC008C, #F15B2A, rgba(0, 0, 0, 0) ) 1 100%;
+}
+
+.trending-tech img {
+    height: 100px;
+    width: 100px;
+}
+
+.trending-tech {
+    height: 650px;
+    background-image: url("images/bkgd-triangle-right.png"), url("images/bkgd-triangle-right2.png"), url("images/bkgd-triangle-left.png");
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: bottom right, right, left;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trending-tech-center-container {
+    width: 59.5%;
+}
+
+.trending-tech h3 {
+    color: #e40084;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.trending-tech h2 {
+    font-size: 32px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.trending-tech h4 {
+    font-size: 13px;
+    color: #e40084;
+    letter-spacing: 1px;
+}
+
+.trending-tech p {
+    font-size: 22px;
+    padding-top: 7px;
+    padding-bottom: 5px;
+}
+
+.trending-tech span {
+    font-size: 17px;
+    color: #aaa;
+}
+
+.trending-tech span strong {
+    color: #fff;
+}
+
+.trending-tech a {
+    font-size: 16px;
+    font-weight: 900;
+    margin-top: 20px;
+}
+
+.purple-arrow-right {
+    color: #e40084;
+}
+
+.trending-tech-containers {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 40px;
+}
+
+.trending-tech-container {
+    width: 450px;
+    height: 165px;
+    background-color: #222;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.trending-tech-container-text {
+    margin-left: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* ---------------------- Whats new ---------------------- */
+
+.whats-new {
+    display: flex;
+    justify-content: center;
+    background-color: #181818;
+    height: 1300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.whats-new h3 {
+    font-size: 15px;
+    color: #e40084;
+    letter-spacing: 1px;
+}
+
+.whats-new h1 {
+    font-size: 32px;
+    margin-top: 18px;
+    margin-bottom: 23px;
+}
+
+.whats-new h4 {
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.whats-new h2 {
+    font-size: 32px;
+    margin: 20px 0;
+}
+
+.whats-new p {
+    font-size: 17px;
+    line-height: 1.4;
+}
+
+.whats-new a {
+    font-size: 17px;
+    font-weight: 900;
+    margin-top: 40px;
+}
+
+.skills-labs {
+    display: flex;
+    background-color: #222;
+    border-radius: 20px;
+    margin-bottom: 50px;
+}
+
+.skills-labs img {
+    width: 50%;
+    height: auto;
+}
+
+.skills-labs-logo img {
+    height: 20px;
+    width: auto;
+    margin-right: 20px;
+}
+
+.skills-labs-logo {
+    display: flex;
+    align-items: flex-end;
+}
+
+.skills-labs-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 30px;
+}
+
+.whats-new-containers {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 30px;
+}
+
+.whats-new-container {
+    background-color: #222;
+    border-radius: 20px;
+    height: 500px;
+    padding: 50px 30px;
+}
+
+.whats-new-container p {
+    margin-bottom: 25px;
+}
+
+/* ---------------------- Keep up to date ---------------------- */
+
+.keep-up-to-date {
+    height: 670px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.keep-up-to-date h3 {
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: #e40084;
+}
+
+.keep-up-to-date h1 {
+    font-size: 32px;
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+
+.keep-up-to-date h2 {
+    font-size: 15px;
+    letter-spacing: 1px;
+    line-height: 1.4;
+    color: #ffba0e;
+    font-weight: 900;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.keep-up-to-date-containers .keep-up-to-date-container:first-child h2,
+.keep-up-to-date-containers .keep-up-to-date-container:last-child h2 {
+    margin-bottom: 50px;
+}
+
+.keep-up-to-date p {
+    font-size: 17px;
+    line-height: 1.4;
+}
+
+.keep-up-to-date-containers {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 20px;
+}
+
+.keep-up-to-date-container a img {
+    height: 173px;
+    width: auto;
+    border-radius: 20px;
+}
+
+/* ---------------------- VMware ---------------------- */
+
+.vmware {
+    height: 550px;
+    display: flex;
+}
+
+#vmware-laptop {
+    width: 58.3%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.vmware-right {
+    background: linear-gradient(100.37deg, rgb(236, 0, 139) 0%, rgb(241, 90, 34) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vmware-text {
+    width: 80%;
+}
+
+.vmware h1 {
+    font-size: 28px;
+    line-height: 1.2;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.vmware p {
+    font-size: 17px;
+    line-height: 1.4;
+}
+
+.vmware button {
+    background-color: #181818;
+    font-size: 15px;
+    letter-spacing: 1px;
+    padding: 18px 34px;
+    font-weight: 900;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.vmware button:hover {
+    box-shadow: 0 20px 100px #181818;
+}
+
+/* ---------------------- Follow us ---------------------- */
+
+.follow-us {
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.follow-us h1 {
+    text-align: center;
+}
+
+.follow-us h3 {
+    text-align: center;
+}
+
+.twitter-container {
+    width: 400px;
+    height: 240px;
+    background-color: #fff;
+}
+
+.follow-us-slider {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    align-items: center;
+}
