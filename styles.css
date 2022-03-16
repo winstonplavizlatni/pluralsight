@@ -103,6 +103,188 @@ a {
     outline: 1px solid #f2f2f2;
 }
 
+#navbar-bg {
+    position: absolute;
+    height: 774.5%;
+    width: 100%;
+    background: rgba(0,0,0,.7);
+    display: none;
+}
+
+/* Navbar - #platform */
+
+#platform-container {
+    display: none;
+    position: absolute;
+    top: 90px;
+    left: 185px;
+    width: 1230px;
+    height: 446px;
+    background: linear-gradient(180deg,#181818 0%,#000000 100%);
+}
+
+#platform-btn {
+    cursor: pointer;
+}
+
+.bottom-border {
+    width: 83px;
+    height: 5px;
+    background: linear-gradient(180deg,#f15b2a 0%,#ec008c 100%);
+    position: absolute;
+    top: 85px;
+    display: none;
+}
+
+#resources-bottom-border {
+    width: 95px;
+}
+
+#products-bottom-border {
+    width: 85px;
+}
+
+#platform-container h5 {
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    color: #aaa;
+}
+
+.platform-container-left a {
+    font-size: 17px;
+    font-weight: 900;
+}
+
+.skills-for a {
+    font-weight: 900;
+    font-size: 15px;
+}
+
+.top-trending-paths-item {
+    cursor: pointer;
+    padding: 7px 10px 12px;
+    background-color: #222;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.top-trending-paths-item:hover {
+    background-color: #252525;
+}
+
+.top-trending-paths-item img {
+    width: 37px;
+    height: 37px;
+    margin-right: 25px;
+}
+
+.top-trending-paths-item h3 {
+    font-weight: 400;
+    font-size: 13px;
+    margin-bottom: 4px;
+}
+
+.top-trending-paths-item p {
+    font-size: 11px;
+    color: #858585;
+}
+
+.top-trending-paths-item p strong {
+    color: #fff;
+}
+
+.platform-container-right-bottom a {
+    font-size: 15px;
+    font-weight: 900;
+}
+
+.platform-container-flex {
+    display: flex;
+    height: 100%;
+}
+
+.platform-container-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 20px;
+    width: 30%;
+}
+
+.platform-container-left-row img {
+    margin-right: -20px;
+}
+
+.platform-container-left-row button {
+    background-image: linear-gradient(to right, rgba(237, 30, 106, 1.0), rgb(240, 90, 40));
+    font-size: 10px;
+    font-weight: 900;
+    text-align: center;
+    padding: 5px 8px;
+    border: none;
+    border-radius: 2px;
+    margin-left: -20px;
+    cursor: pointer;
+}
+
+.platform-container-left-row {
+    display: flex;
+    align-items: center;
+}
+
+.platform-container-right-top {
+    display: flex;
+    width: 100%;
+}
+
+.platform-container-right {
+    width: 70%;
+}
+
+.skills-for {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    width: 30%;
+}
+
+.skills-for h5 {
+    margin-bottom: 33px;
+}
+
+.skills-for a {
+    margin-bottom: 22px;
+    letter-spacing: 1px;
+}
+
+.skills-for a:last-child {
+    margin-bottom: 0;
+}
+
+.top-trending-paths {
+    width: 70%;
+}
+
+.top-trending-paths-container {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    gap: 20px;
+}
+
+.top-trending-paths h5 {
+    margin-top: 30px;
+    margin-bottom: 33px;
+}
+
+.platform-container-right-bottom {
+    margin-top: 50px;
+    padding-top: 40px;
+    border-top: 1.5px solid #222;
+    width: 95.5%;
+}
+
 /* ---------------------- Header ---------------------- */
 
 .header {
