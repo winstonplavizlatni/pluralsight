@@ -12,13 +12,30 @@
 <body>
     <!---------------------- Pre-Header ---------------------->
     <div id="navbar-bg"></div>
+    <div id="mobile-navbar-bg"></div>
+    <div id="search-container">
+        <div class="search-container-center">
+            <div class="search-container-width">
+                <div>
+                    <img src="images/search-icon.png">
+                    <input type="text" placeholder="What do you want to learn?">
+                </div>
+                <button id="search-close-btn"></button>
+            </div>
+        </div>
+    </div>
     <div class="pre-header">
-        <div class="navbar-left">
-        <div class="logo">
+        <div class="logo" id="mobile-logo">
+            <a href="index.html" id="logo-image"><img src="images/pluralsight-logo.png"></a>
+            <a href="index.html">PLURALSIGHT</a>
+        </div>
+        <div class="navbar-left" id="navbar-left">
+            <div class="logo">
                 <a href="index.html" id="logo-image"><img src="images/pluralsight-logo.png"></a>
                 <a href="index.html">PLURALSIGHT</a>
             </div>
-            <a id="platform-btn">Platform <i class="fa fa-angle-down"></i>
+            <a id="platform-btn">Platform <i class="fa fa-angle-down navbar-arrow-down"></i>
+                                          <i class="fa fa-angle-right navbar-arrow-right"></i>
                 <div class="bottom-border" id="platform-bottom-border"></div></a>
             <div id="platform-container">
                 <div class="platform-container-flex">
@@ -111,19 +128,71 @@
                         <a href="">Check out the Technology Index</a>
                     </div>
                 </div>
+                <button id="platform-close-btn"></button>
                 </div>
             </div>
 
-            <a href="">Products <i class="fa fa-angle-down"></i>
+            <a id="products-btn">Products <i class="fa fa-angle-down navbar-arrow-down"></i>
+                                          <i class="fa fa-angle-right navbar-arrow-right"></i>
                 <div class="bottom-border" id="products-bottom-border"></div></a>
-            <a href="">Resources <i class="fa fa-angle-down"></i>
+
+            <div id="products-container">
+                <div class="products-container-flex">
+                    <div class="products-container-col">
+                        <img src="images/skills-logo.png">
+                        <p onclick="window.open('')">Build tech skills to drive results</p>
+                        <a href="">What is Skills?</a>
+                        <a href="">View plans</a>
+                    </div>
+                    <div class="products-container-col">
+                        <img src="images/flow-logo.png">
+                        <p onclick="window.open('')">Get insights into your workflow</p>
+                        <a href="">What is Flow?</a>
+                        <a href="">View plans</a>
+                    </div>
+                </div>
+                <button id="products-close-btn"></button>
+            </div>
+
+            <a id="resources-btn">Resources <i class="fa fa-angle-down navbar-arrow-down"></i>
+                                            <i class="fa fa-angle-right navbar-arrow-right"></i>
                 <div class="bottom-border" id="resources-bottom-border"></div></a>
+
+            <div id="resources-container">
+                <div class="resources-container-flex">
+                    <div class="resources-container-col">
+                        <h5>LEARN</h5>
+                        <a href="">Blog</a>
+                        <a href="">Customer stories</a>
+                        <a href="">Resource center</a>
+                        <a href="">Guides</a>
+                        <a href="">App download</a>
+                        <a href="">Support</a>
+                    </div>
+                    <div class="resources-container-col">
+                        <h5>CONNECT</h5>
+                        <a href="">Events</a>
+                        <a href="">Webinars</a>
+                        <a href="">Podcast</a>
+                        <h5 class="resources-podcasts">PODCASTS</h5>
+                        <a href="">All Hands on Tech</a>
+                        <a href="">Perspectives in Leadership</a>
+                    </div>
+                </div>
+                <button id="resources-close-btn"></button>
+            </div>
+
             <a href="">For Individuals</a>
+            <a href="" class="mobile-sign-in">Sign in <i class="fa fa-angle-right navbar-arrow-right"></i></a>
+            <a href="" class="mobile-view-plans">VIEW PLANS</a>
         </div>
+
         <div class="navbar-right">
-            <a href=""><img src="images/search-icon.png"></a>
+            <a id="search-btn"><img src="images/search-icon.png"></a>
             <a href="">Sign in <i class="fa fa-angle-down"></i></a>
             <a href="">TRY FOR FREE</a>
+            <button id="mobile-menu" onclick="showMobileNav()"></button>
+            <button id="close-mobile-menu" onclick="closeMobileNav()"></button>
         </div>
     </div>
 
@@ -282,9 +351,60 @@
             <h1>Share your skills</h1>
             <div class="follow-us-slider">
                 <img src="images/left-arrow.png">
-                <div class="twitter-container"></div>
-                <div class="twitter-container"></div>
-                <div class="twitter-container"></div>
+                <div class="twitter-container">
+                    <div class="twitter-container-top">
+                        <div class="twitter-profile">
+                            <img src="images/empty-profile-picture.jpg" onclick="window.open('https:twitter.com', 'blank')">
+                            <div class="twitter-profile-text">
+                                <h3 onclick="window.open('https:twitter.com', 'blank')">Lorem Ipsum</h3>
+                                <span onclick="window.open('https:twitter.com', 'blank')">@Lorem</span>
+                            </div>
+                        </div>
+                        <img src="images/twitter-logo.png" onclick="window.open('https:twitter.com', 'blank')">
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <div class="twitter-container-bottom">
+                        <a href=""><img src="images/twitter-reply.png"></a>
+                        <a href=""><img src="images/twitter-retweet.png"></a>
+                        <a href=""><img src="images/twitter-like.png"></a>
+                    </div>
+                </div>
+                <div class="twitter-container" id="twitter-container2">
+                    <div class="twitter-container-top">
+                        <div class="twitter-profile">
+                            <img src="images/empty-profile-picture.jpg" onclick="window.open('https:twitter.com', 'blank')">
+                            <div class="twitter-profile-text">
+                                <h3 onclick="window.open('https:twitter.com', 'blank')">Lorem Ipsum</h3>
+                                <span onclick="window.open('https:twitter.com', 'blank')">@Lorem</span>
+                            </div>
+                        </div>
+                        <img src="images/twitter-logo.png" onclick="window.open('https:twitter.com', 'blank')">
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <div class="twitter-container-bottom">
+                        <a href=""><img src="images/twitter-reply.png"></a>
+                        <a href=""><img src="images/twitter-retweet.png"></a>
+                        <a href=""><img src="images/twitter-like.png"></a>
+                    </div>
+                </div>
+                <div class="twitter-container" id="twitter-container3">
+                    <div class="twitter-container-top">
+                        <div class="twitter-profile">
+                            <img src="images/empty-profile-picture.jpg" onclick="window.open('https:twitter.com', 'blank')">
+                            <div class="twitter-profile-text">
+                                <h3 onclick="window.open('https:twitter.com', 'blank')">Lorem Ipsum</h3>
+                                <span onclick="window.open('https:twitter.com', 'blank')">@Lorem</span>
+                            </div>
+                        </div>
+                        <img src="images/twitter-logo.png" onclick="window.open('https:twitter.com', 'blank')">
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <div class="twitter-container-bottom">
+                        <a href=""><img src="images/twitter-reply.png"></a>
+                        <a href=""><img src="images/twitter-retweet.png"></a>
+                        <a href=""><img src="images/twitter-like.png"></a>
+                    </div>
+                </div>
                 <img src="images/right-arrow.png">
             </div>
         </main>
@@ -316,7 +436,7 @@
         <footer>
             <div class="footer-navbar">
                 <div class="footer-navbar-col">
-                    <h5>SOLUTIONS</h5>
+                    <h5>SOLUTIONS <i class="fa fa-angle-down footer-arrow-down"></i></h5>
                     <a href="">Pluralsight Skills</a>
                     <a href="">Pluralsight Flow</a>
                     <a href="">Government</a>
@@ -326,7 +446,7 @@
                     <a href="">Skill up for free</a>
                 </div>
                 <div class="footer-navbar-col">
-                    <h5>PLATFORM</h5>
+                    <h5>PLATFORM <i class="fa fa-angle-down footer-arrow-down"></i></h5>
                     <a href="">Browse library</a>
                     <a href="">Role IQ</a>
                     <a href="">Skill IQ</a>
@@ -335,7 +455,7 @@
                     <a href="">Professional Services</a>
                  </div>
                  <div class="footer-navbar-col">
-                    <h5>COMPANY</h5>
+                    <h5>COMPANY <i class="fa fa-angle-down footer-arrow-down"></i></h5>
                     <a href="">About us</a>
                     <a href="">Customer stories</a>
                     <a href="">Careers</a>
@@ -345,7 +465,7 @@
                     <a href="">Guides</a>
                  </div>
                  <div class="footer-navbar-col">
-                    <h5>RESOURCES</h5>
+                    <h5>RESOURCES <i class="fa fa-angle-down footer-arrow-down"></i></h5>
                     <a href="">Download Pluralsight</a>
                     <a href="">Events</a>
                     <a href="">Teach</a>
@@ -355,7 +475,7 @@
                     <a href="">Subscribe</a>
                  </div>
                  <div class="footer-navbar-col">
-                    <h5>SUPPORT</h5>
+                    <h5>SUPPORT <i class="fa fa-angle-down footer-arrow-down"></i></h5>
                     <a href="">Contact</a>
                     <a href="">Help center</a>
                     <a href="">IP allowlist</a>
