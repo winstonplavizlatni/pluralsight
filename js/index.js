@@ -42,6 +42,20 @@ $("#resources-close-btn").click(function(){
     $('#navbar-bg').fadeOut();
 });
 
+/* Sign-in */
+
+$('#sign-in-btn').click(function () {
+    $('#sign-in-container').stop(true).fadeToggle();
+    $('#sign-in-bottom-border').stop(true).fadeToggle();
+    $('#navbar-bg').stop(true).fadeToggle();
+});
+
+$("#resources-close-btn").click(function(){
+    $("#sign-in-container").fadeOut();
+    $('#sign-in-bottom-border').fadeOut();
+    $('#navbar-bg').fadeOut();
+});
+
 /* Search */
 
 $('#search-btn').click(function () {
@@ -70,4 +84,71 @@ function closeMobileNav() {
     document.getElementById('search-btn').style.display = "block";
     document.getElementById('mobile-menu').style.display = "block";
     document.getElementById('close-mobile-menu').style.display = "none";
+}
+
+/*---------------------- Mobile Footer Navbar ----------------------*/
+
+function toggleFooterSolutions() {
+    if (document.getElementById('footer-solutions').style.display == 'none') {
+        document.getElementById('footer-solutions').style.display = 'flex';
+        document.getElementById('footer-solutions-arrowdown').style.display = 'none';
+        document.getElementById('footer-solutions-arrowup').style.display = 'block';
+    }
+    else {
+        document.getElementById('footer-solutions').style.display = 'none';
+        document.getElementById('footer-solutions-arrowdown').style.display = 'block';
+        document.getElementById('footer-solutions-arrowup').style.display = 'none';
+    }
+}
+
+function toggleFooterPlatform() {
+    if (document.getElementById('footer-platform').style.display == 'none') {
+        document.getElementById('footer-platform').style.display = 'flex';
+        document.getElementById('footer-platform-arrowdown').style.display = 'none';
+        document.getElementById('footer-platform-arrowup').style.display = 'block';
+    }
+    else {
+        document.getElementById('footer-platform').style.display = 'none';
+        document.getElementById('footer-platform-arrowdown').style.display = 'block';
+        document.getElementById('footer-platform-arrowup').style.display = 'none';
+    }
+}
+
+function toggleFooterCompany() {
+    if (document.getElementById('footer-company').style.display == 'none') {
+        document.getElementById('footer-company').style.display = 'flex';
+        document.getElementById('footer-company-arrowdown').style.display = 'none';
+        document.getElementById('footer-company-arrowup').style.display = 'block';
+    }
+    else {
+        document.getElementById('footer-company').style.display = 'none';
+        document.getElementById('footer-company-arrowdown').style.display = 'block';
+        document.getElementById('footer-company-arrowup').style.display = 'none';
+    }
+}
+
+function toggleFooterResources() {
+    if (document.getElementById('footer-resources').style.display == 'none') {
+        document.getElementById('footer-resources').style.display = 'flex';
+        document.getElementById('footer-resources-arrowdown').style.display = 'none';
+        document.getElementById('footer-resources-arrowup').style.display = 'block';
+    }
+    else {
+        document.getElementById('footer-resources').style.display = 'none';
+        document.getElementById('footer-resources-arrowdown').style.display = 'block';
+        document.getElementById('footer-resources-arrowup').style.display = 'none';
+    }
+}
+
+function toggleFooterSupport() {
+    if (document.getElementById('footer-support').style.display == 'none') {
+        document.getElementById('footer-support').style.display = 'flex';
+        document.getElementById('footer-support-arrowdown').style.display = 'none';
+        document.getElementById('footer-support-arrowup').style.display = 'block';
+    }
+    else {
+        document.getElementById('footer-support').style.display = 'none';
+        document.getElementById('footer-support-arrowdown').style.display = 'block';
+        document.getElementById('footer-support-arrowup').style.display = 'none';
+    }
 }

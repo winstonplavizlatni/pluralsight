@@ -182,17 +182,37 @@
                 <button id="resources-close-btn"></button>
             </div>
 
-            <a href="">For Individuals</a>
+            <a href="individuals.html">For Individuals</a>
             <a href="" class="mobile-sign-in">Sign in <i class="fa fa-angle-right navbar-arrow-right"></i></a>
             <a href="" class="mobile-view-plans">VIEW PLANS</a>
         </div>
 
         <div class="navbar-right">
             <a id="search-btn"><img src="images/search-icon.png"></a>
-            <a href="">Sign in <i class="fa fa-angle-down"></i></a>
-            <a href="">TRY FOR FREE</a>
+            <a id="sign-in-btn">Sign in <i class="fa fa-angle-down"></i>
+                <div class="bottom-border" id="sign-in-bottom-border"></div></a>
+            <a href="" id="try-for-free">TRY FOR FREE</a>
             <button id="mobile-menu" onclick="showMobileNav()"></button>
             <button id="close-mobile-menu" onclick="closeMobileNav()"></button>
+        </div>
+
+        <div id="sign-in-container">
+            <div class="sign-in-flex">
+                <div class="sign-in-col">
+                    <a href="">SIGN IN WITH</a>
+                    <div class="sign-in-img">
+                        <a href=""><img src="images/skills-logo.png"></a>
+                        <i class="fa fa-angle-right purple-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="sign-in-col">
+                    <a href="">SIGN IN WITH</a>
+                    <div class="sign-in-img">
+                        <a href=""><img src="images/flow-logo.png"></a>
+                        <i class="fa fa-angle-right purple-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -436,50 +456,65 @@
         <footer>
             <div class="footer-navbar">
                 <div class="footer-navbar-col">
-                    <h5>SOLUTIONS <i class="fa fa-angle-down footer-arrow-down"></i></h5>
-                    <a href="">Pluralsight Skills</a>
-                    <a href="">Pluralsight Flow</a>
-                    <a href="">Government</a>
-                    <a href="">Gift of Pluralsight</a>
-                    <a href="">View Pricing</a>
-                    <a href="">Contact Sales</a>
-                    <a href="">Skill up for free</a>
+                    <h5 onclick="toggleFooterSolutions()">SOLUTIONS <i id="footer-solutions-arrowdown" class="fa fa-angle-down footer-arrow"></i>
+                                                                    <i id="footer-solutions-arrowup" class="fa fa-angle-up footer-arrow"></i></h5>
+                    <div id="footer-solutions">
+                        <a href="">Pluralsight Skills</a>
+                        <a href="">Pluralsight Flow</a>
+                        <a href="">Government</a>
+                        <a href="">Gift of Pluralsight</a>
+                        <a href="">View Pricing</a>
+                        <a href="">Contact Sales</a>
+                        <a href="">Skill up for free</a>
+                    </div>
                 </div>
                 <div class="footer-navbar-col">
-                    <h5>PLATFORM <i class="fa fa-angle-down footer-arrow-down"></i></h5>
-                    <a href="">Browse library</a>
-                    <a href="">Role IQ</a>
-                    <a href="">Skill IQ</a>
-                    <a href="">Iris</a>
-                    <a href="">Authors</a>
-                    <a href="">Professional Services</a>
+                    <h5 onclick="toggleFooterPlatform()">PLATFORM <i id="footer-platform-arrowdown" class="fa fa-angle-down footer-arrow"></i>
+                                                                  <i id="footer-platform-arrowup" class="fa fa-angle-up footer-arrow"></i></h5>
+                    <div id="footer-platform">
+                        <a href="">Browse library</a>
+                        <a href="">Role IQ</a>
+                        <a href="">Skill IQ</a>
+                        <a href="">Iris</a>
+                        <a href="">Authors</a>
+                        <a href="">Professional Services</a>
+                    </div>
                  </div>
                  <div class="footer-navbar-col">
-                    <h5>COMPANY <i class="fa fa-angle-down footer-arrow-down"></i></h5>
-                    <a href="">About us</a>
-                    <a href="">Customer stories</a>
-                    <a href="">Careers</a>
-                    <a href="">Blog</a>
-                    <a href="">Newsroom</a>
-                    <a href="">Resource center</a>
-                    <a href="">Guides</a>
+                    <h5 onclick="toggleFooterCompany()">COMPANY <i id="footer-company-arrowdown" class="fa fa-angle-down footer-arrow"></i>
+                                                                <i id="footer-company-arrowup" class="fa fa-angle-up footer-arrow"></i></h5>
+                    <div id="footer-company">
+                        <a href="">About us</a>
+                        <a href="">Customer stories</a>
+                        <a href="">Careers</a>
+                        <a href="">Blog</a>
+                        <a href="">Newsroom</a>
+                        <a href="">Resource center</a>
+                        <a href="">Guides</a>
+                    </div>
                  </div>
                  <div class="footer-navbar-col">
-                    <h5>RESOURCES <i class="fa fa-angle-down footer-arrow-down"></i></h5>
-                    <a href="">Download Pluralsight</a>
-                    <a href="">Events</a>
-                    <a href="">Teach</a>
-                    <a href="">Partners</a>
-                    <a href="">Affiliate Partners</a>
-                    <a href="">PluralsightOne.org</a>
-                    <a href="">Subscribe</a>
+                    <h5 onclick="toggleFooterResources()">RESOURCES <i id="footer-resources-arrowdown" class="fa fa-angle-down footer-arrow"></i>
+                                                                    <i id="footer-resources-arrowup" class="fa fa-angle-up footer-arrow"></i></h5>
+                    <div id="footer-resources">
+                        <a href="">Download Pluralsight</a>
+                        <a href="">Events</a>
+                        <a href="">Teach</a>
+                        <a href="">Partners</a>
+                        <a href="">Affiliate Partners</a>
+                        <a href="">PluralsightOne.org</a>
+                        <a href="">Subscribe</a>
+                    </div>
                  </div>
                  <div class="footer-navbar-col">
-                    <h5>SUPPORT <i class="fa fa-angle-down footer-arrow-down"></i></h5>
-                    <a href="">Contact</a>
-                    <a href="">Help center</a>
-                    <a href="">IP allowlist</a>
-                    <a href="">Sitemap</a>
+                    <h5 onclick="toggleFooterSupport()">SUPPORT <i id="footer-support-arrowdown" class="fa fa-angle-down footer-arrow"></i>
+                                                                <i id="footer-support-arrowup" class="fa fa-angle-up footer-arrow"></i></h5>
+                    <div id="footer-support">
+                        <a href="">Contact</a>
+                        <a href="">Help center</a>
+                        <a href="">IP allowlist</a>
+                        <a href="">Sitemap</a>
+                    </div>
                 </div>
             </div>
             <div class="footer-lang">
