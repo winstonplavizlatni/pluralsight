@@ -17,8 +17,12 @@ body {
 
 main {
     width: 86.5%;
+    margin: auto;
 }
 
+/* -----------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------- Index Page -----------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------- */
 
 /* ---------------------- Pre-Header ---------------------- */
 .pre-header {
@@ -93,7 +97,7 @@ a {
     font-weight: 900;
 }
 
-.navbar-right a:last-child {
+#try-for-free {
     border: 1px solid #f2f2f2;
     border-radius: 2px;
     outline: 1px solid transparent;
@@ -104,7 +108,7 @@ a {
     transition: 0.3s ease-in-out;
 }
 
-.navbar-right a:last-child:hover {
+#try-for-free:hover {
     outline: 1px solid #f2f2f2;
 }
 
@@ -126,7 +130,7 @@ a {
 
 #mobile-navbar-bg {
     display: none;
-    position: absolute;
+    position: fixed;
     top: 90px;
     width: 100%;
     height: 100%;
@@ -233,6 +237,53 @@ a {
 
 .navbar-arrow-right {
     display: none!important;
+}
+
+#sign-in-container {
+    display: none;
+    position: absolute;
+    top: 90px;
+    left: 1000px;
+    width: 410px;
+    height: 135px;
+    background: linear-gradient(180deg,#181818 0%,#000000 100%);
+    font-weight: 900;
+}
+
+#sign-in-container a {
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: #aaa;
+}
+
+#sign-in-container a img {
+    width: 120px;
+    height: 21px;
+    padding-right: 5px;
+}
+
+.sign-in-flex {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.sign-in-col {
+    width: 50%;
+    padding-left: 40px;
+    border-left: 1px solid #222;
+}
+
+.sign-in-flex div:first-child {
+    border-left: none;
+}
+
+.sign-in-img {
+    padding-top: 20px;
+}
+
+#sign-in-btn {
+    cursor: pointer;
 }
 
 /* Navbar - #platform */
@@ -1100,7 +1151,7 @@ a {
 
 .insights {
     height: 260px;
-    background-color: #000;
+    background-color: #181818;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1155,6 +1206,11 @@ footer {
 }
 
 .footer-navbar-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-navbar-col div {
     display: flex;
     flex-direction: column;
 }
@@ -1587,8 +1643,10 @@ footer {
         text-align: center;
     }
 
-    .footer-navbar-col a {
+    .footer-navbar-col div {
         display: none;
+        background-color: #181818;
+        padding-top: 12px;
     }
 
     .footer-navbar {
@@ -1598,7 +1656,8 @@ footer {
     }
 
     .footer {
-        height: 560px;
+        min-height: 560px;
+        height: 100%;
     }
 
     .footer-lang {
@@ -1619,11 +1678,178 @@ footer {
         justify-content: space-between;
     }
 
-    .footer-arrow-down {
+    .footer-arrow {
         padding-right: 30px;
+    }
+
+    #footer-solutions-arrowup {
+        display: none;
+    }
+
+    #footer-platform-arrowup {
+        display: none;
+    }
+
+    #footer-company-arrowup {
+        display: none;
+    }
+
+    #footer-resources-arrowup {
+        display: none;
+    }
+
+    #footer-support-arrowup {
+        display: none;
     }
 
     .footer-lang img {
         margin-left: 30px;
     }
+
+    .footer-navbar a {
+        padding-top: 7px;
+        padding-bottom: 7px;
+        padding-left: 40px;
+    }
+
+    .header h1 {
+        text-align: center;
+    }
 }
+
+@media only screen and (max-width: 550px) {
+    .trending-tech-containers {
+        grid-template-columns: 100%;
+    }
+
+    .trending-tech-container {
+        max-width: none;
+    }
+
+    .trending-tech {
+        height: 1000px;
+    }
+
+    .whats-new-container {
+        height: 450px;
+    }
+
+    .whats-new {
+        height: 2450px;
+    }
+
+    .insights h1 {
+        font-size: 34px;
+        text-align: center;
+    }
+
+    .header-orgs {
+        flex-wrap: wrap;
+    }
+
+    .twitter-container {
+        height: 255px;
+    }
+
+    .header-buttons {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header-buttons button:first-child {
+        margin-right: 0;
+        margin-bottom: 25px;
+    }
+
+    .header-buttons button:last-child {
+        margin-left: 0;
+    }
+
+    .header {
+        height: 850px;
+    }
+}
+
+/* -----------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------- Individuals ----------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------- */
+
+/* ---------------------- Individuals Header ---------------------- */
+
+.individuals-header {
+    height: 580px;
+    display: flex;
+    margin-top: 90px;
+    align-items: center;
+}
+
+.skills-for-individuals img {
+    width: 149px!important;
+    height: 26px!important;
+    margin-right: 20px;
+}
+
+.individuals-header img {
+    width: 670px;
+    height: 480px;
+}
+
+.individuals-header h3 {
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.skills-for-individuals {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 50px;
+}
+
+.individuals-header h1 {
+    font-size: 56px;
+}
+
+.individuals-header p {
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+.individuals-header-text button {
+    font-size: 15px;
+    letter-spacing: 1px;
+    padding: 16px 34px;
+    background-image: linear-gradient(to right,#F05A28,#EC008C,#F05A28);
+    background-size: 300% 100%;
+    border: none;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.individuals-header-text {
+    width: 50%;
+}
+
+/* ---------------------- See plans ---------------------- */
+
+.see-plans {
+    background: linear-gradient(107.29deg, #EC008C -29.8%, #F15B2A 100%);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    height: 66.50px;
+    margin-top: 50px;
+}
+
+.see-plans p {
+    margin-right: 5px;
+}
+
+.see-plans a {
+    font-weight: 900;
+}
+
+/* ---------------------- Individuals trending ---------------------- */
