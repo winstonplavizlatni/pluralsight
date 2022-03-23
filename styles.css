@@ -20,6 +20,12 @@ main {
     margin: auto;
 }
 
+.purple-arrow-right {
+    color: #e40084;
+    margin-left: 4px;
+    transition: 0.3s;
+}
+
 /* -----------------------------------------------------------------------------------------------------------------------------------
 --------------------------------------------------------- Index Page -----------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------- */
@@ -34,6 +40,7 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 9999;
 }
 
 .logo img {
@@ -757,8 +764,8 @@ a {
     margin-top: 20px;
 }
 
-.purple-arrow-right {
-    color: #e40084;
+.trending-tech a:hover .purple-arrow-right {
+    margin-left: 10px;
 }
 
 .trending-tech-containers {
@@ -828,6 +835,10 @@ a {
     font-size: 17px;
     font-weight: 900;
     margin-top: 40px;
+}
+
+.whats-new a:hover .purple-arrow-right {
+    margin-left: 10px;
 }
 
 .skills-labs {
@@ -1774,6 +1785,10 @@ footer {
 --------------------------------------------------------- Individuals ----------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------- */
 
+.individuals-second-bg {
+    background-color: #181818;
+}
+
 /* ---------------------- Individuals Header ---------------------- */
 
 .individuals-header {
@@ -1853,3 +1868,383 @@ footer {
 }
 
 /* ---------------------- Individuals trending ---------------------- */
+
+.individuals-trending {
+    margin: 50px 0 80px;
+}
+
+.individuals-trending h1 {
+    font-size: 24px;
+}
+
+.individuals-trending-container-text h3 {
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: #e6078f;
+}
+
+.individuals-trending-container-text h2 {
+    margin: 3px 0;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.individuals-trending-container-text p {
+    font-size: 12px;
+    color: #aaa;
+}
+
+.individuals-trending-container-text {
+    padding: 12px 20px;
+    background: #181818;
+}
+
+.individuals-trending-container {
+    width: 100%;
+    max-width: 440px;
+    height: 265px;
+    cursor: pointer;
+}
+
+.individuals-trending-container-img img {
+    width: 56px;
+    height: 45.73px;
+}
+
+.individuals-trending-container-img {
+    position: relative;
+    width: 100%;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tooltip {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 80px;
+    height: 20px;
+    font-size: 10px;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: default;
+    text-align: center;
+    border-radius: 4px;
+    background: #0084bd;
+}
+
+.tooltip-text {
+    font-size: 11px;
+    color: #181818;
+    text-align: center;
+    line-height: 1.2;
+    padding: 7px;
+    border-radius: 3px;
+    visibility: hidden;
+    position: absolute;
+    background-color: #fff;
+    width: 180px;
+    bottom: 25px;
+}
+
+.tooltip:hover .tooltip-text {
+    visibility: visible;
+}
+
+.individuals-trending-flex {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0 25px;
+}
+
+.individuals-trending-container-text-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+#individuals-trending-container-img1 {
+    background-image: url('images/trending1.jpg');
+    background-size: cover;
+}
+
+#individuals-trending-container-img2 {
+    background-image: url('images/trending2.jpg');
+    background-size: cover;
+}
+
+#individuals-trending-container-img3 {
+    background-image: url('images/trending3.png');
+    background-size: cover;
+}
+
+.individuals-trending-bottom {
+    width: 100%;
+    height: 40px;
+    background: #181818;
+    display: flex;
+    align-items: center;
+}
+
+.individuals-trending-bottom a {
+    padding-left: 15px;
+    font-size: 14px;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+}
+
+/* ---------------------- Individuals overview ---------------------- */
+
+.individuals-overview {
+    background-color: #222;
+    border-radius: 8px;
+    box-shadow: rgb(0 0 0 / 80%) 2px 20px 30px -15px;
+    padding: 75px 0 1px;
+}
+
+.individuals-overview-width {
+    width: 85%;
+    margin: auto;
+}
+
+.individuals-overview h3 {
+    color: #e40084;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.individuals-overview h1 {
+    font-size: 40px;
+    margin: 20px 0;
+}
+
+.individuals-overview p {
+    font-size: 17px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.individuals-overview h2 {
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: #aaa;
+    text-align: center;
+}
+
+.individuals-overview a {
+    font-size: 17px;
+    font-weight: 900;
+}
+
+.individuals-overview a:hover .purple-arrow-right {
+    margin-left: 9px;
+}
+
+.individuals-overview-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.individuals-overview-row-text {
+    width: 55%;
+}
+
+.individuals-overview-width div:first-child div {
+    width: 66%;
+}
+
+.individuals-overview-orgs {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 82%;
+    margin-top: 35px;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ---------------------- Customer Stories ---------------------- */
+
+.customer-stories {
+    height: 100%;
+    min-height: 540px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+}
+
+.customer-stories h3 {
+    color: #e40084;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.customer-stories h1 {
+    font-size: 40px;
+    margin: 20px 0;
+}
+
+.customer-stories p {
+    font-size: 17px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.customer-stories a {
+    font-size: 17px;
+    font-weight: 900;
+}
+
+.customer-stories a:hover .purple-arrow-right {
+    margin-left: 10px;
+}
+
+.customer-stories-text {
+    margin-right: 20px;
+}
+
+.customer-stories img {
+    cursor: pointer;
+}
+
+#customer-stories-video {
+    display: none;
+    position: absolute;
+    z-index: 6;
+}
+
+#customer-stories-video-bg {
+    display: none;
+    width: 100%;
+    height: 300%;
+    position: absolute;
+    background-color: rgba(0,0,0,.45);
+    z-index: 5;
+}
+
+/* ---------------------- Plans & Pricing ---------------------- */
+
+.plans-pricing-pre-text {
+    text-align: center;
+}
+
+.plans-pricing-pre-text h3 {
+    color: #e40084;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.plans-pricing-pre-text h1 {
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.plans-pricing-pre-text h2 {
+    color: #ec008c;
+    font-size: 20px;
+}
+
+.plans-pricing-toggle p {
+    font-size: 20px;
+}
+
+.plans-pricing-toggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.plans-pricing-box h1 {
+    font-size: 36px;
+}
+
+.plans-pricing-box h2 {
+    font-size: 52px;
+    margin-bottom: 5px;
+    margin-top: 10px; 
+}
+
+.plans-pricing-box h2 sup {
+    font-size: 19px;
+}
+
+.plans-pricing-box h3 {
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.plans-pricing-box p {
+    font-size: 17px;
+    margin: 40px 0;
+}
+
+.plans-pricing-box button {
+    background-image: linear-gradient(to right,#F05A28,#EC008C,#F05A28);
+    background-size: 300% 100%;
+    font-size: 15px;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+    border: none;
+    border-radius: 2px;
+    text-align: center;
+    padding: 15px 30px;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+.plans-pricing-box span {
+    font-size: 17px;
+    color: #aaa;
+}
+
+.plans-pricing-box a {
+    color: #ec008c;
+    font-weight: 900;
+}
+
+.plans-pricing-box a:hover {
+    text-decoration: underline;
+}
+
+.best-opportunity {
+    color: #000;
+    background: #f7a614;
+    letter-spacing: 0.5;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 15px;
+    font-size: 14px;
+    font-weight: 900;
+    padding: 7px 15px 5px;
+}
+
+.plans-pricing-flex {
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+
+.plans-pricing-box {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 80px 90px 50px;
+    box-shadow: 0 20px 25px -2px rgb(0 0 0 / 40%);
+    position: relative;
+}
+
+.plans-pricing {
+    padding-top: 100px;
+}

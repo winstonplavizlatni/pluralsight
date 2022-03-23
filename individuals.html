@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Pluralsight | The tech workforce development company</title>
+    <title>For Individuals | Pluralsight</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles.css">
@@ -243,7 +243,9 @@
             <div class="individuals-trending-flex">
                 <div class="individuals-trending-container">
                     <div id="individuals-trending-container-img1" class="individuals-trending-container-img">
-                        <div>EXPANDED</div>
+                        <div class="tooltip">EXPANDED
+                            <span class="tooltip-text">Access to our full 7000+ course library, including more advanced content.</span>
+                        </div>
                         <a href=""><img src="images/play-button.png"></a>
                     </div>
                     <div class="individuals-trending-container-text">
@@ -274,7 +276,9 @@
                 </div>
                 <div class="individuals-trending-container">
                     <div id="individuals-trending-container-img3" class="individuals-trending-container-img">
-                        <div>EXPANDED</div>
+                        <div class="tooltip">EXPANDED
+                            <span class="tooltip-text">Access to our full 7000+ course library, including more advanced content.</span>
+                        </div>
                         <a href=""><img src="images/play-button.png"></a>
                     </div>
                     <div class="individuals-trending-container-text">
@@ -293,7 +297,112 @@
                 <a href="">View more courses »</a>
             </div>
         </div>
+
+        <!---------------------- Individuals overview ---------------------->
+        <div class="individuals-overview">
+            <div class="individuals-overview-width">
+                <div class="individuals-overview-row">
+                    <img src="images/overview1.png">
+                    <div class="individuals-overview-row-text">
+                        <h3>OVERVIEW</h3>
+                        <h1>Take control of your career</h1>
+                        <p>Whether you want to transition into a new field, improve in your role or bring your big ideas to life, Pluralsight Skills can help you get there. With our technology skills platform, you can build in-demand skills and apply them in the real world with confidence.</p>
+                        <a href="">What is Skills? <i class="fa fa-angle-right purple-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <h2>TRUSTED BY LEARNERS AT THOUSANDS OF COMPANIES</h2>
+                <div class="individuals-overview-orgs">
+                    <img src="images/overview-adp.png">
+                    <img src="images/overview-adobe.png">
+                    <img src="images/overview-vmware.png">
+                    <img src="images/overview-fujitsu.png">
+                    <img src="images/overview-nasdaq.png">
+                </div>
+
+                <div class="individuals-overview-row">
+                    <div class="individuals-overview-row-text">
+                        <h3>COURSE LIBRARY</h3>
+                        <h1>Learn from top technologists around the world</h1>
+                        <p>Keep your skills up-to-date with access to thousands of courses authored by an elite network of industry experts and partners.</p>
+                        <a href="">Browse our libraries <i class="fa fa-angle-right purple-arrow-right"></i></a>
+                    </div>
+                    <img src="images/overview2.png">
+                </div>
+                <div class="individuals-overview-row">
+                    <img src="images/overview3.png">
+                    <div class="individuals-overview-row-text">
+                        <h3>SKILL ASSESSMENTS</h3>
+                        <h1>See where your skills stand and where you can grow</h1>
+                        <p>The best way to start learning is to see where your skills stand first. Take a quick skill assessment to uncover your strengths and weaknesses and get personalized recommendations on what to work on.</p>
+                    </div>
+                </div>
+                <div class="individuals-overview-row">
+                    <div class="individuals-overview-row-text">
+                        <h3>HANDS-ON LEARNING</h3>
+                        <h1>Practice applying new skills</h1>
+                        <p>With projects and interactive courses, you can test drive new skills in a risk-free environment and get guided feedback—so you can make mistakes before they matter.</p>
+                    </div>
+                    <img src="images/overview4.png">
+                </div>
+            </div>
+        </div>
+
+        <!---------------------- Customer Stories ---------------------->
+        <div class="customer-stories">
+            <div class="customer-stories-text">
+                <h3>CUSTOMER STORIES</h3>
+                <h1>From soldier to IT specialist: Ryan's Pluralsight story</h1>
+                <p>Technology skills change lives. Hear veteran-turned-IT professional Ryan Chasteauneuf’s Pluralsight story.</p>
+                <a href="">Watch Ryan's story <i class="fa fa-angle-right purple-arrow-right"></i></a>
+            </div>
+            <img onclick="showCsVideo()" src="images/cs-ryan.png">
+            <div id="customer-stories-video">
+                <iframe width="896" height="504" src="https://www.youtube.com/embed/LyAlYxgY0Yk" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div onclick="hideCsVideo()" id="customer-stories-video-bg"></div>
+        </div>
     </main>
+    <div class="individuals-second-bg">
+        <main>
+            <!---------------------- Plans & Pricing ---------------------->
+            <div class="plans-pricing">
+                <div class="plans-pricing-pre-text">
+                    <h3>PLANS & PRICING</h3>
+                    <h1>Build skills that deliver results</h1>
+                    <div class="plans-pricing-toggle">
+                        <p>Monthly</p>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                        <p>Yearly</p>
+                    </div>
+                    <h2>(Save at least 30%!)</h2>
+                </div>
+                <div class="plans-pricing-flex">
+                    <div id="standard-plan1" class="plans-pricing-box">
+                        <h1>Standard</h1>
+                        <h2>159<sup>US$</sup></h2>
+                        <h3>per year</h3>
+                        <p>Core course library,<br>paths and skill assessments.</p>
+                        <button>START WITH STANDARD</button>
+                        <span>or start a <a href="">FREE TRIAL</a></span>
+                    </div>
+                    <div id="premium-plan1" class="plans-pricing-box">
+                        <div class="best-opportunity">BEST OPPORTUNITY</div>
+                        <h1>Premium</h1>
+                        <h2>239<sup>US$</sup></h2>
+                        <h3>per year</h3>
+                        <p>Entire library of core and expanded courses, exams, projects and interactive courses.</p>
+                        <button>START WITH PREMIUM</button>
+                        <span>or start a <a href="">FREE TRIAL</a></span>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
     <script src="js/index.js"></script>
+    <script src="js/individuals.js"></script>
 </body>
 </html>
