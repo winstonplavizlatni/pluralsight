@@ -299,10 +299,14 @@
         </div>
 
         <!---------------------- Individuals overview ---------------------->
+        <div id="overview1-video">
+            <iframe width="896" height="504" src="https://www.youtube.com/embed/9h-I4lRkWH0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div onclick="hideOverviewVideo()" id="overview1-video-bg"></div>
         <div class="individuals-overview">
             <div class="individuals-overview-width">
                 <div class="individuals-overview-row">
-                    <img src="images/overview1.png">
+                    <img onclick="showOverviewVideo()" src="images/overview1.png" style="cursor: pointer;">
                     <div class="individuals-overview-row-text">
                         <h3>OVERVIEW</h3>
                         <h1>Take control of your career</h1>
@@ -374,25 +378,25 @@
                         <p>Monthly</p>
                         <label class="switch">
                             <input type="checkbox">
-                            <span class="slider round"></span>
+                            <span onclick="plansPricingToggle()" class="slider round"></span>
                         </label>
                         <p>Yearly</p>
                     </div>
                     <h2>(Save at least 30%!)</h2>
                 </div>
                 <div class="plans-pricing-flex">
-                    <div id="standard-plan1" class="plans-pricing-box">
+                    <div class="plans-pricing-box">
                         <h1>Standard</h1>
-                        <h2>159<sup>US$</sup></h2>
+                        <h2 id="standard-plan-price">19<sup>US$</sup></h2>
                         <h3>per year</h3>
                         <p>Core course library,<br>paths and skill assessments.</p>
                         <button>START WITH STANDARD</button>
                         <span>or start a <a href="">FREE TRIAL</a></span>
                     </div>
-                    <div id="premium-plan1" class="plans-pricing-box">
+                    <div class="plans-pricing-box">
                         <div class="best-opportunity">BEST OPPORTUNITY</div>
                         <h1>Premium</h1>
-                        <h2>239<sup>US$</sup></h2>
+                        <h2 id="premium-plan-price">29<sup>US$</sup></h2>
                         <h3>per year</h3>
                         <p>Entire library of core and expanded courses, exams, projects and interactive courses.</p>
                         <button>START WITH PREMIUM</button>
@@ -400,7 +404,245 @@
                     </div>
                 </div>
             </div>
+
+            <!---------------------- Compare libraries ---------------------->
+            <div class="individuals-compare-libraries">
+                <h1>Compare our course libraries</h1>
+                <div class="individuals-compare-libraries-flex">
+                    <div class="individuals-compare-libraries-container">
+                        <h3>Core library</h3>
+                        <p>Our core library features 2,500+ of our most-popular courses on in-demand topics like cloud, data, security, software development, infrastructure and more.</p>
+                    </div>
+                    <div class="individuals-compare-libraries-container">
+                        <h3>Expanded library</h3>
+                        <p>Our expanded library gives you access to our full 7,000+ course library. It includes more advanced topics if you need to build deep expertise and niche topics for those tackling special projects.</p>
+                    </div>
+                </div>
+                <table>
+                    <tr>
+                        <th>CORE</th>
+                        <td><strong>Standard</strong></td>
+                        <td style="border: none;"><strong>Premium</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Free trial</td>
+                        <td><strong>For 10 days</strong></td>
+                        <td><strong>For 10 days</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Course library <img class="circle-info" src='images/circle-info-solid.svg'>
+                            <span class="table-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</span></td>
+                        <td><strong>Core library</strong> <img class="circle-info" src='images/circle-info-solid.svg'>
+                            <span class="table-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</span></td>
+                        <td><strong>Expanded library</strong> <img class="circle-info" src='images/circle-info-solid.svg'>
+                            <span class="table-tooltiptext top-tooltip">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</span></td>
+                    </tr>
+                    <tr>
+                        <td>Paths <img class="circle-info" src='images/circle-info-solid.svg'>
+                            <span class="table-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</span></td>
+                        <td><img class="check-icon" src="images/check-icon.png"></td>
+                        <td><img class="check-icon" src="images/check-icon.png"></td>
+                    </tr>
+                    <tr>
+                        <td>Channels <img class="circle-info" src='images/circle-info-solid.svg'>
+                            <span class="table-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</span></td>
+                        <td><img class="check-icon" src="images/check-icon.png"></td>
+                        <td><img class="check-icon" src="images/check-icon.png"></td>
+                    </tr>
+                    <tr>
+                        <td>Course discussions <img class="circle-info" src='images/circle-info-solid.svg'>
+                            <span class="table-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</span></td>
+                        <td><img class="check-icon" src="images/check-icon.png"></td>
+                        <td><img class="check-icon" src="images/check-icon.png"></td>
+                    </tr>
+                    <tr>
+                        <td>Exercise files <img class="circle-info" src='images/circle-info-solid.svg'>
+                            <span class="table-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</span></td>
+                        <td><img class="check-icon" src="images/check-icon.png"></td>
+                        <td><img class="check-icon" src="images/check-icon.png"></td>
+                    </tr>
+                    <tr>
+                        <td>Mobile and TV apps <img class="circle-info" src='images/circle-info-solid.svg'>
+                            <span class="table-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</span></td>
+                        <td><img class="check-icon" src="images/check-icon.png"></td>
+                        <td><img class="check-icon" src="images/check-icon.png"></td>
+                    </tr>
+                    <tr>
+                        <td>Offline viewing <img class="circle-info" src='images/circle-info-solid.svg'>
+                            <span class="table-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</span></td>
+                        <td><img class="check-icon" src="images/check-icon.png"></td>
+                        <td><img class="check-icon" src="images/check-icon.png"></td>
+                    </tr>
+                    <tr>
+                        <td>Conferences <img class="circle-info" src='images/circle-info-solid.svg'>
+                            <span class="table-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</span></td>
+                        <td><img class="check-icon" src="images/check-icon.png"></td>
+                        <td><img class="check-icon" src="images/check-icon.png"></td>
+                    </tr>
+                    <tr>
+                        <td>Guides <img class="circle-info" src='images/circle-info-solid.svg'>
+                            <span class="table-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</span></td>
+                        <td><img class="check-icon" src="images/check-icon.png"></td>
+                        <td><img class="check-icon" src="images/check-icon.png"></td>
+                    </tr>
+                    <tr>
+                        <td>Badges <img class="circle-info" src='images/circle-info-solid.svg'>
+                            <span class="table-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</span></td>
+                        <td><img class="check-icon" src="images/check-icon.png"></td>
+                        <td><img class="check-icon" src="images/check-icon.png"></td>
+                    </tr>
+                    <tr>
+                        <th style="padding-top: 50px; padding-bottom: 15px;">ASSESSMENTS</th>
+                        <td></td>
+                        <td style="border: none;"></td>
+                    </tr>
+                    <tr>
+                        <td>Skill IQ <img class="circle-info" src='images/circle-info-solid.svg'>
+                            <span class="table-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</span></td>
+                        <td><img class="check-icon" src="images/check-icon.png"></td>
+                        <td><img class="check-icon" src="images/check-icon.png"></td>
+                    </tr>
+                    <tr>
+                        <td>Role IQ <img class="circle-info" src='images/circle-info-solid.svg'>
+                            <span class="table-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</span></td>
+                        <td><img class="check-icon" src="images/check-icon.png"></td>
+                        <td><img class="check-icon" src="images/check-icon.png"></td>
+                    </tr>
+                    <tr>
+                        <td>Course learning checks <img class="circle-info" src="images/circle-info-solid.svg">
+                            <span class="table-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</span></td>
+                        <td><img class="check-icon" src="images/check-icon.png"></td>
+                        <td><img class="check-icon" src="images/check-icon.png"></td>
+                    </tr>
+                    <tr>
+                        <th style="padding-top: 50px; padding-bottom: 15px;">PREMIUM</th>
+                        <td></td>
+                        <td style="border: none;"></td>
+                    </tr>
+                    <tr>
+                        <td>Certification practise exams <img class="circle-info" src='images/circle-info-solid.svg'>
+                            <span class="table-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</span></td>
+                        <td></td>
+                        <td><img class="check-icon" src="images/check-icon.png"></td>
+                    </tr>
+                    <tr>
+                        <td>Interactive courses <img class="circle-info" src='images/circle-info-solid.svg'>
+                            <span class="table-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</span></td>
+                        <td></td>
+                        <td><img class="check-icon" src="images/check-icon.png"></td>
+                    </tr>
+                    <tr>
+                        <td>Projects <img class="circle-info" src='images/circle-info-solid.svg'>
+                            <span class="table-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</span></td>
+                        <td></td>
+                        <td><img class="check-icon" src="images/check-icon.png"></td>
+                    </tr>
+                </table>
+            </div>
+
+            <!---------------------- Success starts here ---------------------->
+            <div class="insights" style="margin-top: 200px;">
+                <div class="insights-container" style="width: 100%;">
+                    <h1>Success starts here</h1>
+                    <button style="margin: 0; min-width: 0;">TRY FOR FREE</button>
+                </div>
+            </div>
         </main>
+    </div>
+
+    <!---------------------- Footer ---------------------->
+    <div class="footer">
+        <footer>
+            <div class="footer-navbar">
+                <div class="footer-navbar-col">
+                    <h5 onclick="toggleFooterSolutions()">SOLUTIONS <i id="footer-solutions-arrowdown" class="fa fa-angle-down footer-arrow"></i>
+                                                                    <i id="footer-solutions-arrowup" class="fa fa-angle-up footer-arrow"></i></h5>
+                    <div id="footer-solutions">
+                        <a href="">Pluralsight Skills</a>
+                        <a href="">Pluralsight Flow</a>
+                        <a href="">Government</a>
+                        <a href="">Gift of Pluralsight</a>
+                        <a href="">View Pricing</a>
+                        <a href="">Contact Sales</a>
+                        <a href="">Skill up for free</a>
+                    </div>
+                </div>
+                <div class="footer-navbar-col">
+                    <h5 onclick="toggleFooterPlatform()">PLATFORM <i id="footer-platform-arrowdown" class="fa fa-angle-down footer-arrow"></i>
+                                                                  <i id="footer-platform-arrowup" class="fa fa-angle-up footer-arrow"></i></h5>
+                    <div id="footer-platform">
+                        <a href="">Browse library</a>
+                        <a href="">Role IQ</a>
+                        <a href="">Skill IQ</a>
+                        <a href="">Iris</a>
+                        <a href="">Authors</a>
+                        <a href="">Professional Services</a>
+                    </div>
+                 </div>
+                 <div class="footer-navbar-col">
+                    <h5 onclick="toggleFooterCompany()">COMPANY <i id="footer-company-arrowdown" class="fa fa-angle-down footer-arrow"></i>
+                                                                <i id="footer-company-arrowup" class="fa fa-angle-up footer-arrow"></i></h5>
+                    <div id="footer-company">
+                        <a href="">About us</a>
+                        <a href="">Customer stories</a>
+                        <a href="">Careers</a>
+                        <a href="">Blog</a>
+                        <a href="">Newsroom</a>
+                        <a href="">Resource center</a>
+                        <a href="">Guides</a>
+                    </div>
+                 </div>
+                 <div class="footer-navbar-col">
+                    <h5 onclick="toggleFooterResources()">RESOURCES <i id="footer-resources-arrowdown" class="fa fa-angle-down footer-arrow"></i>
+                                                                    <i id="footer-resources-arrowup" class="fa fa-angle-up footer-arrow"></i></h5>
+                    <div id="footer-resources">
+                        <a href="">Download Pluralsight</a>
+                        <a href="">Events</a>
+                        <a href="">Teach</a>
+                        <a href="">Partners</a>
+                        <a href="">Affiliate Partners</a>
+                        <a href="">PluralsightOne.org</a>
+                        <a href="">Subscribe</a>
+                    </div>
+                 </div>
+                 <div class="footer-navbar-col">
+                    <h5 onclick="toggleFooterSupport()">SUPPORT <i id="footer-support-arrowdown" class="fa fa-angle-down footer-arrow"></i>
+                                                                <i id="footer-support-arrowup" class="fa fa-angle-up footer-arrow"></i></h5>
+                    <div id="footer-support">
+                        <a href="">Contact</a>
+                        <a href="">Help center</a>
+                        <a href="">IP allowlist</a>
+                        <a href="">Sitemap</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-lang">
+                <img src="images/globe-white.png">
+                <a href="">Deutsch</a>
+                <a href="" class="active-lang">English</a>
+                <a href="">French</a>
+            </div>
+            <div class="footer-copyright">
+                <div class="footer-copyright-left">
+                    <img src="images/ps-icon.png">
+                    <p>Copyright © 2004 - 2022 Pluralsight LLC. All rights reserved</p>
+                </div>
+                <div class="footer-copyright-right">
+                    <div class="terms-of-use">
+                        <a href="">Terms of Use</a>
+                        <a href="">Privacy Notice</a>
+                        <a href="">Modern Slavery Act Transparency Statement</a>
+                    </div>
+                    <div class="social-networks">
+                        <a href=""><img src="images/fb.svg"></a>
+                        <a href=""><img src="images/ig.svg"></a>
+                        <a href=""><img src="images/twitter.svg"></a>
+                        <a href=""><img src="images/linkedin.svg"></a>
+                        <a href=""><img src="images/yt.svg"></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
     <script src="js/index.js"></script>
     <script src="js/individuals.js"></script>

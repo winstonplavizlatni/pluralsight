@@ -1320,6 +1320,46 @@ footer {
     margin-right: 0;
 }
 
+#footer-solutions-arrowup {
+    display: none;
+}
+
+#footer-platform-arrowup {
+    display: none;
+}
+
+#footer-company-arrowup {
+    display: none;
+}
+
+#footer-resources-arrowup {
+    display: none;
+}
+
+#footer-support-arrowup {
+    display: none;
+}
+
+#footer-solutions-arrowdown {
+    display: none;
+}
+
+#footer-platform-arrowdown {
+    display: none;
+}
+
+#footer-company-arrowdown {
+    display: none;
+}
+
+#footer-resources-arrowdown {
+    display: none;
+}
+
+#footer-support-arrowdown {
+    display: none;
+}
+
 /* -------------------------------------------- Responsive -------------------------------------------- */
 
 @media only screen and (max-width: 1444px) {
@@ -1713,6 +1753,26 @@ footer {
         display: none;
     }
 
+    #footer-solutions-arrowdown {
+        display: block;
+    }
+    
+    #footer-platform-arrowdown {
+        display: block;
+    }
+    
+    #footer-company-arrowdown {
+        display: block;
+    }
+    
+    #footer-resources-arrowdown {
+        display: block;
+    }
+    
+    #footer-support-arrowdown {
+        display: block;
+    }
+
     .footer-lang img {
         margin-left: 30px;
     }
@@ -2069,6 +2129,22 @@ footer {
     margin-right: auto;
 }
 
+#overview1-video {
+    display: none;
+    position: absolute;
+    z-index: 6;
+    left: 22.5%;
+}
+
+#overview1-video-bg {
+    display: none;
+    width: 100%;
+    height: 300%;
+    position: absolute;
+    background-color: rgba(0,0,0,.45);
+    z-index: 5;
+}
+
 /* ---------------------- Customer Stories ---------------------- */
 
 .customer-stories {
@@ -2145,7 +2221,7 @@ footer {
 .plans-pricing-pre-text h1 {
     font-size: 40px;
     margin-top: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 .plans-pricing-pre-text h2 {
@@ -2199,6 +2275,11 @@ footer {
     padding: 15px 30px;
     cursor: pointer;
     margin-bottom: 30px;
+    transition: all .6s ease-in-out;
+}
+
+.plans-pricing-box button:hover {
+    box-shadow: 0 10px 30px rgb(0 0 0 / 40%);
 }
 
 .plans-pricing-box span {
@@ -2247,4 +2328,163 @@ footer {
 
 .plans-pricing {
     padding-top: 100px;
+}
+
+/* ------------------------------ Toggle Switch ------------------------------------------------------- */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin: 0 12px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #363636;
+    border-radius: 34px;
+    transition: 0.4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+.switch input:checked + .slider:before {
+    transform: translateX(26px);
+}
+/* ---------------------------------------------------------------------------------------------------- */
+
+
+/* ---------------------- Compare libraries ---------------------- */
+.individuals-compare-libraries h1 {
+    font-size: 32px;
+    text-align: center;
+}
+
+.individuals-compare-libraries {
+    margin-top: 80px;
+}
+
+.individuals-compare-libraries-container h3 {
+    font-size: 26px;
+}
+
+.individuals-compare-libraries-container p {
+    font-size: 17px;
+    line-height: 1.4;
+    color: #eee;
+    margin-top: 20px;
+}
+
+.individuals-compare-libraries-container {
+    width: 33%;
+}
+
+.individuals-compare-libraries-flex {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin-top: 45px;
+}
+
+/* Table */
+
+.circle-info {
+    height: 12px;
+    width: 12px;
+    filter: invert(27%) sepia(0%) saturate(1255%) hue-rotate(185deg) brightness(86%) contrast(89%);
+    margin-left: 10px;
+}
+
+.check-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.individuals-compare-libraries table th {
+    color: #0084BD;
+    text-align: left;
+    padding-left: 30px;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.individuals-compare-libraries table tr td:first-child {
+    text-align: left;
+    font-size: 17px;
+    padding-left: 30px;
+    width: 68%;
+}
+
+.individuals-compare-libraries table tr td:last-child {
+    border-left: 1px solid #353535;
+}
+
+.individuals-compare-libraries table td {
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 16%;
+    position: relative;
+}
+
+.individuals-compare-libraries table tr:nth-child(even) {
+    background-color: #212121;
+}
+
+.individuals-compare-libraries table tr:nth-child(odd) {
+    background-color: #18181a;
+}
+
+.individuals-compare-libraries table {
+    width: 100%;
+    border-spacing:0;
+    border-collapse:collapse;
+    margin-top: 170px;
+}
+
+.table-tooltiptext {
+    visibility: hidden;
+    width: 240px;
+    background-color: #fff;
+    color: #282828;
+    font-size: 12px;
+    line-height: 1.4;
+    text-align: left;
+    border: 1px solid #aaaaaa;
+    border-radius: 4px;
+    padding: 20px;
+    position: absolute;
+    bottom: -15px;
+    z-index: 2;
+}
+
+.top-tooltip {
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.individuals-compare-libraries table td:hover .table-tooltiptext {
+    visibility: visible;
 }
