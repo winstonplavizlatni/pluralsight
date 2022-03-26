@@ -34,157 +34,161 @@
                 <a href="index.html" id="logo-image"><img src="images/pluralsight-logo.png"></a>
                 <a href="index.html">PLURALSIGHT</a>
             </div>
-            <a id="platform-btn">Platform <i class="fa fa-angle-down navbar-arrow-down"></i>
+            <a id="platform-btn" onclick="toggleMobilePlatform()">Platform <i class="fa fa-angle-down navbar-arrow-down"></i>
                                           <i class="fa fa-angle-right navbar-arrow-right"></i>
                 <div class="bottom-border" id="platform-bottom-border"></div></a>
-            <div id="platform-container">
-                <div class="platform-container-flex">
-                <div class="platform-container-left">
-                    <h5>WAYS TO UPSKILL</h5>
-                    <div class="platform-container-left-row">
-                        <a href=""><img src="images/courses.png"></a>
-                        <a href="">Courses</a>
-                    </div>
-                    <div class="platform-container-left-row">
-                        <a href=""><img src="images/skill-assessments.png"></a>
-                        <a href="">Skill assessments</a>
-                    </div>
-                    <div class="platform-container-left-row">
-                        <a href=""><img src="images/labs.png"></a>
-                        <a href="">Labs</a>
-                        <button>NEW</button>
-                    </div>
-                    <div class="platform-container-left-row">
-                        <a href=""><img src="images/hands-on learning.png"></a>
-                        <a href="">Hands-on learning</a>
-                    </div>
-                    <div class="platform-container-left-row">
-                        <a href=""><img src="images/certification-prep-platform.png"></a>
-                        <a href="">Certification prep</a>
-                    </div>
-                    <div class="platform-container-left-row">
-                        <a href=""><img src="images/live-classes.svg"></a>
-                        <a href="">Live Classes</a>
-                    </div>
-                    <div class="platform-container-left-row">
-                        <a href=""><img src="images/team-efficiency.png"></a>
-                        <a href="">Team efficiency</a>
-                    </div>
-                </div>
-                <div class="platform-container-right">
-                    <div class="platform-container-right-top">
-                    <div class="skills-for">
-                        <h5>SKILLS FOR</h5>
-                        <a href="">Software development</a>
-                        <a href="">IT ops</a>
-                        <a href="">Info & cyber security</a>
-                        <a href="">Cloud computing</a>
-                        <a href="">Machine learning / AI</a>
-                        <a href="">Data professional</a>
-                    </div>
-                    <div class="top-trending-paths">
-                        <h5>TOP TRENDING PATHS</h5>
-                        <div class="top-trending-paths-container">
-                            <div class="top-trending-paths-item" onclick="window.open('', 'blank')">
-                                <img src="images/microsoft-azure-deployment.png">
-                                <div class="top-trending-paths-item-text">
-                                    <h3>Microsoft Azure Deployment</h3>
-                                    <p><strong>4</strong> Courses <strong>7</strong> Hours</p>
-                                </div>
-                            </div>
-                            <div class="top-trending-paths-item" onclick="window.open('', 'blank')">
-                                <img src="images/cleaning-data-with-r.png">
-                                <div class="top-trending-paths-item-text">
-                                    <h3>Cleaning Data with R</h3>
-                                    <p><strong>5</strong> Courses <strong>9</strong> Hours</p>
-                                </div>
-                            </div>
-                            <div class="top-trending-paths-item" onclick="window.open('', 'blank')">
-                                <img src="images/ruby.png">
-                                <div class="top-trending-paths-item-text">
-                                    <h3>Ruby Language Fundamentals</h3>
-                                    <p><strong>7</strong> Courses <strong>13</strong> Hours</p>
-                                </div>
-                            </div>
-                            <div class="top-trending-paths-item" onclick="window.open('', 'blank')">
-                                <img src="images/aws-operations.png">
-                                <div class="top-trending-paths-item-text">
-                                    <h3>AWS OPERATIONS</h3>
-                                    <p><strong>7</strong> Courses <strong>14</strong> Hours</p>
-                                </div>
-                            </div>
-                            <div class="top-trending-paths-item" onclick="window.open('', 'blank')">
-                                <img src="images/core-python.png">
-                                <div class="top-trending-paths-item-text">
-                                    <h3>Core Python</h3>
-                                    <p><strong>24</strong> Courses <strong>44</strong> Hours</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    </div>
-                    <div class="platform-container-right-bottom">
-                        <a href="">See our entire course library</a>
-                        <a href="">Check out the Technology Index</a>
-                    </div>
-                </div>
-                <button id="platform-close-btn"></button>
-                </div>
-            </div>
+            
 
-            <a id="products-btn">Products <i class="fa fa-angle-down navbar-arrow-down"></i>
+            <a id="products-btn" onclick="toggleMobileProducts()">Products <i class="fa fa-angle-down navbar-arrow-down"></i>
                                           <i class="fa fa-angle-right navbar-arrow-right"></i>
                 <div class="bottom-border" id="products-bottom-border"></div></a>
 
-            <div id="products-container">
-                <div class="products-container-flex">
-                    <div class="products-container-col">
-                        <img src="images/skills-logo.png">
-                        <p onclick="window.open('')">Build tech skills to drive results</p>
-                        <a href="">What is Skills?</a>
-                        <a href="">View plans</a>
-                    </div>
-                    <div class="products-container-col">
-                        <img src="images/flow-logo.png">
-                        <p onclick="window.open('')">Get insights into your workflow</p>
-                        <a href="">What is Flow?</a>
-                        <a href="">View plans</a>
-                    </div>
-                </div>
-                <button id="products-close-btn"></button>
-            </div>
+            
 
-            <a id="resources-btn">Resources <i class="fa fa-angle-down navbar-arrow-down"></i>
+            <a id="resources-btn" onclick="toggleMobileResources()">Resources <i class="fa fa-angle-down navbar-arrow-down"></i>
                                             <i class="fa fa-angle-right navbar-arrow-right"></i>
                 <div class="bottom-border" id="resources-bottom-border"></div></a>
 
-            <div id="resources-container">
-                <div class="resources-container-flex">
-                    <div class="resources-container-col">
-                        <h5>LEARN</h5>
-                        <a href="">Blog</a>
-                        <a href="">Customer stories</a>
-                        <a href="">Resource center</a>
-                        <a href="">Guides</a>
-                        <a href="">App download</a>
-                        <a href="">Support</a>
-                    </div>
-                    <div class="resources-container-col">
-                        <h5>CONNECT</h5>
-                        <a href="">Events</a>
-                        <a href="">Webinars</a>
-                        <a href="">Podcast</a>
-                        <h5 class="resources-podcasts">PODCASTS</h5>
-                        <a href="">All Hands on Tech</a>
-                        <a href="">Perspectives in Leadership</a>
+            
+
+            <a href="individuals.html" id="for-individuals-btn">For Individuals</a>
+            <a class="mobile-sign-in" id="mobile-sign-in" onclick="toggleMobileSignIn()">Sign in <i class="fa fa-angle-right navbar-arrow-right"></i></a>
+            <a href="" class="mobile-view-plans" id="mobile-view-plans">VIEW PLANS</a>
+        </div>
+
+        <div id="platform-container">
+            <div class="platform-container-flex">
+            <div class="platform-container-left">
+                <h5>WAYS TO UPSKILL</h5>
+                <div class="platform-container-left-row">
+                    <a href=""><img src="images/courses.png"></a>
+                    <a href="">Courses</a>
+                </div>
+                <div class="platform-container-left-row">
+                    <a href=""><img src="images/skill-assessments.png"></a>
+                    <a href="">Skill assessments</a>
+                </div>
+                <div class="platform-container-left-row">
+                    <a href=""><img src="images/labs.png"></a>
+                    <a href="">Labs</a>
+                    <button>NEW</button>
+                </div>
+                <div class="platform-container-left-row">
+                    <a href=""><img src="images/hands-on learning.png"></a>
+                    <a href="">Hands-on learning</a>
+                </div>
+                <div class="platform-container-left-row">
+                    <a href=""><img src="images/certification-prep-platform.png"></a>
+                    <a href="">Certification prep</a>
+                </div>
+                <div class="platform-container-left-row">
+                    <a href=""><img src="images/live-classes.svg"></a>
+                    <a href="">Live Classes</a>
+                </div>
+                <div class="platform-container-left-row">
+                    <a href=""><img src="images/team-efficiency.png"></a>
+                    <a href="">Team efficiency</a>
+                </div>
+            </div>
+            <div class="platform-container-right">
+                <div class="platform-container-right-top">
+                <div class="skills-for">
+                    <h5>SKILLS FOR</h5>
+                    <a href="">Software development</a>
+                    <a href="">IT ops</a>
+                    <a href="">Info & cyber security</a>
+                    <a href="">Cloud computing</a>
+                    <a href="">Machine learning / AI</a>
+                    <a href="">Data professional</a>
+                </div>
+                <div class="top-trending-paths">
+                    <h5>TOP TRENDING PATHS</h5>
+                    <div class="top-trending-paths-container">
+                        <div class="top-trending-paths-item" onclick="window.open('', 'blank')">
+                            <img src="images/microsoft-azure-deployment.png">
+                            <div class="top-trending-paths-item-text">
+                                <h3>Microsoft Azure Deployment</h3>
+                                <p><strong>4</strong> Courses <strong>7</strong> Hours</p>
+                            </div>
+                        </div>
+                        <div class="top-trending-paths-item" onclick="window.open('', 'blank')">
+                            <img src="images/cleaning-data-with-r.png">
+                            <div class="top-trending-paths-item-text">
+                                <h3>Cleaning Data with R</h3>
+                                <p><strong>5</strong> Courses <strong>9</strong> Hours</p>
+                            </div>
+                        </div>
+                        <div class="top-trending-paths-item" onclick="window.open('', 'blank')">
+                            <img src="images/ruby.png">
+                            <div class="top-trending-paths-item-text">
+                                <h3>Ruby Language Fundamentals</h3>
+                                <p><strong>7</strong> Courses <strong>13</strong> Hours</p>
+                            </div>
+                        </div>
+                        <div class="top-trending-paths-item" onclick="window.open('', 'blank')">
+                            <img src="images/aws-operations.png">
+                            <div class="top-trending-paths-item-text">
+                                <h3>AWS OPERATIONS</h3>
+                                <p><strong>7</strong> Courses <strong>14</strong> Hours</p>
+                            </div>
+                        </div>
+                        <div class="top-trending-paths-item" onclick="window.open('', 'blank')">
+                            <img src="images/core-python.png">
+                            <div class="top-trending-paths-item-text">
+                                <h3>Core Python</h3>
+                                <p><strong>24</strong> Courses <strong>44</strong> Hours</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <button id="resources-close-btn"></button>
+                </div>
+                <div class="platform-container-right-bottom">
+                    <a href="">See our entire course library</a>
+                    <a href="">Check out the Technology Index</a>
+                </div>
             </div>
-
-            <a href="individuals.html">For Individuals</a>
-            <a href="" class="mobile-sign-in">Sign in <i class="fa fa-angle-right navbar-arrow-right"></i></a>
-            <a href="" class="mobile-view-plans">VIEW PLANS</a>
+            <button id="platform-close-btn"></button>
+            </div>
+        </div>
+        <div id="products-container">
+            <div class="products-container-flex">
+                <div class="products-container-col">
+                    <img src="images/skills-logo.png">
+                    <p onclick="window.open('')">Build tech skills to drive results</p>
+                    <a href="">What is Skills?</a>
+                    <a href="">View plans</a>
+                </div>
+                <div class="products-container-col">
+                    <img src="images/flow-logo.png">
+                    <p onclick="window.open('')">Get insights into your workflow</p>
+                    <a href="">What is Flow?</a>
+                    <a href="">View plans</a>
+                </div>
+            </div>
+            <button id="products-close-btn"></button>
+        </div>
+        <div id="resources-container">
+            <div class="resources-container-flex">
+                <div class="resources-container-col">
+                    <h5>LEARN</h5>
+                    <a href="">Blog</a>
+                    <a href="">Customer stories</a>
+                    <a href="">Resource center</a>
+                    <a href="">Guides</a>
+                    <a href="">App download</a>
+                    <a href="">Support</a>
+                </div>
+                <div class="resources-container-col">
+                    <h5>CONNECT</h5>
+                    <a href="">Events</a>
+                    <a href="">Webinars</a>
+                    <a href="">Podcast</a>
+                    <h5 class="resources-podcasts">PODCASTS</h5>
+                    <a href="">All Hands on Tech</a>
+                    <a href="">Perspectives in Leadership</a>
+                </div>
+            </div>
+            <button id="resources-close-btn"></button>
         </div>
 
         <div class="navbar-right">
@@ -226,7 +230,7 @@
                 </div>
                 <h1>For Individuals: Build better skills</h1>
                 <p>With the technology skills platform, you can see where your skills stand and master the latest in software development, IT ops, AI and machine learning, security and more.</p>
-                <button>TRY FOR FREE</button>
+                <button class="rainbow-button">TRY FOR FREE</button>
             </div>
             <img src="images/hero-individual-illustration.png">
         </div>
@@ -234,7 +238,7 @@
         <!---------------------- See plans ---------------------->
         <div class="see-plans">
             <p>Serious skills. Simple pricing.</p>
-            <a href="">See plans ></a>
+            <a href="#pricing">See plans ></a>
         </div>
 
         <!---------------------- Individuals trending ---------------------->
@@ -370,7 +374,7 @@
     <div class="individuals-second-bg">
         <main>
             <!---------------------- Plans & Pricing ---------------------->
-            <div class="plans-pricing">
+            <div id="pricing" class="plans-pricing">
                 <div class="plans-pricing-pre-text">
                     <h3>PLANS & PRICING</h3>
                     <h1>Build skills that deliver results</h1>
@@ -390,7 +394,7 @@
                         <h2 id="standard-plan-price">19<sup>US$</sup></h2>
                         <h3>per year</h3>
                         <p>Core course library,<br>paths and skill assessments.</p>
-                        <button>START WITH STANDARD</button>
+                        <button class="rainbow-button">START WITH STANDARD</button>
                         <span>or start a <a href="">FREE TRIAL</a></span>
                     </div>
                     <div class="plans-pricing-box">
@@ -399,7 +403,7 @@
                         <h2 id="premium-plan-price">29<sup>US$</sup></h2>
                         <h3>per year</h3>
                         <p>Entire library of core and expanded courses, exams, projects and interactive courses.</p>
-                        <button>START WITH PREMIUM</button>
+                        <button class="rainbow-button">START WITH PREMIUM</button>
                         <span>or start a <a href="">FREE TRIAL</a></span>
                     </div>
                 </div>
@@ -544,7 +548,7 @@
             <div class="insights" style="margin-top: 200px;">
                 <div class="insights-container" style="width: 100%;">
                     <h1>Success starts here</h1>
-                    <button style="margin: 0; min-width: 0;">TRY FOR FREE</button>
+                    <button class="rainbow-button" style="margin: 0; min-width: 0;">TRY FOR FREE</button>
                 </div>
             </div>
         </main>
