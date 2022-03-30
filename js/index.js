@@ -175,6 +175,15 @@ function showMobileNav() {
     document.getElementById('search-btn').style.display = "none";
     document.getElementById('mobile-menu').style.display = "none";
     document.getElementById('close-mobile-menu').style.display = "block";
+    document.getElementById('platform-btn').style.display = "block";
+    document.getElementById('products-btn').style.display = "block";
+    document.getElementById('resources-btn').style.display = "block";
+    document.getElementById('for-individuals-btn').style.display = "block";
+    document.getElementById('mobile-sign-in').style.display = "block";
+    document.getElementById('platform-container').style.display = "block";
+    document.getElementById('products-container').style.display = "block";
+    document.getElementById('resources-container').style.display = "block";
+    document.getElementById('sign-in-container').style.display = "block";
 }
 
 function closeMobileNav() {
@@ -183,6 +192,14 @@ function closeMobileNav() {
     document.getElementById('search-btn').style.display = "block";
     document.getElementById('mobile-menu').style.display = "block";
     document.getElementById('close-mobile-menu').style.display = "none";
+    document.getElementById('platform-container').classList.add('hide-animation-class');
+    document.getElementById('platform-container').classList.remove('show-animation-class');
+    document.getElementById('products-container').classList.add('hide-animation-class');
+    document.getElementById('products-container').classList.remove('show-animation-class');
+    document.getElementById('resources-container').classList.add('hide-animation-class');
+    document.getElementById('resources-container').classList.remove('show-animation-class');
+    document.getElementById('sign-in-container').classList.add('hide-animation-class');
+    document.getElementById('sign-in-container').classList.remove('show-animation-class');
 }
 
 /*---------------------- Mobile Footer Navbar ----------------------*/

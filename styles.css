@@ -152,6 +152,7 @@ a {
     width: 100%;
     height: 100%;
     background-color: #000;
+    z-index: 10;
 }
 
 .mobile-view-plans {
@@ -695,6 +696,18 @@ a {
 .header-buttons {
     margin-top: 30px;
     margin-bottom: 90px;
+}
+
+@keyframes headerSpanFadeAni {
+    0% {opacity: 0; bottom: -10px;}
+    50% {opacity: 1; bottom: 0px;}
+    100% {opacity: 1;}
+}
+
+#header-span {
+    position: relative;
+    animation: headerSpanFadeAni 2500ms infinite;
+    color: #fff;
 }
 
 /* ---------------------- Trending Tech ---------------------- */
@@ -1515,18 +1528,20 @@ footer {
 
     #platform-container {
         width: 100%;
-        height: 100%;
+        height: 1000%;
         left: 100%;
-        top: 223px;
+        top: 181px;
         background: black;
         display: block;
+        overflow: scroll;
+        font-size: 15px!important;
     }
 
     #products-container {
         width: 100%;
         height: 100%;
         left: 100%;
-        top: 223px;
+        top: 181px;
         background: black;
         display: block;
     }
@@ -1535,7 +1550,7 @@ footer {
         width: 100%;
         height: 100%;
         left: 100%;
-        top: 223px;
+        top: 181px;
         background: black;
         display: block;
     }
@@ -1544,7 +1559,7 @@ footer {
         width: 100%;
         height: 100%;
         left: 100%;
-        top: 223px;
+        top: 181px;
         background: black;
         display: block;
     }
@@ -1571,6 +1586,173 @@ footer {
         animation-duration: 0.3s;
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
+    }
+
+    #platform-close-btn {
+        display: none;
+    }
+
+    .platform-container-flex {
+        flex-direction: column;
+    }
+
+    .platform-container-right-top {
+        flex-direction: column;
+    }
+
+    .top-trending-paths-container {
+        grid-template-columns: 100%;
+        background-color: #181818;
+        padding-top: 10px;
+    }
+
+    #platform-container h5 {
+        background-color: black;
+        width: 100%;
+        padding-left: 3.5%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .platform-container-right {
+        width: 100%;
+    }
+
+    .skills-for h5 {
+        margin-bottom: 0;
+    }
+
+    .top-trending-paths {
+        width: 100%;
+    }
+
+    .top-trending-paths h5 {
+        margin: 0;
+    }
+
+    .skills-for {
+        width: 100%;
+        margin-top: 0;
+        background-color: #181818;
+    }
+
+    .skills-for a {
+        margin-bottom: 0;
+        width: 92%;
+        margin: auto;
+        padding: 20px 0;
+        border-bottom: 1px solid #363638;
+    }
+
+    .skills-for a:last-child {
+        border-bottom: none;
+    }
+
+    .platform-container-left {
+        width: 100%;
+        margin-left: 0;
+        background-color: #181818;
+    }
+
+    .platform-container-left-row {
+        width: 92%;
+        margin: auto;
+        border-bottom: 1px solid #363638;
+    }
+
+    .platform-container-left div:last-child {
+        border-bottom: none;
+    }
+
+    .platform-container-left a {
+        padding: 20px 0;
+    }
+
+    .top-trending-paths-item {
+        width: 92%;
+        margin: auto;
+    }
+
+    #products-close-btn {
+        display: none;
+    }
+
+    .products-container-flex {
+        flex-direction: column;
+    }
+
+    .products-container-col:first-child {
+        border-right: none;
+        border-bottom: 2px solid #363638;
+    }
+
+    .products-container-col:last-child {
+        border: none;
+    }
+
+    .products-container-col {
+        width: 92%;
+        margin: auto;
+        padding: 25px 0 17px;
+    }
+
+    .products-container-col a {
+        display: none;
+    }
+
+    .products-container-col p {
+        border: none;
+        margin: none;
+    }
+
+    #resources-close-btn {
+        display: none;
+    }
+
+    .resources-container-flex {
+        flex-direction: column;
+    }
+
+    #resources-container h5 {
+        background-color: black;
+        width: 100%;
+        padding-left: 3.5%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin: 0;
+    }
+
+    .resources-container-col {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        background-color: #181818;
+    }
+
+    .resources-container-col a {
+        width: 92.5%;
+        margin: auto;
+        border-bottom: 1px solid #363638;
+        padding: 20px 0;
+    }
+
+    .resources-container-col a:last-child {
+        border-bottom: none;
+    }
+
+    .sign-in-flex {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .sign-in-col {
+        padding: 30px 50px;
+        border-bottom: 1px solid #363638;
+        width: 100%;
+    }
+
+    .sign-in-flex div:last-child {
+        border-bottom: none;
     }
 
     /* ----------------------------- */
@@ -2393,6 +2575,10 @@ footer {
     padding-top: 100px;
 }
 
+.plans-pricing-flex-mobile {
+    display: none;
+}
+
 /* ------------------------------ Toggle Switch ------------------------------------------------------- */
 .switch {
     position: relative;
@@ -2555,4 +2741,262 @@ footer {
 /* -------------------------------------------- Responsive -------------------------------------------- */
 
 @media only screen and (max-width: 1445px) {
+    .top-tooltip {
+        left: -20%;
+    }
+
+    .tooltip-text {
+        right: 10%;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .individuals-compare-libraries table {
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 1040px) {
+    .individuals-compare-libraries table {
+        display: none;
+    }
+
+    .individuals-header {
+        flex-direction: column;
+        height: 820px;
+        margin-top: 60px;
+    }
+
+    .individuals-header-text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .individuals-header img {
+        width: 335px;
+        height: 240px;
+        margin-top: 100px;
+    }
+
+    .individuals-trending-flex {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .individuals-overview-row:nth-child(1) {
+        flex-direction: column-reverse;
+    }
+
+    .individuals-overview-width div:first-child div {
+        width: 100%;
+    }
+
+    .individuals-overview-row:nth-child(4) {
+        flex-direction: column;
+    }
+
+    .individuals-overview-row:nth-child(5) {
+        flex-direction: column-reverse;
+    }
+
+    .individuals-overview-row:nth-child(6) {
+        flex-direction: column;
+    }
+
+    .individuals-overview-row-text {
+        width: 100%;
+    }
+
+    .individuals-overview-width {
+        width: 90%;
+    }
+
+    .individuals-overview-row img {
+        margin-top: 25px;
+    }
+
+    #overview1-video {
+        left: 5%;
+    }
+
+    .customer-stories {
+        flex-direction: column-reverse;
+        margin-top: 75px;
+        margin-bottom: 75px;
+        width: 100%;
+    }
+
+    .customer-stories-text {
+        margin-right: 0;
+        width: 88%;
+        margin: auto;
+    }
+
+    .customer-stories-text h1 {
+        font-size: 34px;
+    }
+
+    .plans-pricing-toggle {
+        display: none;
+    }
+
+    .plans-pricing-pre-text h2 {
+        display: none;
+    }
+    
+    .plans-pricing-flex {
+        display: none;
+    }
+
+    .plans-pricing-flex-mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .plans-pricing-box-mobile h1 {
+        font-size: 26px;
+    }
+
+    .plans-pricing-box-mobile h2 {
+        font-size: 30px;
+    }
+
+    .plans-pricing-box-mobile h3 {
+        font-size: 17px;
+        font-weight: 400;
+    }
+
+    .plans-pricing-toggle-mobile {
+        display: flex;
+        align-items: center;
+        padding: 15px 0;
+        border-bottom: 2px solid #363638;
+        margin-bottom: 5px;
+    }
+
+    .plans-pricing-toggle-mobile p {
+        font-size: 15px;
+    }
+
+    .plans-pricing-toggle-mobile h4 {
+        font-size: 12px;
+        color: #ec008c;
+    }
+
+    .slider-mobile {
+        transform: scale(0.68, 0.58);
+    }
+
+    .plans-pricing-box-row-mobile img {
+        width: 20px;
+        height: 20px;
+        margin-right: 12px;
+    }
+
+    .plans-pricing-box-row-mobile p {
+        font-size: 17px;
+        font-weight: 900;
+    }
+
+    .plans-pricing-box-row-mobile {
+        display: flex;
+        padding: 15px 0;
+    }
+
+    .plans-pricing-box-mobile button {
+        font-size: 13px;
+        font-weight: 900;
+        padding: 11px 20px;
+        width: 100%;
+        border: none;
+        margin-top: 25px;
+    }
+    
+    .plans-pricing-box-mobile a {
+        font-size: 13px;
+        font-weight: 900;
+        letter-spacing: 1px;
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .plans-pricing-box-mobile {
+        width: 320px;
+        padding-bottom: 60px;
+        border-bottom: 2px solid #363638;
+        margin-top: 18px;
+    }
+
+    .plans-pricing-box-mobile:nth-child(2) {
+        border-bottom: none;
+    }
+
+    .best-opportunity-mobile {
+        color: #000;
+        background: #f7a614;
+        letter-spacing: 0.5;
+        text-align: center;
+        width: 100%;
+        font-size: 14px;
+        font-weight: 900;
+        padding: 7px 15px 5px;
+        margin-bottom: 10px;
+    }
+
+    .individuals-compare-libraries-flex {
+        flex-direction: column;
+    }
+
+    .individuals-compare-libraries-container {
+        width: 100%;
+    }
+
+    .individuals-compare-libraries-container p {
+        margin-bottom: 20px;
+        font-size: 17px;
+    }
+
+    .individuals-compare-libraries h1 {
+        font-size: 28px;
+    }
+
+    .individuals-compare-libraries-container h3 {
+        font-size: 20px;
+    }
+
+    .individuals-insights-btn {
+        margin-top: 20px!important;
+    }
+}
+
+@media only screen and (max-width: 930px) {
+    .individuals-trending-flex {
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .individuals-overview-orgs {
+        flex-wrap: wrap;
+    }
+
+    .individuals-overview-row img {
+        max-width: 600px;
+        width: 100%;
+    }
+
+    .individuals-header {
+        height: 1000px;
+    }
+
+    .see-plans p {
+        font-size: 18px;
+    }
+
+    .see-plans a {
+        font-size: 18px;
+    }
 }
