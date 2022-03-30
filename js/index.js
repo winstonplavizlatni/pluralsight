@@ -5,13 +5,18 @@ if (screen.width >= 1030) {
   $('#platform-btn').click(function () {
     $('#platform-container').stop(true).fadeToggle();
     $('#platform-bottom-border').stop(true).fadeToggle();
-    $('#navbar-bg').stop(true).fadeToggle();
+    $('#products-container').fadeOut();
+    $('#products-bottom-border').fadeOut();
+    $('#resources-container').fadeOut();
+    $('#resources-bottom-border').fadeOut();
+    $('#sign-in-container').fadeOut();
+    $('#sign-in-bottom-border').fadeOut();
+    $('#search-container').fadeOut();
 });
 
   $("#platform-close-btn").click(function(){
     $("#platform-container").fadeOut();
     $('#platform-bottom-border').fadeOut();
-    $('#navbar-bg').fadeOut();
 });
 }
 
@@ -44,13 +49,18 @@ if (screen.width >= 1030) {
 $('#products-btn').click(function () {
     $('#products-container').stop(true).fadeToggle();
     $('#products-bottom-border').stop(true).fadeToggle();
-    $('#navbar-bg').stop(true).fadeToggle();
+    $('#platform-container').fadeOut();
+    $('#platform-bottom-border').fadeOut();
+    $('#resources-container').fadeOut();
+    $('#resources-bottom-border').fadeOut();
+    $('#sign-in-container').fadeOut();
+    $('#sign-in-bottom-border').fadeOut();
+    $('#search-container').fadeOut();
 });
 
 $("#products-close-btn").click(function(){
     $("#products-container").fadeOut();
     $('#products-bottom-border').fadeOut();
-    $('#navbar-bg').fadeOut();
 });
 }
 
@@ -83,13 +93,18 @@ if (screen.width >= 1030) {
 $('#resources-btn').click(function () {
     $('#resources-container').stop(true).fadeToggle();
     $('#resources-bottom-border').stop(true).fadeToggle();
-    $('#navbar-bg').stop(true).fadeToggle();
+    $('#platform-container').fadeOut();
+    $('#platform-bottom-border').fadeOut();
+    $('#products-container').fadeOut();
+    $('#products-bottom-border').fadeOut();
+    $('#sign-in-container').fadeOut();
+    $('#sign-in-bottom-border').fadeOut();
+    $('#search-container').fadeOut();
 });
 
 $("#resources-close-btn").click(function(){
     $("#resources-container").fadeOut();
     $('#resources-bottom-border').fadeOut();
-    $('#navbar-bg').fadeOut();
 });
 }
 
@@ -121,13 +136,18 @@ if (screen.width >= 1030) {
 $('#sign-in-btn').click(function () {
     $('#sign-in-container').stop(true).fadeToggle();
     $('#sign-in-bottom-border').stop(true).fadeToggle();
-    $('#navbar-bg').stop(true).fadeToggle();
+    $('#platform-container').fadeOut();
+    $('#platform-bottom-border').fadeOut();
+    $('#products-container').fadeOut();
+    $('#products-bottom-border').fadeOut();
+    $('#resources-container').fadeOut();
+    $('#resources-bottom-border').fadeOut();
+    $('#search-container').fadeOut();
 });
 
 $("#resources-close-btn").click(function(){
     $("#sign-in-container").fadeOut();
     $('#sign-in-bottom-border').fadeOut();
-    $('#navbar-bg').fadeOut();
 });
 }
 
@@ -159,13 +179,32 @@ if (screen.width <= 1030) {
 
 $('#search-btn').click(function () {
     $('#search-container').stop(true).fadeToggle();
-    $('#navbar-bg').stop(true).fadeToggle();
+    $('#platform-container').fadeOut();
+    $('#platform-bottom-border').fadeOut();
+    $('#products-container').fadeOut();
+    $('#products-bottom-border').fadeOut();
+    $('#resources-container').fadeOut();
+    $('#resources-bottom-border').fadeOut();
+    $('#sign-in-container').fadeOut();
+    $('#sign-in-bottom-border').fadeOut();
 });
 
 $("#search-close-btn").click(function(){
     $("#search-container").fadeOut();
-    $('#navbar-bg').fadeOut();
 });
+
+/* Navbar background */
+function navbarBgFunction() {
+    $('#platform-container').fadeOut();
+    $('#platform-bottom-border').fadeOut();
+    $('#products-container').fadeOut();
+    $('#products-bottom-border').fadeOut();
+    $('#resources-container').fadeOut();
+    $('#resources-bottom-border').fadeOut();
+    $('#sign-in-container').fadeOut();
+    $('#sign-in-bottom-border').fadeOut();
+    $('#search-container').fadeOut();
+}
 
 /*---------------------- Mobile Navbar ----------------------*/
 

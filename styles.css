@@ -129,12 +129,15 @@ a {
     outline: 1px solid #f2f2f2;
 }
 
-#navbar-bg {
-    position: absolute;
+.navbar-bg {
+    position: fixed;
+    top: 90;
+    left: 0;
     height: 774.5%;
-    width: 100%;
+    width: 100vw;
     background: rgba(0,0,0,.7);
-    display: none;
+    display: block;
+    z-index: -1;
 }
 
 #mobile-logo {
@@ -1756,6 +1759,10 @@ footer {
     }
 
     /* ----------------------------- */
+
+    .navbar-bg {
+        display: none;
+    }
 
     .trending-tech-center-container {
         width: 90%;
