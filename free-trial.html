@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pluralsight | Personal Free Trial</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="images/pluralsight-logo.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body style="background-color: #181818;">
+    <!---------------------- Pre-Header ---------------------->
+    <div id="mobile-navbar-bg"></div>
+    <div id="search-container">
+        <div class="navbar-bg" onclick="navbarBgFunction()"></div>
+        <div class="search-container-center">
+            <div class="search-container-width">
+                <div>
+                    <img src="images/search-icon.png">
+                    <input type="text" placeholder="What do you want to learn?">
+                </div>
+                <button id="search-close-btn"></button>
+            </div>
+        </div>
+    </div>
+    <div id="pre-header" class="pre-header">
+        <div class="logo" id="mobile-logo">
+            <a href="index.html" id="logo-image"><img src="images/pluralsight-logo.png"></a>
+            <a href="index.html">PLURALSIGHT</a>
+        </div>
+        <div class="navbar-left" id="navbar-left">
+            <div class="logo">
+                <a href="index.html" id="logo-image"><img src="images/pluralsight-logo.png"></a>
+                <a href="index.html">PLURALSIGHT</a>
+            </div>
+            <a id="platform-btn" onclick="toggleMobilePlatform()">Platform <i class="fa fa-angle-down navbar-arrow-down"></i>
+                                          <i class="fa fa-angle-right navbar-arrow-right"></i>
+                <div class="bottom-border" id="platform-bottom-border"></div></a>
+            
+
+            <a id="products-btn" onclick="toggleMobileProducts()">Products <i class="fa fa-angle-down navbar-arrow-down"></i>
+                                          <i class="fa fa-angle-right navbar-arrow-right"></i>
+                <div class="bottom-border" id="products-bottom-border"></div></a>
+
+            
+
+            <a id="resources-btn" onclick="toggleMobileResources()">Resources <i class="fa fa-angle-down navbar-arrow-down"></i>
+                                            <i class="fa fa-angle-right navbar-arrow-right"></i>
+                <div class="bottom-border" id="resources-bottom-border"></div></a>
+
+            
+
+            <a href="individuals.html" id="for-individuals-btn">For Individuals</a>
+            <a class="mobile-sign-in" id="mobile-sign-in" onclick="toggleMobileSignIn()">Sign in <i class="fa fa-angle-right navbar-arrow-right"></i></a>
+            <a href="" class="mobile-view-plans" id="mobile-view-plans">VIEW PLANS</a>
+        </div>
+
+        <div id="platform-container">
+            <div class="navbar-bg" onclick="navbarBgFunction()"></div>
+            <div class="platform-container-flex">
+            <div class="platform-container-left">
+                <h5>WAYS TO UPSKILL</h5>
+                <div class="platform-container-left-row">
+                    <a href=""><img src="images/courses.png"></a>
+                    <a href="">Courses</a>
+                </div>
+                <div class="platform-container-left-row">
+                    <a href=""><img src="images/skill-assessments.png"></a>
+                    <a href="">Skill assessments</a>
+                </div>
+                <div class="platform-container-left-row">
+                    <a href=""><img src="images/labs.png"></a>
+                    <a href="">Labs</a>
+                    <button>NEW</button>
+                </div>
+                <div class="platform-container-left-row">
+                    <a href=""><img src="images/hands-on learning.png"></a>
+                    <a href="">Hands-on learning</a>
+                </div>
+                <div class="platform-container-left-row">
+                    <a href=""><img src="images/certification-prep-platform.png"></a>
+                    <a href="">Certification prep</a>
+                </div>
+                <div class="platform-container-left-row">
+                    <a href=""><img src="images/live-classes.svg"></a>
+                    <a href="">Live Classes</a>
+                </div>
+                <div class="platform-container-left-row">
+                    <a href=""><img src="images/team-efficiency.png"></a>
+                    <a href="">Team efficiency</a>
+                </div>
+            </div>
+            <div class="platform-container-right">
+                <div class="platform-container-right-top">
+                <div class="skills-for">
+                    <h5>SKILLS FOR</h5>
+                    <a href="">Software development</a>
+                    <a href="">IT ops</a>
+                    <a href="">Info & cyber security</a>
+                    <a href="">Cloud computing</a>
+                    <a href="">Machine learning / AI</a>
+                    <a href="">Data professional</a>
+                </div>
+                <div class="top-trending-paths">
+                    <h5>TOP TRENDING PATHS</h5>
+                    <div class="top-trending-paths-container">
+                        <div class="top-trending-paths-item" onclick="window.open('', 'blank')">
+                            <img src="images/microsoft-azure-deployment.png">
+                            <div class="top-trending-paths-item-text">
+                                <h3>Microsoft Azure Deployment</h3>
+                                <p><strong>4</strong> Courses <strong>7</strong> Hours</p>
+                            </div>
+                        </div>
+                        <div class="top-trending-paths-item" onclick="window.open('', 'blank')">
+                            <img src="images/cleaning-data-with-r.png">
+                            <div class="top-trending-paths-item-text">
+                                <h3>Cleaning Data with R</h3>
+                                <p><strong>5</strong> Courses <strong>9</strong> Hours</p>
+                            </div>
+                        </div>
+                        <div class="top-trending-paths-item" onclick="window.open('', 'blank')">
+                            <img src="images/ruby.png">
+                            <div class="top-trending-paths-item-text">
+                                <h3>Ruby Language Fundamentals</h3>
+                                <p><strong>7</strong> Courses <strong>13</strong> Hours</p>
+                            </div>
+                        </div>
+                        <div class="top-trending-paths-item" onclick="window.open('', 'blank')">
+                            <img src="images/aws-operations.png">
+                            <div class="top-trending-paths-item-text">
+                                <h3>AWS OPERATIONS</h3>
+                                <p><strong>7</strong> Courses <strong>14</strong> Hours</p>
+                            </div>
+                        </div>
+                        <div class="top-trending-paths-item" onclick="window.open('', 'blank')">
+                            <img src="images/core-python.png">
+                            <div class="top-trending-paths-item-text">
+                                <h3>Core Python</h3>
+                                <p><strong>24</strong> Courses <strong>44</strong> Hours</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="platform-container-right-bottom">
+                    <a href="">See our entire course library</a>
+                    <a href="">Check out the Technology Index</a>
+                </div>
+            </div>
+            <button id="platform-close-btn"></button>
+            </div>
+        </div>
+        <div id="products-container">
+            <div class="navbar-bg" onclick="navbarBgFunction()"></div>
+            <div class="products-container-flex">
+                <div class="products-container-col">
+                    <img src="images/skills-logo.png">
+                    <p onclick="window.open('')">Build tech skills to drive results</p>
+                    <a href="">What is Skills?</a>
+                    <a href="">View plans</a>
+                </div>
+                <div class="products-container-col">
+                    <img src="images/flow-logo.png">
+                    <p onclick="window.open('')">Get insights into your workflow</p>
+                    <a href="">What is Flow?</a>
+                    <a href="">View plans</a>
+                </div>
+            </div>
+            <button id="products-close-btn"></button>
+        </div>
+        <div id="resources-container">
+            <div class="navbar-bg" onclick="navbarBgFunction()"></div>
+            <div class="resources-container-flex">
+                <div class="resources-container-col">
+                    <h5>LEARN</h5>
+                    <a href="">Blog</a>
+                    <a href="">Customer stories</a>
+                    <a href="">Resource center</a>
+                    <a href="">Guides</a>
+                    <a href="">App download</a>
+                    <a href="">Support</a>
+                </div>
+                <div class="resources-container-col">
+                    <h5>CONNECT</h5>
+                    <a href="">Events</a>
+                    <a href="">Webinars</a>
+                    <a href="">Podcast</a>
+                    <h5 class="resources-podcasts">PODCASTS</h5>
+                    <a href="">All Hands on Tech</a>
+                    <a href="">Perspectives in Leadership</a>
+                </div>
+            </div>
+            <button id="resources-close-btn"></button>
+        </div>
+
+        <div class="navbar-right">
+            <a id="search-btn"><img src="images/search-icon.png"></a>
+            <a id="sign-in-btn">Sign in <i class="fa fa-angle-down"></i>
+                <div class="bottom-border" id="sign-in-bottom-border"></div></a>
+            <a href="free-trial.html" id="try-for-free">TRY FOR FREE</a>
+            <button id="mobile-menu" onclick="showMobileNav()"></button>
+            <button id="close-mobile-menu" onclick="closeMobileNav()"></button>
+        </div>
+
+        <div id="sign-in-container">
+            <div class="navbar-bg" onclick="navbarBgFunction()"></div>
+            <div class="sign-in-flex">
+                <div class="sign-in-col">
+                    <a href="">SIGN IN WITH</a>
+                    <div class="sign-in-img">
+                        <a href=""><img src="images/skills-logo.png"></a>
+                        <i class="fa fa-angle-right purple-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="sign-in-col">
+                    <a href="">SIGN IN WITH</a>
+                    <div class="sign-in-img">
+                        <a href=""><img src="images/flow-logo.png"></a>
+                        <i class="fa fa-angle-right purple-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---------------------- Free-trial header ---------------------->
+    <div class="free-trial-header">
+        <div class="free-trial-header-text">
+            <h3>TRY PLURALSIGHT SKILLS FOR FREE</h3>
+            <h1>Build your career, one skill at a time</h1>
+            <p>Get started with a free trial. Cancel anytime.</p>
+        </div>
+    </div>
+    <main>
+        <!---------------------- Number of subs ---------------------->
+        <div class="number-of-subs">
+            <div class="number-of-subs-text">
+                <h1>Number of subscriptions?</h1>
+                <p>We can recommend the right plan.</p>
+            </div>
+            <div class="number-of-subs-slider">
+                <input type="range" id="free-trial-slider" name="free-trial-slider" min="0" max="2" value="0" oninput="freeTrialSliderFunction()">
+                <span class="free-trial-slider-line free-trial-slider-line-position1"></span>
+                <span class="free-trial-slider-line free-trial-slider-line-position2"></span>
+                <span class="free-trial-slider-line free-trial-slider-line-position3"></span>
+                <span class="free-trial-slider-number free-trial-slider-number-position1">1</span>
+                <span class="free-trial-slider-number free-trial-slider-number-position2">2 - 10</span>
+                <span class="free-trial-slider-number free-trial-slider-number-position3">11+</span>
+            </div>
+        </div>
+        <div id="free-trial-slide1">
+            <h1>Your free 10-day individual trial includes</h1>
+            <div class="free-trial-slide1-grid">
+                <div class="free-trial-slide1-grid-item">
+                    <div class="free-trial-slide1-grid-item-heading">
+                        <img src="images/expert-led-courses.png">
+                        <h3>Expert-led courses</h3>
+                    </div>
+                    <p>Keep up with the pace of change with thousands of expert-led, in-depth courses.</p>
+                </div>
+                <div class="free-trial-slide1-grid-item">
+                    <div class="free-trial-slide1-grid-item-heading">
+                        <img src="images/pluralsight-iq.png">
+                        <h3>Pluralsight IQ</h3>
+                    </div>
+                    <p>Validate skill levels with assessments that take 10 minutes or less.</p>
+                </div>
+                <div class="free-trial-slide1-grid-item">
+                    <div class="free-trial-slide1-grid-item-heading">
+                        <img src="images/expert-led-courses.png">
+                        <h3>Expanded library</h3>
+                    </div>
+                    <p>Grow your team's proficiency with access to our <strong>full</strong> 7,000+ course library.</p>
+                    <h5>*Available on Premium only</h5>
+                </div>
+                <div class="free-trial-slide1-grid-item">
+                    <div class="free-trial-slide1-grid-item-heading">
+                        <img src="images/hands-on-learning.png">
+                        <h3>Hands-on learning</h3>
+                    </div>
+                    <p>Practice and apply knowledge faster in real-world scenarios with projects and interactive courses.</p>
+                    <h5>*Available on Premium only</h5>
+                </div>
+            </div>
+            <div class="free-trial-plans-pricing">
+                <div class="plans-pricing-toggle free-trial-plans-pricing-toggle">
+                    <p>Monthly</p>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span onclick="freeTrialPlansPricingToggle()" class="slider round"></span>
+                    </label>
+                    <p>Yearly</p>
+                </div>
+                <div class="plans-pricing-flex">
+                    <div class="plans-pricing-box">
+                        <h1>Standard</h1>
+                        <p style="margin: 25px 0; line-height: 1.6;">Our core library of most popular courses, paths and all skill assessments</p>
+                        <button class="rainbow-button">START A FREE 10-DAY TRIAL</button>
+                        <h5 id="free-trial-standard-plan-price">10-day free trial<br>then 19,00 US$/month, billed monthly</h5>
+                    </div>
+                    <div class="plans-pricing-box">
+                        <div class="best-opportunity">BEST OPPORTUNITY</div>
+                        <h1>Premium</h1>
+                        <p style="margin: 25px 0; line-height: 1.6;">Our expanded library containing all 7,000+ courses, certification practice exams and interactive courses</p>
+                        <button class="rainbow-button">START A FREE 10-DAY TRIAL</button>
+                        <h5 id="free-trial-premium-plan-price">10-day free trial<br>then 29,00 US$/month, billed monthly</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="free-trial-slide2">
+            <div class="free-trial-slide23">
+                <h1>With your 14-day team trial, you can</h1>
+                <div class="free-trial-slide23-row">
+                    <img src="images/check-icon-purple.png">
+                    <p>Give up to 10 users access to our <strong>full</strong> 7,000+ course library</p>
+                </div>
+                <div class="free-trial-slide23-row">
+                    <img src="images/check-icon-purple.png">
+                    <p>Practice and apply skills with interactive courses and projects</p>
+                </div>
+                <div class="free-trial-slide23-row">
+                    <img src="images/check-icon-purple.png">
+                    <p>See skills, usage and trend data for your teams</p>
+                </div>
+                <div class="free-trial-slide23-row">
+                    <img src="images/check-icon-purple.png">
+                    <p>Prepare for certifications with industry-leading practice exams</p>
+                </div>
+                <div class="free-trial-slide23-row">
+                    <img src="images/check-icon-purple.png">
+                    <p>Measure proficiency across skills and roles</p>
+                </div>
+                <div class="free-trial-slide23-row">
+                    <img src="images/check-icon-purple.png">
+                    <p>Align learning to your goals with paths and channels</p>
+                </div>
+                <div class="free-trial-slide23-btn-container">
+                <button class="rainbow-button">START A FREE TEAM TRIAL</button>
+                </div>
+            </div>
+        </div>
+        <div id="free-trial-slide3">
+            <div class="free-trial-slide23">
+                <h1>With your 14-day enterprise trial, you can</h1>
+                <div class="free-trial-slide23-row">
+                    <img src="images/check-icon-purple.png">
+                    <p>Grow your team's proficiency with access to our <strong>full</strong> 7,000+ course library</p>
+                </div>
+                <div class="free-trial-slide23-row">
+                    <img src="images/check-icon-purple.png">
+                    <p>Practice and apply skills with interactive courses and projects</p>
+                </div>
+                <div class="free-trial-slide23-row">
+                    <img src="images/check-icon-purple.png">
+                    <p>See skills, usage and trend data for your teams</p>
+                </div>
+                <div class="free-trial-slide23-row">
+                    <img src="images/check-icon-purple.png">
+                    <p>Prepare for certifications with industry-leading practice exams</p>
+                </div>
+                <div class="free-trial-slide23-row">
+                    <img src="images/check-icon-purple.png">
+                    <p>Measure proficiency across skills and roles</p>
+                </div>
+                <div class="free-trial-slide23-row">
+                    <img src="images/check-icon-purple.png">
+                    <p>Align learning to your goals with paths and channels</p>
+                </div>
+                <div class="free-trial-slide23-btn-container">
+                <button class="rainbow-button">CONTACT SALES</button>
+                </div>
+            </div>
+        </div>
+        <!---------------------- Free-trial table ---------------------->
+        <div class="free-trial-table">
+            <table>
+                <tr style="background-color: #18181a;">
+                    <td></td>
+                    <td style="border:none;" colspan="2">
+                        <div class="free-trial-table-feature" style="color: #F7A614;">INDIVIDUAL</div>
+                    </td>
+                    <td colspan="2">
+                        <div class="free-trial-table-feature" style="color: #EC008C">TEAM</div>
+                    </td>
+                </tr>
+                <tr>
+                    <th style="padding-top: 15px;">CORE</th>
+                    <td style="border:none;"><strong>Standard</strong></td>
+                    <td><strong>Premium</strong></td>
+                    <td style="border:none;"><strong>Professional</strong></td>
+                    <td><strong>Enterprise</strong></td>
+                </tr>
+                <tr>
+                    <td>Free trial</td>
+                    <td><strong>For 10 days</strong></td>
+                    <td><strong>For 10 days</strong></td>
+                    <td><strong>For 14 days</strong></td>
+                    <td><strong>For 14 days</strong></td>
+                </tr>
+                <tr>
+                    <td>Course library <img class="circle-info" src="images/circle-info-solid.svg">
+                    <span class="table-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</span></td>
+                    <td><strong>Core library</strong> <img class="circle-info" src="images/circle-info-solid.svg">
+                    <span class="table-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</span></td>
+                    <td><strong>Expanded library</strong> <img class="circle-info" src="images/circle-info-solid.svg">
+                    <span class="table-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</span></td>
+                    <td><strong>Expanded library</strong> <img class="circle-info" src="images/circle-info-solid.svg">
+                    <span class="table-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</span></td>
+                    <td><strong>Expanded library</strong> <img class="circle-info" src="images/circle-info-solid.svg">
+                    <span class="table-tooltiptext top-tooltip">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</span></td>
+                </tr>
+                <tr>
+                    <td>Paths <img class="circle-info" src="images/circle-info-solid.svg">
+                    <span class="table-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</span></td>
+                    <td><img class="check-icon" src="images/check-icon.png"></td>
+                    <td><img class="check-icon" src="images/check-icon.png"></td>
+                    <td><img class="check-icon" src="images/check-icon-purple.png"></td>
+                    <td><img class="check-icon" src="images/check-icon-purple.png"></td>
+                </tr>
+                <tr>
+                    <td>Channels <img class="circle-info" src="images/circle-info-solid.svg">
+                    <span class="table-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</span></td>
+                    <td><img class="check-icon" src="images/check-icon.png"></td>
+                    <td><img class="check-icon" src="images/check-icon.png"></td>
+                    <td><img class="check-icon" src="images/check-icon-purple.png"></td>
+                    <td><img class="check-icon" src="images/check-icon-purple.png"></td>
+                </tr>
+                <tr>
+                    <td>Course discussions <img class="circle-info" src="images/circle-info-solid.svg">
+                    <span class="table-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</span></td>
+                    <td><img class="check-icon" src="images/check-icon.png"></td>
+                    <td><img class="check-icon" src="images/check-icon.png"></td>
+                    <td><img class="check-icon" src="images/check-icon-purple.png"></td>
+                    <td><img class="check-icon" src="images/check-icon-purple.png"></td>
+                </tr>
+                <tr>
+                    <td>Exercise files <img class="circle-info" src="images/circle-info-solid.svg">
+                    <span class="table-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</span></td>
+                    <td><img class="check-icon" src="images/check-icon.png"></td>
+                    <td><img class="check-icon" src="images/check-icon.png"></td>
+                    <td><img class="check-icon" src="images/check-icon-purple.png"></td>
+                    <td><img class="check-icon" src="images/check-icon-purple.png"></td>
+                </tr>
+                <tr>
+                    <td>Mobile and TV apps <img class="circle-info" src="images/circle-info-solid.svg">
+                    <span class="table-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</span></td>
+                    <td><img class="check-icon" src="images/check-icon.png"></td>
+                    <td><img class="check-icon" src="images/check-icon.png"></td>
+                    <td><img class="check-icon" src="images/check-icon-purple.png"></td>
+                    <td><img class="check-icon" src="images/check-icon-purple.png"></td>
+                </tr>
+                <tr>
+                    <td>Offline viewing <img class="circle-info" src="images/circle-info-solid.svg">
+                    <span class="table-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</span></td>
+                    <td><img class="check-icon" src="images/check-icon.png"></td>
+                    <td><img class="check-icon" src="images/check-icon.png"></td>
+                    <td><img class="check-icon" src="images/check-icon-purple.png"></td>
+                    <td><img class="check-icon" src="images/check-icon-purple.png"></td>
+                </tr>
+                <tr>
+                    <td>Conferences <img class="circle-info" src="images/circle-info-solid.svg">
+                    <span class="table-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</span></td>
+                    <td><img class="check-icon" src="images/check-icon.png"></td>
+                    <td><img class="check-icon" src="images/check-icon.png"></td>
+                    <td><img class="check-icon" src="images/check-icon-purple.png"></td>
+                    <td><img class="check-icon" src="images/check-icon-purple.png"></td>
+                </tr>
+                <tr>
+                    <td>Guides <img class="circle-info" src="images/circle-info-solid.svg">
+                    <span class="table-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</span></td>
+                    <td><img class="check-icon" src="images/check-icon.png"></td>
+                    <td><img class="check-icon" src="images/check-icon.png"></td>
+                    <td><img class="check-icon" src="images/check-icon-purple.png"></td>
+                    <td><img class="check-icon" src="images/check-icon-purple.png"></td>
+                </tr>
+                <tr>
+                    <td>Badges <img class="circle-info" src="images/circle-info-solid.svg">
+                    <span class="table-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</span></td>
+                    <td><img class="check-icon" src="images/check-icon.png"></td>
+                    <td><img class="check-icon" src="images/check-icon.png"></td>
+                    <td><img class="check-icon" src="images/check-icon-purple.png"></td>
+                    <td><img class="check-icon" src="images/check-icon-purple.png"></td>
+                </tr>
+                <tr>
+                    <th>ASSESSMENTS</th>
+                    <td style="border:none;"></td>
+                    <td></td>
+                    <td style="border:none;"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Skill IQ <img class="circle-info" src="images/circle-info-solid.svg">
+                    <span class="table-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</span></td>
+                    <td><img class="check-icon" src="images/check-icon.png"></td>
+                    <td><img class="check-icon" src="images/check-icon.png"></td>
+                    <td><img class="check-icon" src="images/check-icon-purple.png"></td>
+                    <td><img class="check-icon" src="images/check-icon-purple.png"></td>
+                </tr>
+                <tr>
+                    <td>Role IQ <img class="circle-info" src="images/circle-info-solid.svg">
+                    <span class="table-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</span></td>
+                    <td><img class="check-icon" src="images/check-icon.png"></td>
+                    <td><img class="check-icon" src="images/check-icon.png"></td>
+                    <td><img class="check-icon" src="images/check-icon-purple.png"></td>
+                    <td><img class="check-icon" src="images/check-icon-purple.png"></td>
+                </tr>
+                <tr>
+                    <td>Course learning checks <img class="circle-info" src="images/circle-info-solid.svg">
+                    <span class="table-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</span></td>
+                    <td><img class="check-icon" src="images/check-icon.png"></td>
+                    <td><img class="check-icon" src="images/check-icon.png"></td>
+                    <td><img class="check-icon" src="images/check-icon-purple.png"></td>
+                    <td><img class="check-icon" src="images/check-icon-purple.png"></td>
+                </tr>
+                <tr>
+                    <th>PREMIUM</th>
+                    <td style="border:none;"></td>
+                    <td></td>
+                    <td style="border:none;"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Certification practise exams <img class="circle-info" src="images/circle-info-solid.svg">
+                    <span class="table-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</span></td>
+                    <td></td>
+                    <td><img class="check-icon" src="images/check-icon.png"></td>
+                    <td><img class="check-icon" src="images/check-icon-purple.png"></td>
+                    <td><img class="check-icon" src="images/check-icon-purple.png"></td>
+                </tr>
+                <tr>
+                    <td>Interactive courses <img class="circle-info" src="images/circle-info-solid.svg">
+                    <span class="table-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</span></td>
+                    <td></td>
+                    <td><img class="check-icon" src="images/check-icon.png"></td>
+                    <td><img class="check-icon" src="images/check-icon-purple.png"></td>
+                    <td><img class="check-icon" src="images/check-icon-purple.png"></td>
+                </tr>
+                <tr>
+                    <td>Projects <img class="circle-info" src="images/circle-info-solid.svg">
+                    <span class="table-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</span></td>
+                    <td></td>
+                    <td><img class="check-icon" src="images/check-icon.png"></td>
+                    <td><img class="check-icon" src="images/check-icon-purple.png"></td>
+                    <td><img class="check-icon" src="images/check-icon-purple.png"></td>
+                </tr>
+                <tr>
+                    <td>Labs <img class="circle-info" src="images/circle-info-solid.svg">
+                    <span class="table-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</span></td>
+                    <td></td>
+                    <td></td>
+                    <td><img class="phone-icon" src="images/phone-solid.svg">
+                    <span class="table-tooltiptext top-tooltip"><a href="">Contact sales</a> to add this to your plan.</span></td>
+                    <td><img class="check-icon" src="images/check-icon-purple.png"> <img class="circle-info" src="images/circle-info-solid.svg">
+                    <span class="table-tooltiptext top-tooltip">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</span></td>
+                </tr>
+                <tr>
+                    <td>Sandboxes <img class="circle-info" src="images/circle-info-solid.svg">
+                    <span class="table-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</span></td>
+                    <td></td>
+                    <td></td>
+                    <td><img class="phone-icon" src="images/phone-solid.svg">
+                    <span class="table-tooltiptext top-tooltip"><a href="">Contact sales</a> to add this to your plan.</span></td>
+                    <td><img class="check-icon" src="images/check-icon-purple.png"> <img class="circle-info" src="images/circle-info-solid.svg">
+                    <span class="table-tooltiptext top-tooltip">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</span></td>
+                </tr>
+                <tr>
+                    <th>ANALYTICS</th>
+                    <td style="border:none;"></td>
+                    <td></td>
+                    <td style="border:none;"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>API Access <img class="circle-info" src="images/circle-info-solid.svg">
+                    <span class="table-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</span></td>
+                    <td></td>
+                    <td></td>
+                    <td><img class="check-icon" src="images/check-icon-purple.png"></td>
+                    <td><img class="check-icon" src="images/check-icon-purple.png"></td>
+                </tr>
+                <tr>
+                    <td>Trend analytics <img class="circle-info" src="images/circle-info-solid.svg">
+                    <span class="table-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</span></td>
+                    <td></td>
+                    <td></td>
+                    <td><img class="check-icon" src="images/check-icon-purple.png"></td>
+                    <td><img class="check-icon" src="images/check-icon-purple.png"></td>
+                </tr>
+                <tr>
+                    <td>Usage analytics <img class="circle-info" src="images/circle-info-solid.svg">
+                    <span class="table-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</span></td>
+                    <td></td>
+                    <td></td>
+                    <td><img class="check-icon" src="images/check-icon-purple.png"></td>
+                    <td><img class="check-icon" src="images/check-icon-purple.png"></td>
+                </tr>
+                <tr>
+                    <td>Skills analytics</td>
+                    <td></td>
+                    <td></td>
+                    <td>Basic <img class="circle-info" src="images/circle-info-solid.svg">
+                    <span class="table-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</span></td>
+                    <td>Advanced <img class="circle-info" src="images/circle-info-solid.svg">
+                    <span class="table-tooltiptext top-tooltip">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</span></td>
+                </tr>
+                <tr>
+                    <td>Roles analytics</td>
+                    <td></td>
+                    <td></td>
+                    <td>Basic <img class="circle-info" src="images/circle-info-solid.svg">
+                    <span class="table-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</span></td>
+                    <td>Advanced <img class="circle-info" src="images/circle-info-solid.svg">
+                    <span class="table-tooltiptext top-tooltip">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</span></td>
+                </tr>
+                <tr>
+                    <td>Channels analytics</td>
+                    <td></td>
+                    <td></td>
+                    <td>Basic <img class="circle-info" src="images/circle-info-solid.svg">
+                    <span class="table-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</span></td>
+                    <td>Advanced <img class="circle-info" src="images/circle-info-solid.svg">
+                    <span class="table-tooltiptext top-tooltip">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</span></td>
+                </tr>
+                <tr style="background-color: #18181a;">
+                    <th>ENTERPRISE</th>
+                    <td style="border:none;"></td>
+                    <td></td>
+                    <td style="border:none;"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Role customization <img class="circle-info" src="images/circle-info-solid.svg">
+                    <span class="table-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</span></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><img class="check-icon" src="images/check-icon-purple.png"></td>
+                </tr>
+                <tr>
+                    <td>Q&A <img class="circle-info" src="images/circle-info-solid.svg">
+                    <span class="table-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</span></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><img class="check-icon" src="images/check-icon-purple.png"></td>
+                </tr>
+                <tr>
+                    <td>Priorities <img class="circle-info" src="images/circle-info-solid.svg">
+                    <span class="table-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</span></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><img class="check-icon" src="images/check-icon-purple.png"></td>
+                </tr>
+                <tr style="background-color: #18181a;">
+                    <th>PROFESSIONAL SERVICES</th>
+                    <td style="border:none;"></td>
+                    <td></td>
+                    <td style="border:none;"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Onboarding <img class="circle-info" src="images/circle-info-solid.svg">
+                    <span class="table-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</span></td>
+                    <td></td>
+                    <td></td>
+                    <td><img class="phone-icon" src="images/phone-solid.svg">
+                    <span class="table-tooltiptext top-tooltip"><a href="">Contact sales</a> to add this to your plan.</span></td>
+                    <td><img class="phone-icon" src="images/phone-solid.svg">
+                    <span class="table-tooltiptext top-tooltip"><a href="">Contact sales</a> to add this to your plan.</span></td>
+                </tr>
+                <tr>
+                    <td>Skills Strategy Plans <img class="circle-info" src="images/circle-info-solid.svg">
+                    <span class="table-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</span></td>
+                    <td></td>
+                    <td></td>
+                    <td><img class="phone-icon" src="images/phone-solid.svg">
+                    <span class="table-tooltiptext top-tooltip"><a href="">Contact sales</a> to add this to your plan.</span></td>
+                    <td><img class="phone-icon" src="images/phone-solid.svg">
+                    <span class="table-tooltiptext top-tooltip"><a href="">Contact sales</a> to add this to your plan.</span></td>
+                </tr>
+                <tr>
+                    <td>Data export <img class="circle-info" src="images/circle-info-solid.svg">
+                    <span class="table-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</span></td>
+                    <td></td>
+                    <td></td>
+                    <td><img class="phone-icon" src="images/phone-solid.svg">
+                    <span class="table-tooltiptext top-tooltip"><a href="">Contact sales</a> to add this to your plan.</span></td>
+                    <td><img class="phone-icon" src="images/phone-solid.svg">
+                    <span class="table-tooltiptext top-tooltip"><a href="">Contact sales</a> to add this to your plan.</span></td>
+                </tr>
+                <tr>
+                    <td>Single sign-on (SSO) <img class="circle-info" src="images/circle-info-solid.svg">
+                    <span class="table-tooltiptext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</span></td>
+                    <td></td>
+                    <td></td>
+                    <td><img class="phone-icon" src="images/phone-solid.svg">
+                    <span class="table-tooltiptext top-tooltip"><a href="">Contact sales</a> to add this to your plan.</span></td>
+                    <td><img class="phone-icon" src="images/phone-solid.svg">
+                    <span class="table-tooltiptext top-tooltip"><a href="">Contact sales</a> to add this to your plan.</span></td>
+                </tr>
+            </table>
+        </div>
+    </main>
+
+    <!---------------------- Industry standard ---------------------->
+    <div class="industry-standard">
+        <div class="industry-standard-text">
+            <h3>INDUSTRY STANDARD</h3>
+            <h1>Trusted by companies big and small to scale their business</h1>
+            <div class="industry-standard-orgs">
+                <img src="images/t-mobile.png">
+                <img src="images/sales-force.png">
+                <img src="images/vmware-grey.png">
+                <img src="images/home-depot.png">
+                <img src="images/nasdaq-industry.png">
+                <img src="images/fujitsu-red.png">
+            </div>
+            <a href="">View our customer stories <i class="fa fa-angle-right purple-arrow-right"></i></a>
+        </div>
+    </div>
+    <main>
+        <!---------------------- Free-trial FAQ ---------------------->
+        <div class="free-trial-faq">
+            <div class="free-trial-faq-text">
+                <h3>KNOW WHAT YOU’RE GETTING</h3>
+                <h1>A few frequently asked questions</h1>
+            </div>
+            <div class="free-trial-faq-questions">
+                <div id="question1-btn" class="free-trial-faq-questions-row">
+                    <div class="free-trial-faq-questions-row-upper">
+                        <p>Can i cancel anytime?</p>
+                        <i class="fa fa-angle-down" id="faq-arrow1"></i>
+                    </div>
+                    <p class="free-trial-answer" id="free-trial-answer1">Yes, you can cancel your subscription at any time. Your subscription will auto-renew until you cancel, but why would you want to?</p>
+                </div>
+                <div id="question2-btn" class="free-trial-faq-questions-row">
+                    <div class="free-trial-faq-questions-row-upper">
+                        <p>Will I be charged now for a free trial?</p>
+                        <i class="fa fa-angle-down" id="faq-arrow2"></i>
+                    </div>
+                    <p class="free-trial-answer" id="free-trial-answer2">No, we won't charge you at this time. However, there is a $1 USD hold that is immediately released. You may see a charge of $1 on your account, but it will be reversed. After your trial ends, we'll use this information to create your account, so you can continue to build new skills with uninterrupted access to our platform.</p> 
+                </div>
+                <div id="question3-btn" class="free-trial-faq-questions-row">
+                    <div class="free-trial-faq-questions-row-upper">
+                        <p>What are Pluralsight business plans?</p>
+                        <i class="fa fa-angle-down" id="faq-arrow3"></i>
+                    </div>
+                    <p class="free-trial-answer" id="free-trial-answer3">Businesses of all sizes - from small shops to large enterprises - purchase these plans, with other tools to effectively grow and measure skills and track progress. In addition to all the features that come with personal plans, business plans include easy group management, in-depth reporting on usage and skills growth, SSO and more.</p>
+                </div>
+                <div id="question4-btn" class="free-trial-faq-questions-row">
+                    <div class="free-trial-faq-questions-row-upper">
+                        <p>How does a Pluralsight subscription work?</p>
+                        <i class="fa fa-angle-down" id="faq-arrow4"></i>
+                    </div>
+                    <p class="free-trial-answer" id="free-trial-answer4">It's simple. When you sign up, you'll immediately have unlimited viewing of thousands of expert courses, paths to guide your learning, tools to measure your skills and hands-on resources like exercise files. There’s no limit on what you can learn and you can cancel at any time.</p>
+                </div>
+                <div id="question5-btn" class="free-trial-faq-questions-row">
+                    <div class="free-trial-faq-questions-row-upper">
+                        <p>How long is my personal free trial?</p>
+                        <i class="fa fa-angle-down" id="faq-arrow5"></i>
+                    </div>
+                    <p class="free-trial-answer" id="free-trial-answer5">When you sign up for a trial, you will receive 10 days or 200 minutes of viewing -- <strong>whichever comes first</strong>. If you trial is not canceled within the 10 days, the trial will convert to a paid subscription that will auto-renew until the subscription is canceled. <a href="">Click here for more information on our trials.</a></p>
+                </div>
+                <div class="free-trial-faq-questions-span-container">
+                    <span>Explore the benefits of a plan for teams of 2 or more.</span>
+                    <a href="">Learn more ></a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!---------------------- Follow us ---------------------->
+    <div class="follow-us" style="background-color: black;">
+        <main>
+            <h1>What our users are saying</h1>
+            <div class="follow-us-slider">
+                <img src="images/left-arrow.png">
+                <div class="twitter-container">
+                    <div class="twitter-container-top">
+                        <div class="twitter-profile">
+                            <img src="images/empty-profile-picture.jpg" onclick="window.open('https:twitter.com', 'blank')">
+                            <div class="twitter-profile-text">
+                                <h3 onclick="window.open('https:twitter.com', 'blank')">Lorem Ipsum</h3>
+                                <span onclick="window.open('https:twitter.com', 'blank')">@Lorem</span>
+                            </div>
+                        </div>
+                        <img src="images/twitter-logo.png" onclick="window.open('https:twitter.com', 'blank')">
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <div class="twitter-container-bottom">
+                        <a href=""><img src="images/twitter-reply.png"></a>
+                        <a href=""><img src="images/twitter-retweet.png"></a>
+                        <a href=""><img src="images/twitter-like.png"></a>
+                    </div>
+                </div>
+                <div class="twitter-container" id="twitter-container2">
+                    <div class="twitter-container-top">
+                        <div class="twitter-profile">
+                            <img src="images/empty-profile-picture.jpg" onclick="window.open('https:twitter.com', 'blank')">
+                            <div class="twitter-profile-text">
+                                <h3 onclick="window.open('https:twitter.com', 'blank')">Lorem Ipsum</h3>
+                                <span onclick="window.open('https:twitter.com', 'blank')">@Lorem</span>
+                            </div>
+                        </div>
+                        <img src="images/twitter-logo.png" onclick="window.open('https:twitter.com', 'blank')">
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <div class="twitter-container-bottom">
+                        <a href=""><img src="images/twitter-reply.png"></a>
+                        <a href=""><img src="images/twitter-retweet.png"></a>
+                        <a href=""><img src="images/twitter-like.png"></a>
+                    </div>
+                </div>
+                <div class="twitter-container" id="twitter-container3">
+                    <div class="twitter-container-top">
+                        <div class="twitter-profile">
+                            <img src="images/empty-profile-picture.jpg" onclick="window.open('https:twitter.com', 'blank')">
+                            <div class="twitter-profile-text">
+                                <h3 onclick="window.open('https:twitter.com', 'blank')">Lorem Ipsum</h3>
+                                <span onclick="window.open('https:twitter.com', 'blank')">@Lorem</span>
+                            </div>
+                        </div>
+                        <img src="images/twitter-logo.png" onclick="window.open('https:twitter.com', 'blank')">
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <div class="twitter-container-bottom">
+                        <a href=""><img src="images/twitter-reply.png"></a>
+                        <a href=""><img src="images/twitter-retweet.png"></a>
+                        <a href=""><img src="images/twitter-like.png"></a>
+                    </div>
+                </div>
+                <img src="images/right-arrow.png">
+            </div>
+            <p style="text-align: center; margin-top: 65px;">We're blushing. Find us <a href="" style="color:#EC008C">@pluralsight</a></p>
+        </main>
+    </div>
+
+    <!---------------------- Footer ---------------------->
+    <div class="footer">
+        <footer>
+            <div class="footer-navbar">
+                <div class="footer-navbar-col">
+                    <h5 onclick="toggleFooterSolutions()">SOLUTIONS <i id="footer-solutions-arrowdown" class="fa fa-angle-down footer-arrow"></i>
+                                                                    <i id="footer-solutions-arrowup" class="fa fa-angle-up footer-arrow"></i></h5>
+                    <div id="footer-solutions">
+                        <a href="">Pluralsight Skills</a>
+                        <a href="">Pluralsight Flow</a>
+                        <a href="">Government</a>
+                        <a href="">Gift of Pluralsight</a>
+                        <a href="">View Pricing</a>
+                        <a href="">Contact Sales</a>
+                        <a href="">Skill up for free</a>
+                    </div>
+                </div>
+                <div class="footer-navbar-col">
+                    <h5 onclick="toggleFooterPlatform()">PLATFORM <i id="footer-platform-arrowdown" class="fa fa-angle-down footer-arrow"></i>
+                                                                  <i id="footer-platform-arrowup" class="fa fa-angle-up footer-arrow"></i></h5>
+                    <div id="footer-platform">
+                        <a href="">Browse library</a>
+                        <a href="">Role IQ</a>
+                        <a href="">Skill IQ</a>
+                        <a href="">Iris</a>
+                        <a href="">Authors</a>
+                        <a href="">Professional Services</a>
+                    </div>
+                 </div>
+                 <div class="footer-navbar-col">
+                    <h5 onclick="toggleFooterCompany()">COMPANY <i id="footer-company-arrowdown" class="fa fa-angle-down footer-arrow"></i>
+                                                                <i id="footer-company-arrowup" class="fa fa-angle-up footer-arrow"></i></h5>
+                    <div id="footer-company">
+                        <a href="">About us</a>
+                        <a href="">Customer stories</a>
+                        <a href="">Careers</a>
+                        <a href="">Blog</a>
+                        <a href="">Newsroom</a>
+                        <a href="">Resource center</a>
+                        <a href="">Guides</a>
+                    </div>
+                 </div>
+                 <div class="footer-navbar-col">
+                    <h5 onclick="toggleFooterResources()">RESOURCES <i id="footer-resources-arrowdown" class="fa fa-angle-down footer-arrow"></i>
+                                                                    <i id="footer-resources-arrowup" class="fa fa-angle-up footer-arrow"></i></h5>
+                    <div id="footer-resources">
+                        <a href="">Download Pluralsight</a>
+                        <a href="">Events</a>
+                        <a href="">Teach</a>
+                        <a href="">Partners</a>
+                        <a href="">Affiliate Partners</a>
+                        <a href="">PluralsightOne.org</a>
+                        <a href="">Subscribe</a>
+                    </div>
+                 </div>
+                 <div class="footer-navbar-col">
+                    <h5 onclick="toggleFooterSupport()">SUPPORT <i id="footer-support-arrowdown" class="fa fa-angle-down footer-arrow"></i>
+                                                                <i id="footer-support-arrowup" class="fa fa-angle-up footer-arrow"></i></h5>
+                    <div id="footer-support">
+                        <a href="">Contact</a>
+                        <a href="">Help center</a>
+                        <a href="">IP allowlist</a>
+                        <a href="">Sitemap</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-lang">
+                <img src="images/globe-white.png">
+                <a href="">Deutsch</a>
+                <a href="" class="active-lang">English</a>
+                <a href="">French</a>
+            </div>
+            <div class="footer-copyright">
+                <div class="footer-copyright-left">
+                    <img src="images/ps-icon.png">
+                    <p>Copyright © 2004 - 2022 Pluralsight LLC. All rights reserved</p>
+                </div>
+                <div class="footer-copyright-right">
+                    <div class="terms-of-use">
+                        <a href="">Terms of Use</a>
+                        <a href="">Privacy Notice</a>
+                        <a href="">Modern Slavery Act Transparency Statement</a>
+                    </div>
+                    <div class="social-networks">
+                        <a href=""><img src="images/fb.svg"></a>
+                        <a href=""><img src="images/ig.svg"></a>
+                        <a href=""><img src="images/twitter.svg"></a>
+                        <a href=""><img src="images/linkedin.svg"></a>
+                        <a href=""><img src="images/yt.svg"></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/index.js"></script>
+    <script src="js/free-trial.js"></script>
+</body>
+</html>
