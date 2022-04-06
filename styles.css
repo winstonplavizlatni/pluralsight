@@ -2431,6 +2431,7 @@ footer {
 .customer-stories a {
     font-size: 17px;
     font-weight: 900;
+    cursor: pointer;
 }
 
 .customer-stories a:hover .purple-arrow-right {
@@ -3507,4 +3508,353 @@ footer {
 
 .free-trial-faq-questions-row-upper i {
     transition: 0.35s;
+}
+
+/* -------------------------------------------- Responsive -------------------------------------------- */
+
+@media only screen and (max-width: 1265px) {
+    .free-trial-table table {
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 1090px) {
+    .free-trial-plans-pricing {
+        width: 98%;
+    }
+
+    .industry-standard-text {
+        width: 100%;
+    }
+
+    .free-trial-table table {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 1040px) {
+    .free-trial-table {
+        display: none;
+    }
+
+    .free-trial-plans-pricing h1 {
+        font-size: 26px!important;
+        text-align: left!important;
+    }
+}
+
+@media only screen and (max-width: 1025px) {
+    .free-trial-faq {
+        flex-direction: column;
+        margin: 60px 0;
+    }
+
+    .free-trial-faq-text {
+        width: 100%;
+    }
+
+    .free-trial-faq-questions {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .industry-standard-orgs {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 20px;
+    }
+
+    .free-trial-slide23 {
+        width: 60%;
+    }
+
+    .free-trial-slide1-grid {
+        grid-template-columns: auto auto;
+        gap: 45px;
+        padding-left: 25px;
+        padding-right: 15px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .free-trial-slide23 {
+        width: 75%;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .number-of-subs {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .free-trial-slide23 {
+        width: 95%;
+    }
+
+    .industry-standard-orgs {
+        grid-template-columns: auto auto;
+    }
+
+    .free-trial-slide1-grid {
+        grid-template-columns: auto;
+    }
+
+    .free-trial-header-text h1 {
+        font-size: 36px;
+    }
+}
+
+/* -----------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------- Labs -----------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------- */
+
+.labs-width {
+    width: 75%;
+    margin: auto;
+}
+
+/* ---------------------- Labs header ---------------------- */
+
+.labs-header {
+    margin-top: 90px;
+    background: url('images/triangular-gradient.png');
+    background-position: -183px 100%;
+    background-repeat: no-repeat;
+}
+
+.labs-header-top {
+    text-align: center;
+    margin-top: 190px;
+}
+
+.labs-header-top h1 {
+    font-size: 48px;
+    line-height: 43px;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.labs-header-button-container button {
+    font-size: 15px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    padding: 18px 34px;
+    cursor: pointer;
+    border: none;
+    border-radius: 2px;
+}
+
+.labs-header-button-container button:last-child {
+    border: 1px solid #fff;
+    background: transparent;
+    outline: 1px solid transparent;
+    outline-offset: -2px;
+    transition: 0.3s ease-in-out;
+}
+
+.labs-header-button-container button:last-child:hover {
+    outline: 1px solid #fff;
+}
+
+.labs-header-button-container button:first-child {
+    margin-right: 25px;
+    margin-left: -25px;
+}
+
+.labs-header-bottom h3 {
+    color: rgb(238,32,154);
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.labs-header-bottom h1 {
+    font-size: 36px;
+    line-height: 1.2;
+    margin: 20px 0;
+}
+
+.labs-header-bottom p {
+    font-size: 17px;
+    line-height: 1.4;
+}
+
+.labs-header-bottom img {
+    width: 100%;
+    max-width: 570px;
+}
+
+.labs-header-bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 120px;
+}
+
+/* ---------------------- Labs main ---------------------- */
+
+.labs-main {
+    margin-top: 50px;
+}
+
+.labs-main-grid-item h3 {
+    font-size: 22px;
+    padding: 10px 0 20px;
+}
+
+.labs-main-grid-item p {
+    font-size: 17px;
+    line-height: 1.4;
+}
+
+.labs-main-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 60px;
+    padding: 0 20px;
+}
+
+.labs-main-text {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 175px;
+}
+
+.labs-main-text h3 {
+    color: rgb(238,32,154);
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.labs-main-text h1 {
+    font-size: 36px;
+    line-height: 1.2;
+    padding: 20px 0;
+    width: 70%;
+    margin: auto;
+}
+
+.labs-main-text p {
+    font-size: 17px;
+    line-height: 1.4;
+}
+
+/* ---------------------- Labs request ---------------------- */
+
+.labs-before-footer {
+    width: 100%;
+    height: 90px;
+    background-color: #222;
+}
+
+.labs-request {
+    position: relative;
+}
+
+.labs-request-container {
+    min-height: 112.5px;
+    height: 100%;
+    width: 90%;
+    box-shadow: rgb(0 0 0 / 80%) 2px 20px 30px -15px;
+    border-radius: 10px;
+    background: url('images/labs-request-bg.png'), linear-gradient(269.52deg, #EC008C 0%, #F15B2A 98.86%);
+    background-repeat: no-repeat;
+    background-position: left center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 120px;
+    position: absolute;
+    top: -68px;
+    left: 5%;
+}
+
+.labs-request-container h1 {
+    font-size: 28px;
+    line-height: 1.2;
+}
+
+.labs-request-container button {
+    background: #181818;
+    font-size: 15px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    padding: 18px 34px;
+    border: none;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: 0.3s ease-in-out;
+}
+
+.labs-request-container button:hover {
+    box-shadow: 0 10px 30px rgb(0 0 0 / 40%);
+}
+
+/* -------------------------------------------- Responsive -------------------------------------------- */
+
+@media only screen and (max-width: 1025px) {
+    .labs-width {
+        width: 97%;
+    }
+
+    .labs-header-button-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .labs-header-button-container button {
+        max-width: 211px;
+        width: 100%;
+    }
+
+    .labs-header-button-container button:first-child {
+        margin: 5px 0px 20px;
+    }
+
+    .labs-header-top {
+        margin-top: 160px;
+    }
+
+    .labs-header-bottom {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .labs-header-bottom img {
+        margin-top: 20px;       
+    }
+
+    .labs-main-grid-item h3 {
+        font-size: 18px;
+    }
+
+    .labs-request-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 75px 0;
+        background-size: contain;
+        top: -85px;
+    }
+
+    .labs-request-container h1 {
+        margin-bottom: 15px;
+    }
+}
+
+@media only screen and (max-width: 810px) {
+    .labs-header-top h1 {
+        width: 95%;
+    }
+
+    .labs-main-text h1 {
+        width: 95%;
+    }
+
+    .labs-request-container h1 {
+        text-align: center;
+    }
 }

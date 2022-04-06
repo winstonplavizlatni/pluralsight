@@ -12,11 +12,19 @@ if (screen.width >= 1030) {
     $('#sign-in-container').fadeOut();
     $('#sign-in-bottom-border').fadeOut();
     $('#search-container').fadeOut();
+    scrollTop = 
+              window.pageYOffset || document.documentElement.scrollTop;
+            scrollLeft = 
+              window.pageXOffset || document.documentElement.scrollLeft,
+              window.onscroll = function() {
+                window.scrollTo(scrollLeft, scrollTop);
+              }
 });
 
   $("#platform-close-btn").click(function(){
     $("#platform-container").fadeOut();
     $('#platform-bottom-border').fadeOut();
+    window.onscroll = function() {};
 });
 }
 
@@ -56,11 +64,19 @@ $('#products-btn').click(function () {
     $('#sign-in-container').fadeOut();
     $('#sign-in-bottom-border').fadeOut();
     $('#search-container').fadeOut();
+    scrollTop = 
+              window.pageYOffset || document.documentElement.scrollTop;
+            scrollLeft = 
+              window.pageXOffset || document.documentElement.scrollLeft,
+              window.onscroll = function() {
+                window.scrollTo(scrollLeft, scrollTop);
+              }
 });
 
 $("#products-close-btn").click(function(){
     $("#products-container").fadeOut();
     $('#products-bottom-border').fadeOut();
+    window.onscroll = function() {};
 });
 }
 
@@ -100,11 +116,19 @@ $('#resources-btn').click(function () {
     $('#sign-in-container').fadeOut();
     $('#sign-in-bottom-border').fadeOut();
     $('#search-container').fadeOut();
+    scrollTop = 
+              window.pageYOffset || document.documentElement.scrollTop;
+            scrollLeft = 
+              window.pageXOffset || document.documentElement.scrollLeft,
+              window.onscroll = function() {
+                window.scrollTo(scrollLeft, scrollTop);
+              }
 });
 
 $("#resources-close-btn").click(function(){
     $("#resources-container").fadeOut();
     $('#resources-bottom-border').fadeOut();
+    window.onscroll = function() {};
 });
 }
 
@@ -143,11 +167,13 @@ $('#sign-in-btn').click(function () {
     $('#resources-container').fadeOut();
     $('#resources-bottom-border').fadeOut();
     $('#search-container').fadeOut();
-});
-
-$("#resources-close-btn").click(function(){
-    $("#sign-in-container").fadeOut();
-    $('#sign-in-bottom-border').fadeOut();
+    scrollTop = 
+              window.pageYOffset || document.documentElement.scrollTop;
+            scrollLeft = 
+              window.pageXOffset || document.documentElement.scrollLeft,
+              window.onscroll = function() {
+                window.scrollTo(scrollLeft, scrollTop);
+              }
 });
 }
 
@@ -187,10 +213,18 @@ $('#search-btn').click(function () {
     $('#resources-bottom-border').fadeOut();
     $('#sign-in-container').fadeOut();
     $('#sign-in-bottom-border').fadeOut();
+    scrollTop = 
+              window.pageYOffset || document.documentElement.scrollTop;
+            scrollLeft = 
+              window.pageXOffset || document.documentElement.scrollLeft,
+              window.onscroll = function() {
+                window.scrollTo(scrollLeft, scrollTop);
+              }
 });
 
 $("#search-close-btn").click(function(){
     $("#search-container").fadeOut();
+    window.onscroll = function() {};
 });
 
 /* Navbar background */
@@ -204,6 +238,7 @@ function navbarBgFunction() {
     $('#sign-in-container').fadeOut();
     $('#sign-in-bottom-border').fadeOut();
     $('#search-container').fadeOut();
+    window.onscroll = function() {};
 }
 
 /*---------------------- Mobile Navbar ----------------------*/

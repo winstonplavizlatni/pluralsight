@@ -104,3 +104,24 @@ $('#question5-btn').click(function () {
         document.getElementById('faq-arrow5').style.transform = "rotate3d(1, 0, 0, 180deg)";
     }
 });
+
+/* Plans & Pricing Toggle - RESPONSIVE */
+function plansPricingToggleMobileStandard() {
+    if(document.getElementById('standard-plan-price-mobile').innerHTML === "19 US$") {
+      document.getElementById('standard-plan-price-mobile').innerHTML = "159 US$";
+      document.getElementById('plans-pricing-month-year-mobile1').innerHTML = "per year";
+    } else {
+      document.getElementById('standard-plan-price-mobile').innerHTML = "19 US$";
+      document.getElementById('plans-pricing-month-year-mobile1').innerHTML = "per month";
+    }
+  }
+  
+  function plansPricingToggleMobilePremium() {
+    if(document.getElementById('premium-plan-price-mobile').innerHTML === "29 US$") {
+      document.getElementById('premium-plan-price-mobile').innerHTML = "239 US$";
+      document.getElementById('plans-pricing-month-year-mobile2').innerHTML = "per year";
+    } else {
+      document.getElementById('premium-plan-price-mobile').innerHTML = "29 US$";
+      document.getElementById('plans-pricing-month-year-mobile2').innerHTML = "per month";
+    }
+  }
