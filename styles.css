@@ -36,6 +36,18 @@ main {
     background-position: -50% 0;
 }
 
+.transparent-button {
+    border: 1px solid #fff!important;
+    background: transparent;
+    outline: 1px solid transparent;
+    outline-offset: -2px;
+    transition: 0.3s ease-in-out;
+}
+
+.transparent-button:hover {
+    outline: 1px solid #fff;
+}
+
 /* -----------------------------------------------------------------------------------------------------------------------------------
 --------------------------------------------------------- Index Page -----------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------- */
@@ -671,15 +683,6 @@ a {
 
 .header-buttons button:last-child {
     margin-left: 15px;
-    background-color: #000;
-    border: 1px solid #fff;
-    outline: 1px solid transparent;
-    outline-offset: -2px;
-    transition: 0.3s ease-in-out;
-}
-
-.header-buttons button:last-child:hover {
-    outline: 1px solid #fff;
 }
 
 .header span {
@@ -3647,18 +3650,6 @@ footer {
     border-radius: 2px;
 }
 
-.labs-header-button-container button:last-child {
-    border: 1px solid #fff;
-    background: transparent;
-    outline: 1px solid transparent;
-    outline-offset: -2px;
-    transition: 0.3s ease-in-out;
-}
-
-.labs-header-button-container button:last-child:hover {
-    outline: 1px solid #fff;
-}
-
 .labs-header-button-container button:first-child {
     margin-right: 25px;
     margin-left: -25px;
@@ -3856,5 +3847,745 @@ footer {
 
     .labs-request-container h1 {
         text-align: center;
+    }
+}
+
+/* -----------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------Hands-on learning ----------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------- */
+
+.hands-on-width {
+    width: 74%;
+    margin: auto;
+}
+
+/* Hands-on header */
+
+.hands-on-header {
+    margin-top: 90px;
+    background-color: #181818;
+    padding: 120px 0 90px;
+}
+
+.hands-on-skills img {
+    max-width: 167.5px;
+    width: 100%;
+}
+
+.hands-on-skills span {
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: 900;
+}
+
+.hands-on-skills {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 380px;
+    width: 100%;
+}
+
+.hands-on-header-text h1 {
+    line-height: 1.2;
+    font-size: 54px;
+    padding: 40px 0 20px;
+    width: 85%;
+}
+
+.hands-on-header-text p {
+    font-size: 17px;
+    line-height: 1.4;
+}
+
+.hands-on-header-btn-container button {
+    font-size: 15px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    padding: 18px 34px;
+    border: none;
+    cursor: pointer;
+}
+
+.hands-on-header-btn-container button:first-child {
+    margin-right: 20px;
+}
+
+.hands-on-header-btn-container {
+    margin-top: 40px;
+}
+
+.hands-on-header-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hands-on-header-flex img:last-child {
+    max-width: 470px;
+    width: 100%;
+    align-self: flex-end;
+}
+
+/*---------- Team trial window ----------*/
+
+.team-trial-window {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.team-trial-window-content-text h3 {
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+.team-trial-window-content-text-row img {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+}
+
+.team-trial-window-content-text-row p {
+    font-size: 16px;
+}
+
+.team-trial-window-content-text-row {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.team-trial-window-content-checkout h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+    width: 60%;
+    margin: auto;
+}
+
+.team-trial-window-subs h1 {
+    font-size: 90px;
+}
+
+.team-trial-window-subs i {
+    background: #222;
+    border-radius: 25px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.team-trial-window-subs i:hover {
+    background: #2c2c2c;
+}
+
+.team-trial-window-subs {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 430px;
+    margin: auto;
+}
+
+.team-trial-window-content-checkout h5 {
+    font-size: 13px;
+    color: #a5a5a5;
+    letter-spacing: 2.5px;
+    margin: 10px 0 40px;
+}
+
+.team-trial-window-content-checkout p a {
+    color: #ec008c;
+}
+
+.team-trial-window-content-checkout p a:hover {
+    text-decoration: underline;
+}
+
+.team-trial-window-button-container {
+    margin-top: 40px;
+}
+
+.team-trial-window-button-container button {
+    font-size: 15px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    padding: 18px 34px;
+    border: none;
+    cursor: pointer;
+    margin-right: 40px;
+}
+
+.team-trial-window-content-checkout {
+    text-align: center;
+}
+
+.team-trial-window-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 65%;
+    z-index: 9999;
+}
+
+.team-trial-window-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#team-trial-window-bg {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.93);
+    z-index: 6001;
+}
+
+/*---------------------------------------*/
+
+/* Hands-on after-header */
+
+.hands-on-after-header {
+    margin: 100px 0 50px;
+    display: flex;
+}
+
+.hands-on-after-header-text h1 {
+    font-size: 32px;
+}
+
+.hands-on-after-header-text p {
+    font-size: 17px;
+    line-height: 1.4;
+    margin-top: 20px;
+}
+
+.hands-on-after-header-text {
+    margin-left: 80px;
+}
+
+.hands-on-after-header img {
+    max-width: 442px;
+    width: 100%;
+    object-fit: contain;
+}
+
+/* Hands-on overview */
+
+.hands-on-overview-heading {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.hands-on-overview-heading img {
+    margin-right: 20px;
+}
+
+.hands-on-overview-heading h4 {
+    font-size: 22px;
+}
+
+.individuals-overview-row-text h5 {
+    font-size: 13px;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.hands-on-overview-row-text {
+    width: 47%!important;
+}
+
+/* Hands-on demo */
+
+.hands-on-demo {
+    width: 80%!important;
+    min-height: 400px!important;
+}
+
+.hands-on-demo-text h1 {
+    font-size: 32px!important;
+}
+
+.hands-on-demo-text button {
+    font-size: 15px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    padding: 18px 34px;
+    cursor: pointer;
+}
+
+/* Hands-on insights */
+
+.hands-on-insights h1 {
+    font-size: 32px;
+    line-height: 1.2;
+    width: 62.5%;
+}
+
+.hands-on-insights button {
+    height: 52.5px;
+    font-size: 15px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    padding: 0 34px;
+    border: none;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.hands-on-insights {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0 80px;
+}
+
+/* -------------------------------------------- Responsive -------------------------------------------- */
+
+@media only screen and (max-width: 1500px) {
+    .hands-on-width {
+        width: 78.5%;
+    }
+}
+
+@media only screen and (max-width: 1430px) {
+    .hands-on-width {
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .hands-on-width {
+        width: 97.5%;
+    }
+
+    .hands-on-header-flex img:last-child {
+        max-width: 333px;
+    }
+}
+
+@media only screen and (max-width: 1030px) {
+    .hands-on-header-flex {
+        flex-direction: column;
+    }
+
+    .hands-on-header-flex img:last-child {
+        max-width: 470px;
+        align-self: center;
+        margin-top: 40px;
+    }
+
+    .hands-on-header {
+        margin-top: 40px;
+    }
+
+    .individuals-overview-row {
+        flex-direction: column;
+    }
+
+    .hands-on-insights {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hands-on-insights h1 {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 35px;
+    }
+
+    .hands-on-after-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hands-on-after-header img {
+        margin-bottom: 35px;
+    }
+
+    .hands-on-after-header-text {
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .hands-on-header-text h1 {
+        font-size: 36px;
+    }
+
+    .hands-on-overview-heading img {
+        max-width: 35px;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 555px) {
+    .hands-on-header-btn-container button:last-child {
+        margin-top: 20px;
+    }
+}
+
+/* -----------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------- Skill-IQ ------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------- */
+
+/* Skill-iq header */
+
+.skill-iq-header {
+    margin-top: 90px;
+    min-height: 540px;
+    height: 100%;
+    background: url('images/skill-iq-header-bg.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.skill-iq-header h1 {
+    font-size: 56px;
+    margin: 20px 0;
+    width: 70%;
+}
+
+.skill-iq-header p {
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.skill-iq-header-btn {
+    min-width: 250px;
+    font-size: 15px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    padding: 18px 34px;
+    border: none;
+    cursor: pointer;
+    margin-right: 40px;
+    text-align: center;
+}
+
+.skill-iq-btn img {
+    width: 40px;
+    height: 40px;
+}
+
+.skill-iq-btn a {
+    font-size: 17px;
+    font-weight: 900;
+    padding-left: 10px;
+}
+
+.skill-iq-btn:hover .purple-arrow-right {
+    margin-left: 10px;
+}
+
+.skill-iq-btn {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.skill-iq-header-text {
+    width: 57.5%;
+}
+
+.skill-iq-header-btn-container {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.skill-iq-video {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Skill-iq after-header */
+
+.skill-iq-after-header {
+    background: #181818;
+}
+
+.skill-iq-after-header-text h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.skill-iq-after-header-text p {
+    font-size: 17px;
+    line-height: 1.4;
+}
+
+.skill-iq-after-header-video {
+    width: 100%;
+    max-width: 750px;
+    height: auto;
+    object-fit: fill;
+}
+
+.skill-iq-after-header-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 0;
+}
+
+.skill-iq-after-header-text {
+    padding-right: 8%;
+}
+
+/* Skill-iq courses */
+
+.skill-iq-courses {
+    margin-top: 120px;
+}
+
+.skill-iq-courses-width {
+    width: 61%;
+    margin: auto;
+}
+
+.skill-iq-courses h1 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.skill-iq-courses-navbar {
+    display: flex;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 20px;
+}
+
+.skill-iq-courses-navbar a {
+    color: #b5b5b5;
+    font-size: 17px;
+    margin-right: 28px;
+    padding-bottom: 10px;
+    border-bottom: 5px solid transparent;
+    cursor: pointer!important;
+    transition: 0.3s;
+}
+
+.skill-iq-courses-navbar a:hover {
+    color: #fff;
+}
+
+.skill-iq-active {
+    border-bottom: 5px solid #ec008c!important;
+    color: #fff!important;
+}
+
+.skill-iq-courses-list-item img {
+    width: 62px;
+    height: 62px;
+    margin-right: 18px;
+}
+
+.skill-iq-courses-list-item-text h3 {
+    font-size: 15px;
+    line-height: 1.2;
+    max-width: 80%;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.skill-iq-courses-list-item-text p {
+    font-size: 13px;
+    padding-right: 10px;
+    color: #858585;
+}
+
+.skill-iq-courses-list-item-text-bottom {
+    display: flex;
+}
+
+.skill-iq-courses-list-item p strong {
+    color: #fff;
+}
+
+.get-your-skill-iq img {
+    width: 10px;
+    height: 10px;
+    margin-right: 2px;
+}
+
+.get-your-skill-iq {
+    display: flex;
+    align-items: center;
+}
+
+.skill-iq-courses-list-item {
+    max-width: 475px;
+    width: 100%;
+    height: 80px;
+    background: #222;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.skill-iq-courses-list-item:hover {
+    background: #252525;
+}
+
+.skill-iq-courses-list-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+#skill-iq-courses-list2 {
+    display: none;
+}
+
+#skill-iq-courses-list3 {
+    display: none;
+}
+
+#skill-iq-courses-list4 {
+    display: none;
+}
+
+#skill-iq-courses-list5 {
+    display: none;
+}
+
+#skill-iq-courses-list6 {
+    display: none;
+}
+
+/* Skill-iq insights */
+
+.skill-iq-insights h1 {
+    width: 60%;
+}
+
+.skill-iq-insights button {
+    margin-right: 0;
+    height: 52.5px;
+    align-self: center;
+}
+
+.skill-iq-insights button:hover {
+    box-shadow: 0 10px 30px rgb(0 0 0 / 40%);
+}
+
+.skill-iq-insights {
+    margin-top: 150px;
+}
+
+/* -------------------------------------------- Responsive -------------------------------------------- */
+
+@media only screen and (max-width: 1565px) {
+    .skill-iq-courses-width {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 1360px) {
+    .skill-iq-courses-width {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .skill-iq-courses-width {
+        width: 88%;
+    }
+
+    .skill-iq-header h1 {
+        width: 82%;
+    }
+
+    .skill-iq-after-header-video {
+        max-width: 500px;
+    }
+}
+
+@media only screen and (max-width: 1080px) {
+    .skill-iq-courses-width {
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 1030px) {
+    .skill-iq-header-text {
+        width: 100%;
+    }
+
+    .skill-iq-header h1 {
+        width: 100%;
+    }
+
+    .skill-iq-header {
+        min-height: 400px;
+    }
+
+    .skill-iq-after-header-flex {
+        flex-direction: column;
+        padding: 60px 0;
+    }
+
+    .skill-iq-after-header-text {
+        padding-right: 0;
+    }
+
+    .skill-iq-after-header-video {
+        max-width: 98.5%;
+        margin-top: 20px;
+    }
+
+    .skill-iq-courses-list-row {
+        flex-direction: column;
+    }
+
+    .skill-iq-courses-list-item {
+        max-width: 100%;
+    }
+
+    .skill-iq-courses-list-row div:first-child {
+        margin-bottom: 15px;
+    }
+
+    .skill-iq-insights h1 {
+        width: 97.5%;
+        text-align: center;
+        font-size: 34px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .skill-iq-header-btn-container {
+        flex-direction: column;
+    }
+
+    .skill-iq-header-btn {
+        margin-right: 0;
+    }
+
+    .skill-iq-btn {
+        margin: 20px 0;
+    }
+
+    .skill-iq-courses-navbar {
+        flex-wrap: wrap;
+    }
+
+    .skill-iq-header-text {
+        margin-top: 8px;
     }
 }

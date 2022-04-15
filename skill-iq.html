@@ -1,0 +1,1121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Get your Skill IQ</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="images/pluralsight-logo.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <!---------------------- Pre-Header ---------------------->
+    <div id="mobile-navbar-bg"></div>
+    <div id="search-container">
+        <div class="navbar-bg" onclick="navbarBgFunction()"></div>
+        <div class="search-container-center">
+            <div class="search-container-width">
+                <div>
+                    <img src="images/search-icon.png">
+                    <input type="text" placeholder="What do you want to learn?">
+                </div>
+                <button id="search-close-btn"></button>
+            </div>
+        </div>
+    </div>
+    <div class="pre-header">
+        <div class="logo" id="mobile-logo">
+            <a href="index.html" id="logo-image"><img src="images/pluralsight-logo.png"></a>
+            <a href="index.html">PLURALSIGHT</a>
+        </div>
+        <div class="navbar-left" id="navbar-left">
+            <div class="logo">
+                <a href="index.html" id="logo-image"><img src="images/pluralsight-logo.png"></a>
+                <a href="index.html">PLURALSIGHT</a>
+            </div>
+            <a id="platform-btn" onclick="toggleMobilePlatform()">Platform <i class="fa fa-angle-down navbar-arrow-down"></i>
+                                          <i class="fa fa-angle-right navbar-arrow-right"></i>
+                <div class="bottom-border" id="platform-bottom-border"></div></a>
+            
+
+            <a id="products-btn" onclick="toggleMobileProducts()">Products <i class="fa fa-angle-down navbar-arrow-down"></i>
+                                          <i class="fa fa-angle-right navbar-arrow-right"></i>
+                <div class="bottom-border" id="products-bottom-border"></div></a>
+
+            
+
+            <a id="resources-btn" onclick="toggleMobileResources()">Resources <i class="fa fa-angle-down navbar-arrow-down"></i>
+                                            <i class="fa fa-angle-right navbar-arrow-right"></i>
+                <div class="bottom-border" id="resources-bottom-border"></div></a>
+
+            
+
+            <a href="individuals.html" id="for-individuals-btn">For Individuals</a>
+            <a class="mobile-sign-in" id="mobile-sign-in" onclick="toggleMobileSignIn()">Sign in <i class="fa fa-angle-right navbar-arrow-right"></i></a>
+            <a href="" class="mobile-view-plans" id="mobile-view-plans">VIEW PLANS</a>
+        </div>
+
+        <div id="platform-container">
+            <div class="navbar-bg" onclick="navbarBgFunction()"></div>
+            <div class="platform-container-flex">
+            <div class="platform-container-left">
+                <h5>WAYS TO UPSKILL</h5>
+                <div class="platform-container-left-row">
+                    <a href=""><img src="images/courses.png"></a>
+                    <a href="">Courses</a>
+                </div>
+                <div class="platform-container-left-row">
+                    <a href="skill-iq.html"><img src="images/skill-assessments.png"></a>
+                    <a href="skill-iq.html">Skill assessments</a>
+                </div>
+                <div class="platform-container-left-row">
+                    <a href="labs.html"><img src="images/labs.png"></a>
+                    <a href="labs.html">Labs</a>
+                    <button onclick="window.open('labs.html', '_self')">NEW</button>
+                </div>
+                <div class="platform-container-left-row">
+                    <a href="hands-on-learning.html"><img src="images/hands-on learning.png"></a>
+                    <a href="hands-on-learning.html">Hands-on learning</a>
+                </div>
+                <div class="platform-container-left-row">
+                    <a href=""><img src="images/certification-prep-platform.png"></a>
+                    <a href="">Certification prep</a>
+                </div>
+                <div class="platform-container-left-row">
+                    <a href=""><img src="images/live-classes.svg"></a>
+                    <a href="">Live Classes</a>
+                </div>
+                <div class="platform-container-left-row">
+                    <a href=""><img src="images/team-efficiency.png"></a>
+                    <a href="">Team efficiency</a>
+                </div>
+            </div>
+            <div class="platform-container-right">
+                <div class="platform-container-right-top">
+                <div class="skills-for">
+                    <h5>SKILLS FOR</h5>
+                    <a href="">Software development</a>
+                    <a href="">IT ops</a>
+                    <a href="">Info & cyber security</a>
+                    <a href="">Cloud computing</a>
+                    <a href="">Machine learning / AI</a>
+                    <a href="">Data professional</a>
+                </div>
+                <div class="top-trending-paths">
+                    <h5>TOP TRENDING PATHS</h5>
+                    <div class="top-trending-paths-container">
+                        <div class="top-trending-paths-item" onclick="window.open('', 'blank')">
+                            <img src="images/microsoft-azure-deployment.png">
+                            <div class="top-trending-paths-item-text">
+                                <h3>Microsoft Azure Deployment</h3>
+                                <p><strong>4</strong> Courses <strong>7</strong> Hours</p>
+                            </div>
+                        </div>
+                        <div class="top-trending-paths-item" onclick="window.open('', 'blank')">
+                            <img src="images/cleaning-data-with-r.png">
+                            <div class="top-trending-paths-item-text">
+                                <h3>Cleaning Data with R</h3>
+                                <p><strong>5</strong> Courses <strong>9</strong> Hours</p>
+                            </div>
+                        </div>
+                        <div class="top-trending-paths-item" onclick="window.open('', 'blank')">
+                            <img src="images/ruby.png">
+                            <div class="top-trending-paths-item-text">
+                                <h3>Ruby Language Fundamentals</h3>
+                                <p><strong>7</strong> Courses <strong>13</strong> Hours</p>
+                            </div>
+                        </div>
+                        <div class="top-trending-paths-item" onclick="window.open('', 'blank')">
+                            <img src="images/aws-operations.png">
+                            <div class="top-trending-paths-item-text">
+                                <h3>AWS OPERATIONS</h3>
+                                <p><strong>7</strong> Courses <strong>14</strong> Hours</p>
+                            </div>
+                        </div>
+                        <div class="top-trending-paths-item" onclick="window.open('', 'blank')">
+                            <img src="images/core-python.png">
+                            <div class="top-trending-paths-item-text">
+                                <h3>Core Python</h3>
+                                <p><strong>24</strong> Courses <strong>44</strong> Hours</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="platform-container-right-bottom">
+                    <a href="">See our entire course library</a>
+                    <a href="">Check out the Technology Index</a>
+                </div>
+            </div>
+            <button id="platform-close-btn"></button>
+            </div>
+        </div>
+        <div id="products-container">
+            <div class="navbar-bg" onclick="navbarBgFunction()"></div>
+            <div class="products-container-flex">
+                <div class="products-container-col">
+                    <img src="images/skills-logo.png">
+                    <p onclick="window.open('')">Build tech skills to drive results</p>
+                    <a href="">What is Skills?</a>
+                    <a href="">View plans</a>
+                </div>
+                <div class="products-container-col">
+                    <img src="images/flow-logo.png">
+                    <p onclick="window.open('')">Get insights into your workflow</p>
+                    <a href="">What is Flow?</a>
+                    <a href="">View plans</a>
+                </div>
+            </div>
+            <button id="products-close-btn"></button>
+        </div>
+        <div id="resources-container">
+            <div class="navbar-bg" onclick="navbarBgFunction()"></div>
+            <div class="resources-container-flex">
+                <div class="resources-container-col">
+                    <h5>LEARN</h5>
+                    <a href="">Blog</a>
+                    <a href="">Customer stories</a>
+                    <a href="">Resource center</a>
+                    <a href="">Guides</a>
+                    <a href="">App download</a>
+                    <a href="">Support</a>
+                </div>
+                <div class="resources-container-col">
+                    <h5>CONNECT</h5>
+                    <a href="">Events</a>
+                    <a href="">Webinars</a>
+                    <a href="">Podcast</a>
+                    <h5 class="resources-podcasts">PODCASTS</h5>
+                    <a href="">All Hands on Tech</a>
+                    <a href="">Perspectives in Leadership</a>
+                </div>
+            </div>
+            <button id="resources-close-btn"></button>
+        </div>
+
+        <div class="navbar-right">
+            <a id="search-btn"><img src="images/search-icon.png"></a>
+            <a id="sign-in-btn">Sign in <i class="fa fa-angle-down"></i>
+                <div class="bottom-border" id="sign-in-bottom-border"></div></a>
+            <a href="free-trial.html" id="try-for-free">TRY FOR FREE</a>
+            <button id="mobile-menu" onclick="showMobileNav()"></button>
+            <button id="close-mobile-menu" onclick="closeMobileNav()"></button>
+        </div>
+
+        <div id="sign-in-container">
+            <div class="navbar-bg" onclick="navbarBgFunction()"></div>
+            <div class="sign-in-flex">
+                <div class="sign-in-col">
+                    <a href="">SIGN IN WITH</a>
+                    <div class="sign-in-img">
+                        <a href=""><img src="images/skills-logo.png"></a>
+                        <i class="fa fa-angle-right purple-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="sign-in-col">
+                    <a href="">SIGN IN WITH</a>
+                    <div class="sign-in-img">
+                        <a href=""><img src="images/flow-logo.png"></a>
+                        <i class="fa fa-angle-right purple-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---------------------- Skill-IQ Header ---------------------->
+    <div class="skill-iq-video">
+        <div id="customer-stories-video" style="margin-top: 50%;">
+            <iframe width="896" height="504" src="https://www.youtube.com/embed/oVpmevtmGoE" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div onclick="hideCsVideo()" id="customer-stories-video-bg"></div>
+    <div class="skill-iq-header">
+        <main>
+            <div class="skill-iq-header-text">
+                <img src="images/skill-iq-logo.png">
+                <h1>Don't guess where your skills stand</h1>
+                <p>This is your future. Define your skills by the only metric that matches the pace of change. Take a free assessment to get your Skill IQ today.</p>
+                <div class="skill-iq-header-btn-container">
+                    <div class="rainbow-button skill-iq-header-btn">GET YOUR SKILL IQ</div>
+                    <div class="skill-iq-btn" onclick="showCsVideo()">
+                        <img src="images/playbutton-white.png">
+                        <a>This is not a test <i class="fa fa-angle-right purple-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!---------------------- Skill-IQ After-Header ---------------------->
+    <div class="skill-iq-after-header">
+        <main>
+            <div class="skill-iq-after-header-flex">
+                <div class="skill-iq-after-header-text">
+                    <h1>Do you know what you don’t know?</h1>
+                    <p>Identify your knowledge gaps and strengths with our skill assessments. Your results will tell you where to start within a learning path, so you can develop the skills you need most and not waste time on what you already know.</p>
+                </div>
+                <video autoplay loop class="skill-iq-after-header-video" muted plays-inline>
+                    <source src="images/skill-iq-video.mp4">
+                </video>
+            </div>
+        </main>
+    </div>
+
+    <!---------------------- Skill-IQ courses ---------------------->
+    <div class="skill-iq-courses">
+        <div class="skill-iq-courses-width">
+            <h1>Take a free assessment to get your Skill IQ today</h1>
+            <div class="skill-iq-courses-navbar">
+                <a id="skill-iq-list-btn-all" class="skill-iq-active" onclick="allListFunction()">All</a>
+                <a id="skill-iq-list-btn-dev" onclick="devListFunction()">Development</a>
+                <a id="skill-iq-list-btn-itops" onclick="itopsListFunction()">IT Ops</a>
+                <a id="skill-iq-list-btn-creative" onclick="creativeListFunction()">Creative</a>
+                <a id="skill-iq-list-btn-security" onclick="securityListFunction()">Security</a>
+                <a id="skill-iq-list-btn-conferences" onclick="conferencesListFunction()">Conferences</a>
+            </div>
+            <div class="skill-iq-courses-list" id="skill-iq-courses-list1">
+                <div class="skill-iq-courses-list-row">
+                    <div class="skill-iq-courses-list-item">
+                        <img src="images/javascript.png">
+                        <div class="skill-iq-courses-list-item-text">
+                            <h3>Lorem ipsum dolor sit amet</h1>
+                            <div class="skill-iq-courses-list-item-text-bottom">
+                                <p><strong>3</strong> Courses</p>
+                                <p><strong>12</strong> Hours</p>
+                                <div class="get-your-skill-iq">
+                                    <img src="images/get-your-skill-iq.png">
+                                    <p>Get your Skill IQ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-iq-courses-list-item">
+                        <img src="images/javascript.png">
+                        <div class="skill-iq-courses-list-item-text">
+                            <h3>Lorem ipsum dolor sit amet</h1>
+                            <div class="skill-iq-courses-list-item-text-bottom">
+                                <p><strong>3</strong> Courses</p>
+                                <p><strong>12</strong> Hours</p>
+                                <div class="get-your-skill-iq">
+                                    <img src="images/get-your-skill-iq.png">
+                                    <p>Get your Skill IQ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-iq-courses-list-row">
+                    <div class="skill-iq-courses-list-item">
+                        <img src="images/javascript.png">
+                        <div class="skill-iq-courses-list-item-text">
+                            <h3>Lorem ipsum dolor sit amet</h1>
+                            <div class="skill-iq-courses-list-item-text-bottom">
+                                <p><strong>3</strong> Courses</p>
+                                <p><strong>12</strong> Hours</p>
+                                <div class="get-your-skill-iq">
+                                    <img src="images/get-your-skill-iq.png">
+                                    <p>Get your Skill IQ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-iq-courses-list-item">
+                        <img src="images/javascript.png">
+                        <div class="skill-iq-courses-list-item-text">
+                            <h3>Lorem ipsum dolor sit amet</h1>
+                            <div class="skill-iq-courses-list-item-text-bottom">
+                                <p><strong>3</strong> Courses</p>
+                                <p><strong>12</strong> Hours</p>
+                                <div class="get-your-skill-iq">
+                                    <img src="images/get-your-skill-iq.png">
+                                    <p>Get your Skill IQ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-iq-courses-list-row">
+                    <div class="skill-iq-courses-list-item">
+                        <img src="images/javascript.png">
+                        <div class="skill-iq-courses-list-item-text">
+                            <h3>Lorem ipsum dolor sit amet</h1>
+                            <div class="skill-iq-courses-list-item-text-bottom">
+                                <p><strong>3</strong> Courses</p>
+                                <p><strong>12</strong> Hours</p>
+                                <div class="get-your-skill-iq">
+                                    <img src="images/get-your-skill-iq.png">
+                                    <p>Get your Skill IQ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-iq-courses-list-item">
+                        <img src="images/javascript.png">
+                        <div class="skill-iq-courses-list-item-text">
+                            <h3>Lorem ipsum dolor sit amet</h1>
+                            <div class="skill-iq-courses-list-item-text-bottom">
+                                <p><strong>3</strong> Courses</p>
+                                <p><strong>12</strong> Hours</p>
+                                <div class="get-your-skill-iq">
+                                    <img src="images/get-your-skill-iq.png">
+                                    <p>Get your Skill IQ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-iq-courses-list-row">
+                    <div class="skill-iq-courses-list-item">
+                        <img src="images/javascript.png">
+                        <div class="skill-iq-courses-list-item-text">
+                            <h3>Lorem ipsum dolor sit amet</h1>
+                            <div class="skill-iq-courses-list-item-text-bottom">
+                                <p><strong>3</strong> Courses</p>
+                                <p><strong>12</strong> Hours</p>
+                                <div class="get-your-skill-iq">
+                                    <img src="images/get-your-skill-iq.png">
+                                    <p>Get your Skill IQ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-iq-courses-list-item">
+                        <img src="images/javascript.png">
+                        <div class="skill-iq-courses-list-item-text">
+                            <h3>Lorem ipsum dolor sit amet</h1>
+                            <div class="skill-iq-courses-list-item-text-bottom">
+                                <p><strong>3</strong> Courses</p>
+                                <p><strong>12</strong> Hours</p>
+                                <div class="get-your-skill-iq">
+                                    <img src="images/get-your-skill-iq.png">
+                                    <p>Get your Skill IQ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-iq-courses-list-row">
+                    <div class="skill-iq-courses-list-item">
+                        <img src="images/javascript.png">
+                        <div class="skill-iq-courses-list-item-text">
+                            <h3>Lorem ipsum dolor sit amet</h1>
+                            <div class="skill-iq-courses-list-item-text-bottom">
+                                <p><strong>3</strong> Courses</p>
+                                <p><strong>12</strong> Hours</p>
+                                <div class="get-your-skill-iq">
+                                    <img src="images/get-your-skill-iq.png">
+                                    <p>Get your Skill IQ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-iq-courses-list-item">
+                        <img src="images/javascript.png">
+                        <div class="skill-iq-courses-list-item-text">
+                            <h3>Lorem ipsum dolor sit amet</h1>
+                            <div class="skill-iq-courses-list-item-text-bottom">
+                                <p><strong>3</strong> Courses</p>
+                                <p><strong>12</strong> Hours</p>
+                                <div class="get-your-skill-iq">
+                                    <img src="images/get-your-skill-iq.png">
+                                    <p>Get your Skill IQ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-iq-courses-list-row">
+                    <div class="skill-iq-courses-list-item">
+                        <img src="images/javascript.png">
+                        <div class="skill-iq-courses-list-item-text">
+                            <h3>Lorem ipsum dolor sit amet</h1>
+                            <div class="skill-iq-courses-list-item-text-bottom">
+                                <p><strong>3</strong> Courses</p>
+                                <p><strong>12</strong> Hours</p>
+                                <div class="get-your-skill-iq">
+                                    <img src="images/get-your-skill-iq.png">
+                                    <p>Get your Skill IQ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-iq-courses-list-item">
+                        <img src="images/javascript.png">
+                        <div class="skill-iq-courses-list-item-text">
+                            <h3>Lorem ipsum dolor sit amet</h1>
+                            <div class="skill-iq-courses-list-item-text-bottom">
+                                <p><strong>3</strong> Courses</p>
+                                <p><strong>12</strong> Hours</p>
+                                <div class="get-your-skill-iq">
+                                    <img src="images/get-your-skill-iq.png">
+                                    <p>Get your Skill IQ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-iq-courses-list-row">
+                    <div class="skill-iq-courses-list-item">
+                        <img src="images/javascript.png">
+                        <div class="skill-iq-courses-list-item-text">
+                            <h3>Lorem ipsum dolor sit amet</h1>
+                            <div class="skill-iq-courses-list-item-text-bottom">
+                                <p><strong>3</strong> Courses</p>
+                                <p><strong>12</strong> Hours</p>
+                                <div class="get-your-skill-iq">
+                                    <img src="images/get-your-skill-iq.png">
+                                    <p>Get your Skill IQ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-iq-courses-list-item">
+                        <img src="images/javascript.png">
+                        <div class="skill-iq-courses-list-item-text">
+                            <h3>Lorem ipsum dolor sit amet</h1>
+                            <div class="skill-iq-courses-list-item-text-bottom">
+                                <p><strong>3</strong> Courses</p>
+                                <p><strong>12</strong> Hours</p>
+                                <div class="get-your-skill-iq">
+                                    <img src="images/get-your-skill-iq.png">
+                                    <p>Get your Skill IQ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-iq-courses-list-row">
+                    <div class="skill-iq-courses-list-item">
+                        <img src="images/javascript.png">
+                        <div class="skill-iq-courses-list-item-text">
+                            <h3>Lorem ipsum dolor sit amet</h1>
+                            <div class="skill-iq-courses-list-item-text-bottom">
+                                <p><strong>3</strong> Courses</p>
+                                <p><strong>12</strong> Hours</p>
+                                <div class="get-your-skill-iq">
+                                    <img src="images/get-your-skill-iq.png">
+                                    <p>Get your Skill IQ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-iq-courses-list-item">
+                        <img src="images/javascript.png">
+                        <div class="skill-iq-courses-list-item-text">
+                            <h3>Lorem ipsum dolor sit amet</h1>
+                            <div class="skill-iq-courses-list-item-text-bottom">
+                                <p><strong>3</strong> Courses</p>
+                                <p><strong>12</strong> Hours</p>
+                                <div class="get-your-skill-iq">
+                                    <img src="images/get-your-skill-iq.png">
+                                    <p>Get your Skill IQ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-iq-courses-list" id="skill-iq-courses-list2">
+                <div class="skill-iq-courses-list-row">
+                    <div class="skill-iq-courses-list-item">
+                        <img src="images/microsoft-azure-deployment.png">
+                        <div class="skill-iq-courses-list-item-text">
+                            <h3>Lorem ipsum dolor sit amet</h1>
+                            <div class="skill-iq-courses-list-item-text-bottom">
+                                <p><strong>3</strong> Courses</p>
+                                <p><strong>12</strong> Hours</p>
+                                <div class="get-your-skill-iq">
+                                    <img src="images/get-your-skill-iq.png">
+                                    <p>Get your Skill IQ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-iq-courses-list-item">
+                        <img src="images/microsoft-azure-deployment.png">
+                        <div class="skill-iq-courses-list-item-text">
+                            <h3>Lorem ipsum dolor sit amet</h1>
+                            <div class="skill-iq-courses-list-item-text-bottom">
+                                <p><strong>3</strong> Courses</p>
+                                <p><strong>12</strong> Hours</p>
+                                <div class="get-your-skill-iq">
+                                    <img src="images/get-your-skill-iq.png">
+                                    <p>Get your Skill IQ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-iq-courses-list-row">
+                    <div class="skill-iq-courses-list-item">
+                        <img src="images/microsoft-azure-deployment.png">
+                        <div class="skill-iq-courses-list-item-text">
+                            <h3>Lorem ipsum dolor sit amet</h1>
+                            <div class="skill-iq-courses-list-item-text-bottom">
+                                <p><strong>3</strong> Courses</p>
+                                <p><strong>12</strong> Hours</p>
+                                <div class="get-your-skill-iq">
+                                    <img src="images/get-your-skill-iq.png">
+                                    <p>Get your Skill IQ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-iq-courses-list-item">
+                        <img src="images/microsoft-azure-deployment.png">
+                        <div class="skill-iq-courses-list-item-text">
+                            <h3>Lorem ipsum dolor sit amet</h1>
+                            <div class="skill-iq-courses-list-item-text-bottom">
+                                <p><strong>3</strong> Courses</p>
+                                <p><strong>12</strong> Hours</p>
+                                <div class="get-your-skill-iq">
+                                    <img src="images/get-your-skill-iq.png">
+                                    <p>Get your Skill IQ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-iq-courses-list-row">
+                    <div class="skill-iq-courses-list-item">
+                        <img src="images/microsoft-azure-deployment.png">
+                        <div class="skill-iq-courses-list-item-text">
+                            <h3>Lorem ipsum dolor sit amet</h1>
+                            <div class="skill-iq-courses-list-item-text-bottom">
+                                <p><strong>3</strong> Courses</p>
+                                <p><strong>12</strong> Hours</p>
+                                <div class="get-your-skill-iq">
+                                    <img src="images/get-your-skill-iq.png">
+                                    <p>Get your Skill IQ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-iq-courses-list-item">
+                        <img src="images/microsoft-azure-deployment.png">
+                        <div class="skill-iq-courses-list-item-text">
+                            <h3>Lorem ipsum dolor sit amet</h1>
+                            <div class="skill-iq-courses-list-item-text-bottom">
+                                <p><strong>3</strong> Courses</p>
+                                <p><strong>12</strong> Hours</p>
+                                <div class="get-your-skill-iq">
+                                    <img src="images/get-your-skill-iq.png">
+                                    <p>Get your Skill IQ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-iq-courses-list-row">
+                    <div class="skill-iq-courses-list-item">
+                        <img src="images/microsoft-azure-deployment.png">
+                        <div class="skill-iq-courses-list-item-text">
+                            <h3>Lorem ipsum dolor sit amet</h1>
+                            <div class="skill-iq-courses-list-item-text-bottom">
+                                <p><strong>3</strong> Courses</p>
+                                <p><strong>12</strong> Hours</p>
+                                <div class="get-your-skill-iq">
+                                    <img src="images/get-your-skill-iq.png">
+                                    <p>Get your Skill IQ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-iq-courses-list-item">
+                        <img src="images/microsoft-azure-deployment.png">
+                        <div class="skill-iq-courses-list-item-text">
+                            <h3>Lorem ipsum dolor sit amet</h1>
+                            <div class="skill-iq-courses-list-item-text-bottom">
+                                <p><strong>3</strong> Courses</p>
+                                <p><strong>12</strong> Hours</p>
+                                <div class="get-your-skill-iq">
+                                    <img src="images/get-your-skill-iq.png">
+                                    <p>Get your Skill IQ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-iq-courses-list-row">
+                    <div class="skill-iq-courses-list-item">
+                        <img src="images/microsoft-azure-deployment.png">
+                        <div class="skill-iq-courses-list-item-text">
+                            <h3>Lorem ipsum dolor sit amet</h1>
+                            <div class="skill-iq-courses-list-item-text-bottom">
+                                <p><strong>3</strong> Courses</p>
+                                <p><strong>12</strong> Hours</p>
+                                <div class="get-your-skill-iq">
+                                    <img src="images/get-your-skill-iq.png">
+                                    <p>Get your Skill IQ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-iq-courses-list-item">
+                        <img src="images/microsoft-azure-deployment.png">
+                        <div class="skill-iq-courses-list-item-text">
+                            <h3>Lorem ipsum dolor sit amet</h1>
+                            <div class="skill-iq-courses-list-item-text-bottom">
+                                <p><strong>3</strong> Courses</p>
+                                <p><strong>12</strong> Hours</p>
+                                <div class="get-your-skill-iq">
+                                    <img src="images/get-your-skill-iq.png">
+                                    <p>Get your Skill IQ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-iq-courses-list-row">
+                    <div class="skill-iq-courses-list-item">
+                        <img src="images/microsoft-azure-deployment.png">
+                        <div class="skill-iq-courses-list-item-text">
+                            <h3>Lorem ipsum dolor sit amet</h1>
+                            <div class="skill-iq-courses-list-item-text-bottom">
+                                <p><strong>3</strong> Courses</p>
+                                <p><strong>12</strong> Hours</p>
+                                <div class="get-your-skill-iq">
+                                    <img src="images/get-your-skill-iq.png">
+                                    <p>Get your Skill IQ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-iq-courses-list-item">
+                        <img src="images/microsoft-azure-deployment.png">
+                        <div class="skill-iq-courses-list-item-text">
+                            <h3>Lorem ipsum dolor sit amet</h1>
+                            <div class="skill-iq-courses-list-item-text-bottom">
+                                <p><strong>3</strong> Courses</p>
+                                <p><strong>12</strong> Hours</p>
+                                <div class="get-your-skill-iq">
+                                    <img src="images/get-your-skill-iq.png">
+                                    <p>Get your Skill IQ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-iq-courses-list-row">
+                    <div class="skill-iq-courses-list-item">
+                        <img src="images/microsoft-azure-deployment.png">
+                        <div class="skill-iq-courses-list-item-text">
+                            <h3>Lorem ipsum dolor sit amet</h1>
+                            <div class="skill-iq-courses-list-item-text-bottom">
+                                <p><strong>3</strong> Courses</p>
+                                <p><strong>12</strong> Hours</p>
+                                <div class="get-your-skill-iq">
+                                    <img src="images/get-your-skill-iq.png">
+                                    <p>Get your Skill IQ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-iq-courses-list-item">
+                        <img src="images/microsoft-azure-deployment.png">
+                        <div class="skill-iq-courses-list-item-text">
+                            <h3>Lorem ipsum dolor sit amet</h1>
+                            <div class="skill-iq-courses-list-item-text-bottom">
+                                <p><strong>3</strong> Courses</p>
+                                <p><strong>12</strong> Hours</p>
+                                <div class="get-your-skill-iq">
+                                    <img src="images/get-your-skill-iq.png">
+                                    <p>Get your Skill IQ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-iq-courses-list-row">
+                    <div class="skill-iq-courses-list-item">
+                        <img src="images/microsoft-azure-deployment.png">
+                        <div class="skill-iq-courses-list-item-text">
+                            <h3>Lorem ipsum dolor sit amet</h1>
+                            <div class="skill-iq-courses-list-item-text-bottom">
+                                <p><strong>3</strong> Courses</p>
+                                <p><strong>12</strong> Hours</p>
+                                <div class="get-your-skill-iq">
+                                    <img src="images/get-your-skill-iq.png">
+                                    <p>Get your Skill IQ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-iq-courses-list-item">
+                        <img src="images/microsoft-azure-deployment.png">
+                        <div class="skill-iq-courses-list-item-text">
+                            <h3>Lorem ipsum dolor sit amet</h1>
+                            <div class="skill-iq-courses-list-item-text-bottom">
+                                <p><strong>3</strong> Courses</p>
+                                <p><strong>12</strong> Hours</p>
+                                <div class="get-your-skill-iq">
+                                    <img src="images/get-your-skill-iq.png">
+                                    <p>Get your Skill IQ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-iq-courses-list" id="skill-iq-courses-list3">
+                <div class="skill-iq-courses-list-row">
+                    <div class="skill-iq-courses-list-item">
+                        <img src="images/javascript.png">
+                        <div class="skill-iq-courses-list-item-text">
+                            <h3>Lorem ipsum dolor sit amet</h1>
+                            <div class="skill-iq-courses-list-item-text-bottom">
+                                <p><strong>3</strong> Courses</p>
+                                <p><strong>12</strong> Hours</p>
+                                <div class="get-your-skill-iq">
+                                    <img src="images/get-your-skill-iq.png">
+                                    <p>Get your Skill IQ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-iq-courses-list-item">
+                        <img src="images/javascript.png">
+                        <div class="skill-iq-courses-list-item-text">
+                            <h3>Lorem ipsum dolor sit amet</h1>
+                            <div class="skill-iq-courses-list-item-text-bottom">
+                                <p><strong>3</strong> Courses</p>
+                                <p><strong>12</strong> Hours</p>
+                                <div class="get-your-skill-iq">
+                                    <img src="images/get-your-skill-iq.png">
+                                    <p>Get your Skill IQ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-iq-courses-list-row">
+                    <div class="skill-iq-courses-list-item">
+                        <img src="images/javascript.png">
+                        <div class="skill-iq-courses-list-item-text">
+                            <h3>Lorem ipsum dolor sit amet</h1>
+                            <div class="skill-iq-courses-list-item-text-bottom">
+                                <p><strong>3</strong> Courses</p>
+                                <p><strong>12</strong> Hours</p>
+                                <div class="get-your-skill-iq">
+                                    <img src="images/get-your-skill-iq.png">
+                                    <p>Get your Skill IQ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-iq-courses-list-item">
+                        <img src="images/javascript.png">
+                        <div class="skill-iq-courses-list-item-text">
+                            <h3>Lorem ipsum dolor sit amet</h1>
+                            <div class="skill-iq-courses-list-item-text-bottom">
+                                <p><strong>3</strong> Courses</p>
+                                <p><strong>12</strong> Hours</p>
+                                <div class="get-your-skill-iq">
+                                    <img src="images/get-your-skill-iq.png">
+                                    <p>Get your Skill IQ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-iq-courses-list" id="skill-iq-courses-list4">
+                <div class="skill-iq-courses-list-row">
+                    <div class="skill-iq-courses-list-item">
+                        <img src="images/javascript.png">
+                        <div class="skill-iq-courses-list-item-text">
+                            <h3>Lorem ipsum dolor sit amet</h1>
+                            <div class="skill-iq-courses-list-item-text-bottom">
+                                <p><strong>3</strong> Courses</p>
+                                <p><strong>12</strong> Hours</p>
+                                <div class="get-your-skill-iq">
+                                    <img src="images/get-your-skill-iq.png">
+                                    <p>Get your Skill IQ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-iq-courses-list-item">
+                        <img src="images/javascript.png">
+                        <div class="skill-iq-courses-list-item-text">
+                            <h3>Lorem ipsum dolor sit amet</h1>
+                            <div class="skill-iq-courses-list-item-text-bottom">
+                                <p><strong>3</strong> Courses</p>
+                                <p><strong>12</strong> Hours</p>
+                                <div class="get-your-skill-iq">
+                                    <img src="images/get-your-skill-iq.png">
+                                    <p>Get your Skill IQ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-iq-courses-list-row">
+                    <div class="skill-iq-courses-list-item">
+                        <img src="images/javascript.png">
+                        <div class="skill-iq-courses-list-item-text">
+                            <h3>Lorem ipsum dolor sit amet</h1>
+                            <div class="skill-iq-courses-list-item-text-bottom">
+                                <p><strong>3</strong> Courses</p>
+                                <p><strong>12</strong> Hours</p>
+                                <div class="get-your-skill-iq">
+                                    <img src="images/get-your-skill-iq.png">
+                                    <p>Get your Skill IQ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-iq-courses-list-item">
+                        <img src="images/javascript.png">
+                        <div class="skill-iq-courses-list-item-text">
+                            <h3>Lorem ipsum dolor sit amet</h1>
+                            <div class="skill-iq-courses-list-item-text-bottom">
+                                <p><strong>3</strong> Courses</p>
+                                <p><strong>12</strong> Hours</p>
+                                <div class="get-your-skill-iq">
+                                    <img src="images/get-your-skill-iq.png">
+                                    <p>Get your Skill IQ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-iq-courses-list" id="skill-iq-courses-list5">
+                <div class="skill-iq-courses-list-row">
+                    <div class="skill-iq-courses-list-item">
+                        <img src="images/javascript.png">
+                        <div class="skill-iq-courses-list-item-text">
+                            <h3>Lorem ipsum dolor sit amet</h1>
+                            <div class="skill-iq-courses-list-item-text-bottom">
+                                <p><strong>3</strong> Courses</p>
+                                <p><strong>12</strong> Hours</p>
+                                <div class="get-your-skill-iq">
+                                    <img src="images/get-your-skill-iq.png">
+                                    <p>Get your Skill IQ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-iq-courses-list-item">
+                        <img src="images/javascript.png">
+                        <div class="skill-iq-courses-list-item-text">
+                            <h3>Lorem ipsum dolor sit amet</h1>
+                            <div class="skill-iq-courses-list-item-text-bottom">
+                                <p><strong>3</strong> Courses</p>
+                                <p><strong>12</strong> Hours</p>
+                                <div class="get-your-skill-iq">
+                                    <img src="images/get-your-skill-iq.png">
+                                    <p>Get your Skill IQ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-iq-courses-list-row">
+                    <div class="skill-iq-courses-list-item">
+                        <img src="images/javascript.png">
+                        <div class="skill-iq-courses-list-item-text">
+                            <h3>Lorem ipsum dolor sit amet</h1>
+                            <div class="skill-iq-courses-list-item-text-bottom">
+                                <p><strong>3</strong> Courses</p>
+                                <p><strong>12</strong> Hours</p>
+                                <div class="get-your-skill-iq">
+                                    <img src="images/get-your-skill-iq.png">
+                                    <p>Get your Skill IQ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-iq-courses-list-item">
+                        <img src="images/javascript.png">
+                        <div class="skill-iq-courses-list-item-text">
+                            <h3>Lorem ipsum dolor sit amet</h1>
+                            <div class="skill-iq-courses-list-item-text-bottom">
+                                <p><strong>3</strong> Courses</p>
+                                <p><strong>12</strong> Hours</p>
+                                <div class="get-your-skill-iq">
+                                    <img src="images/get-your-skill-iq.png">
+                                    <p>Get your Skill IQ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-iq-courses-list" id="skill-iq-courses-list6">
+                <div class="skill-iq-courses-list-row">
+                    <div class="skill-iq-courses-list-item">
+                        <img src="images/javascript.png">
+                        <div class="skill-iq-courses-list-item-text">
+                            <h3>Lorem ipsum dolor sit amet</h1>
+                            <div class="skill-iq-courses-list-item-text-bottom">
+                                <p><strong>3</strong> Courses</p>
+                                <p><strong>12</strong> Hours</p>
+                                <div class="get-your-skill-iq">
+                                    <img src="images/get-your-skill-iq.png">
+                                    <p>Get your Skill IQ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-iq-courses-list-item">
+                        <img src="images/javascript.png">
+                        <div class="skill-iq-courses-list-item-text">
+                            <h3>Lorem ipsum dolor sit amet</h1>
+                            <div class="skill-iq-courses-list-item-text-bottom">
+                                <p><strong>3</strong> Courses</p>
+                                <p><strong>12</strong> Hours</p>
+                                <div class="get-your-skill-iq">
+                                    <img src="images/get-your-skill-iq.png">
+                                    <p>Get your Skill IQ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-iq-courses-list-row">
+                    <div class="skill-iq-courses-list-item">
+                        <img src="images/javascript.png">
+                        <div class="skill-iq-courses-list-item-text">
+                            <h3>Lorem ipsum dolor sit amet</h1>
+                            <div class="skill-iq-courses-list-item-text-bottom">
+                                <p><strong>3</strong> Courses</p>
+                                <p><strong>12</strong> Hours</p>
+                                <div class="get-your-skill-iq">
+                                    <img src="images/get-your-skill-iq.png">
+                                    <p>Get your Skill IQ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-iq-courses-list-item">
+                        <img src="images/javascript.png">
+                        <div class="skill-iq-courses-list-item-text">
+                            <h3>Lorem ipsum dolor sit amet</h1>
+                            <div class="skill-iq-courses-list-item-text-bottom">
+                                <p><strong>3</strong> Courses</p>
+                                <p><strong>12</strong> Hours</p>
+                                <div class="get-your-skill-iq">
+                                    <img src="images/get-your-skill-iq.png">
+                                    <p>Get your Skill IQ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---------------------- Skill-IQ insights ---------------------->
+    <div class="insights skill-iq-insights">
+        <main>
+            <div class="insights-container">
+            <h1>Identify your knowledge gaps and strengths with Skill IQ</h1>
+            <button class="rainbow-button">GET YOUR SKILL IQ</button>
+            </div>
+        </main>
+    </div>
+
+    <!---------------------- Footer ---------------------->
+    <div class="footer">
+        <footer>
+            <div class="footer-navbar">
+                <div class="footer-navbar-col">
+                    <h5 onclick="toggleFooterSolutions()">SOLUTIONS <i id="footer-solutions-arrowdown" class="fa fa-angle-down footer-arrow"></i>
+                                                                    <i id="footer-solutions-arrowup" class="fa fa-angle-up footer-arrow"></i></h5>
+                    <div id="footer-solutions">
+                        <a href="">Pluralsight Skills</a>
+                        <a href="">Pluralsight Flow</a>
+                        <a href="">Government</a>
+                        <a href="">Gift of Pluralsight</a>
+                        <a href="">View Pricing</a>
+                        <a href="">Contact Sales</a>
+                        <a href="">Skill up for free</a>
+                    </div>
+                </div>
+                <div class="footer-navbar-col">
+                    <h5 onclick="toggleFooterPlatform()">PLATFORM <i id="footer-platform-arrowdown" class="fa fa-angle-down footer-arrow"></i>
+                                                                  <i id="footer-platform-arrowup" class="fa fa-angle-up footer-arrow"></i></h5>
+                    <div id="footer-platform">
+                        <a href="">Browse library</a>
+                        <a href="">Role IQ</a>
+                        <a href="">Skill IQ</a>
+                        <a href="">Iris</a>
+                        <a href="">Authors</a>
+                        <a href="">Professional Services</a>
+                    </div>
+                 </div>
+                 <div class="footer-navbar-col">
+                    <h5 onclick="toggleFooterCompany()">COMPANY <i id="footer-company-arrowdown" class="fa fa-angle-down footer-arrow"></i>
+                                                                <i id="footer-company-arrowup" class="fa fa-angle-up footer-arrow"></i></h5>
+                    <div id="footer-company">
+                        <a href="">About us</a>
+                        <a href="">Customer stories</a>
+                        <a href="">Careers</a>
+                        <a href="">Blog</a>
+                        <a href="">Newsroom</a>
+                        <a href="">Resource center</a>
+                        <a href="">Guides</a>
+                    </div>
+                 </div>
+                 <div class="footer-navbar-col">
+                    <h5 onclick="toggleFooterResources()">RESOURCES <i id="footer-resources-arrowdown" class="fa fa-angle-down footer-arrow"></i>
+                                                                    <i id="footer-resources-arrowup" class="fa fa-angle-up footer-arrow"></i></h5>
+                    <div id="footer-resources">
+                        <a href="">Download Pluralsight</a>
+                        <a href="">Events</a>
+                        <a href="">Teach</a>
+                        <a href="">Partners</a>
+                        <a href="">Affiliate Partners</a>
+                        <a href="">PluralsightOne.org</a>
+                        <a href="">Subscribe</a>
+                    </div>
+                 </div>
+                 <div class="footer-navbar-col">
+                    <h5 onclick="toggleFooterSupport()">SUPPORT <i id="footer-support-arrowdown" class="fa fa-angle-down footer-arrow"></i>
+                                                                <i id="footer-support-arrowup" class="fa fa-angle-up footer-arrow"></i></h5>
+                    <div id="footer-support">
+                        <a href="">Contact</a>
+                        <a href="">Help center</a>
+                        <a href="">IP allowlist</a>
+                        <a href="">Sitemap</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-lang">
+                <img src="images/globe-white.png">
+                <a href="">Deutsch</a>
+                <a href="" class="active-lang">English</a>
+                <a href="">French</a>
+            </div>
+            <div class="footer-copyright">
+                <div class="footer-copyright-left">
+                    <img src="images/ps-icon.png">
+                    <p>Copyright © 2004 - 2022 Pluralsight LLC. All rights reserved</p>
+                </div>
+                <div class="footer-copyright-right">
+                    <div class="terms-of-use">
+                        <a href="">Terms of Use</a>
+                        <a href="">Privacy Notice</a>
+                        <a href="">Modern Slavery Act Transparency Statement</a>
+                    </div>
+                    <div class="social-networks">
+                        <a href=""><img src="images/fb.svg"></a>
+                        <a href=""><img src="images/ig.svg"></a>
+                        <a href=""><img src="images/twitter.svg"></a>
+                        <a href=""><img src="images/linkedin.svg"></a>
+                        <a href=""><img src="images/yt.svg"></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+    <script src="js/index.js"></script>
+    <script src="js/skill-iq.js"></script>
+</body>
+</html>

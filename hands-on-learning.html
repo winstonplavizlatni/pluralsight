@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Pluralsight | The tech workforce development company</title>
+    <title>Pluralsight | Hands-on learning</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles.css">
@@ -10,6 +10,55 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
+    <!---------------------- Team trial window ---------------------->
+    <div id="team-trial-window-bg" onclick="hideTeamTrialWindow()"></div>
+    <div class="team-trial-window" id="team-trial-window">
+        <div class="team-trial-window-flex">
+            <div class="team-trial-window-content">
+                <div class="team-trial-window-content-text">
+                    <h3>With your 14-day pilot, you can:</h3>
+                    <div class="team-trial-window-content-text-row">
+                        <img src="images/check-icon-purple.png">
+                        <p>Give up to 10 users access to thousands of video courses</p>
+                    </div>
+                    <div class="team-trial-window-content-text-row">
+                        <img src="images/check-icon-purple.png">
+                        <p>Practice and apply skills with interactive courses and projects</p>
+                    </div>
+                    <div class="team-trial-window-content-text-row">
+                        <img src="images/check-icon-purple.png">
+                        <p>See skills, usage, and trend data for your teams</p>
+                    </div>
+                    <div class="team-trial-window-content-text-row">
+                        <img src="images/check-icon-purple.png">
+                        <p>Prepare for certifications with industry-leading practice exams</p>
+                    </div>
+                    <div class="team-trial-window-content-text-row">
+                        <img src="images/check-icon-purple.png">
+                        <p>Measure proficiency across skills and roles</p>
+                    </div>
+                    <div class="team-trial-window-content-text-row">
+                        <img src="images/check-icon-purple.png">
+                        <p>Align learning to your goals with paths and channels</p>
+                    </div>
+                </div>
+                <div class="team-trial-window-content-checkout">
+                    <h2>Ready to skill up your entire team?</h2>
+                    <div class="team-trial-window-subs">
+                        <i class="fa fa-angle-down" onclick="trialWindowSubsMinus()" id="team-trial-arrowdown"></i>
+                        <h1 id="team-trial-subs">10</h1>
+                        <i class="fa fa-angle-up" onclick="trialWindowSubsPlus()"></i>
+                    </div>
+                    <h5>SUBSCRIPTIONS</h5>
+                    <p>Need more subscriptions? <a href="">Contact sales</a>.</p>
+                    <div class="team-trial-window-button-container">
+                        <button class="rainbow-button">CONTINUE TO CHECKOUT</button>
+                        <a onclick="hideTeamTrialWindow()" style="cursor: pointer;">Cancel</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!---------------------- Pre-Header ---------------------->
     <div id="mobile-navbar-bg"></div>
     <div id="search-container">
@@ -224,239 +273,110 @@
         </div>
     </div>
 
-    <!---------------------- Header ---------------------->
-    <div class="header">
-        <h1>Build better <span id="header-span"></span></h1>
-        <p>Face the future with confidence-and with the skills and tools to thrive.</p>
-        <div class="header-buttons">
-            <button class="rainbow-button">VIEW PLANS</button>
-            <button class="transparent-button" onclick="window.open('free-trial.html', '_self')">TRY FOR FREE</button>
-        </div>
-        <span>HELPING THOUSANDS OF ORGANIZATIONS BUILD TECH SKILLS AT SCALE</span>
-        <div class="header-orgs">
-            <img src="images/adp.png">
-            <img src="images/adobe.png">
-            <img src="images/vmware.png">
-            <img src="images/fujitsu.png">
-            <img src="images/nasdaq.png">
-        </div>
-    </div>
-
-    <!---------------------- Trending Tech ---------------------->
-    <div class="journey-line"></div>
-    <div class="trending-tech">
-        <div class="trending-tech-center-container">
-            <h3>TRENDING TECHNOLOGIES</h3>
-            <h2>Popular topics to learn now</h2>
-            <div class="trending-tech-containers">
-                <div class="trending-tech-container">
-                    <div class="trending-tech-container-text">
-                        <h4>PATH</h4>
-                        <p>JavaScript</p>
-                        <span><strong>11</strong> Courses</span>
-                        <a href="">Take a look <i class="fa fa-angle-right purple-arrow-right"></i></a>
+    <!---------------------- Hands-on header ---------------------->
+    <div class="hands-on-header">
+        <div class="hands-on-width">
+            <div class="hands-on-header-flex">
+                <div class="hands-on-header-text">
+                    <div class="hands-on-skills">
+                        <img src="images/skills-logo.png">
+                        <span>HANDS-ON LEARNING</span>
                     </div>
-                    <img src="images/javascript.png">
-                </div>
-                <div class="trending-tech-container">
-                    <div class="trending-tech-container-text">
-                        <h4>PATH</h4>
-                        <p>Angular</p>
-                        <span><strong>14</strong> Courses</span>
-                        <a href="">Take a look <i class="fa fa-angle-right purple-arrow-right"></i></a>
+                    <h1>Turn knowledge into skills with Pluralsight's hands-on learning</h1>
+                    <p>The best way to build, practice and apply new tech skills</p>
+                    <div class="hands-on-header-btn-container">
+                        <button class="rainbow-button" onclick="window.open('free-trial.html', '_self')">START A FREE 10 DAY TRIAL</button>
+                        <button class="transparent-button" onclick="showTeamTrialWindow()">START A TEAM TRIAL</button>
                     </div>
-                    <img src="images/angular.png">
                 </div>
-                <div class="trending-tech-container">
-                    <div class="trending-tech-container-text">
-                        <h4>PATH</h4>
-                        <p>Core Python</p>
-                        <span><strong>12</strong> Courses</span>
-                        <a href="">Take a look <i class="fa fa-angle-right purple-arrow-right"></i></a>
-                    </div>
-                    <img src="images/python.png">
-                </div>
-                <div class="trending-tech-container">
-                    <div class="trending-tech-container-text">
-                        <h4>PATH</h4>
-                        <p>C#</p>
-                        <span><strong>19</strong> Courses</span>
-                        <a href="">Take a look <i class="fa fa-angle-right purple-arrow-right"></i></a>
-                    </div>
-                    <img src="images/csharp.png">
-                </div>
+                <img src="images/hands-on-header.png">
             </div>
         </div>
     </div>
 
-    <!---------------------- Whats new ---------------------->
-    <div class="whats-new">
-        <main>
-            <h3>SEE WHAT'S NEW</h3>
-            <h1>Our latest features</h1>
-            <div class="skills-labs">
-                <div class="skills-labs-text">
-                    <div class="skills-labs-logo">
-                        <img src="images/logo-skills.png">
-                        <h4>LABS</h4>
-                    </div>
-                    <h2>Deepen your people's expertise with hands-on labs</h2>
-                    <p>Improve your teams' confidence in their ability to deliver on business objectives by building the right skills that meet your org’s needs. Pluralsight offers 950+ labs that enable hands-on practice in secure environments across domains such as cloud (AWS, GCP and Azure), IT Ops, security, data and software development.</p>
-                    <a href="">Learn more <i class="fa fa-angle-right purple-arrow-right"></i></a>
-                </div>
-                <img src="images/Cloud-labs-image2x.png">
-            </div>
-            <div class="whats-new-containers">
-                <div class="whats-new-container">
-                    <img src="images/certification-prep.png">
-                    <h2>Empower your teams to grow their skills and their careers</h2>
-                    <p>Prepare your team for certification exams with our expert authored content and practice exams.</p>
-                    <a href="">Learn more <i class="fa fa-angle-right purple-arrow-right"></i></a>
-                </div>
-                <div class="whats-new-container">
-                    <img src="images/delivery-module.png">
-                    <h2>Make lasting workflow improvements with insights from your Jira data</h2>
-                    <p>Go beyond Jira data and get visibility into what's happening within your user stories, tasks and bugs. Flow's delivery module helps you better understand how your team is working and can make lasting improvements to your workflow.</p>
-                    <a href="">Learn more <i class="fa fa-angle-right purple-arrow-right"></i></a>
-                </div>
-                <div class="whats-new-container">
-                    <img src="images/sandboxes.png">
-                    <h2>Utilize a space for unrestricted exploration</h2>
-                    <p>Sandboxes gives your team a safe environment to practice what they're learning from expert-authored courses.</p>
-                    <a href="">Learn more <i class="fa fa-angle-right purple-arrow-right"></i></a>
-                </div>
-            </div>
-        </main>
-    </div>
-
-    <!---------------------- Keep up to date ---------------------->
-    <div class="keep-up-to-date">
-        <main>
-            <h3>KEEP UP TO DATE</h3>
-            <h1>Discover more about Pluralsight</h1>
-            <div class="keep-up-to-date-containers">
-                <div class="keep-up-to-date-container">
-                    <a href=""><img src="images/keep-up-to-date1.jpg"></a>
-                    <h2>WHAT IS PLURALSIGHT SKILLS?</h2>
-                    <p>Discover the fastest, most effective path to developing technology skills</p>
-                </div>
-                <div class="keep-up-to-date-container">
-                    <a href=""><img src="images/keep-up-to-date2.jpg"></a>
-                    <h2>PLURALSIGHT NAMED A LEADER FOR IT TRAINING</h2>
-                    <p>We're honored to be recognized in the 2021 IDC MarketScape for IT training.</p>
-                </div>
-                <div class="keep-up-to-date-container">
-                    <a href=""><img src="images/keep-up-to-date3.png"></a>
-                    <h2>LEARN HOW TO DE-FRICTION YOUR SOFTWARE DEVELOPMENT WORKFLOW WITH FLOW</h2>
-                    <p>Take a guided tour through Pluralsight Flow to see how visibility can take your team to the next level</p>
-                </div>
-                <div class="keep-up-to-date-container">
-                    <a href=""><img src="images/keep-up-to-date4.png"></a>
-                    <h2>CREATE YOUR FREE ACCOUNT</h2>
-                    <p>Build new tech skills on us with free access to 50+ expert-led courses, assessments and more.</p>
-                </div>
-            </div>
-        </main>
-    </div>
-
-    <!---------------------- VMware ---------------------->
-    <div class="vmware">
-        <img src="images/vmware-laptop.png" id="vmware-laptop">
-        <div class="vmware-right">
-            <div class="vmware-text">
-                <img src="images/vmware.png">
-                <h1>Winning the talent war with a scalable tech skills platform</h1>
-                <p>Evolving a 20-year-old company, increasing innovation and accelerating time to delivery requires fresh skills. See how VMware’s globally dispersed teams use Pluralsight to leverage the latest developments in technology as they find new ways to serve customers.</p>
-                <button>HOW THEY'RE SKILLING UP</button>
+    <div class="hands-on-width">
+        <!---------------------- Hands-on after-header ---------------------->
+        <div class="hands-on-after-header">
+            <img src="images/hands-on-after-header.png">
+            <div class="hands-on-after-header-text">
+                <h1>Learn through practice and application</h1>
+                <p>Every tech leader should be able to feel confident in their team's ability to execute successful solutions for critical initiatives now and in the future—and it's hard to trust in your team's future skills without having made an ongoing commitment to skill development.</p>
+                <p>Pluralsight Skills offers unique, hands-on learning experiences that allow learns to build their knowledge and practice applying it before bringing it into a professional setting.</p>
+                <p>When you equip your teams for continuous learning with Pluralsight, they'll be able to build stronger skills through these four hands-on content modalities:</p>
             </div>
         </div>
-    </div>
-
-    <!---------------------- Follow us ---------------------->
-    <div class="follow-us">
-        <main>
-            <h3>FOLLOW US</h3>
-            <h1>Share your skills</h1>
-            <div class="follow-us-slider">
-                <img src="images/left-arrow.png">
-                <div class="twitter-container">
-                    <div class="twitter-container-top">
-                        <div class="twitter-profile">
-                            <img src="images/empty-profile-picture.jpg" onclick="window.open('https:twitter.com', 'blank')">
-                            <div class="twitter-profile-text">
-                                <h3 onclick="window.open('https:twitter.com', 'blank')">Lorem Ipsum</h3>
-                                <span onclick="window.open('https:twitter.com', 'blank')">@Lorem</span>
-                            </div>
+        <!---------------------- Hands-on overview ---------------------->
+        <div class="individuals-overview">
+            <div class="individuals-overview-width">
+                <div class="individuals-overview-row">
+                    <img src="images/hands-on-overview1.png">
+                    <div class="individuals-overview-row-text hands-on-overview-row-text">
+                        <div class="hands-on-overview-heading">
+                            <img src="images/labs-icon.png">
+                            <h4>Labs</h4>
                         </div>
-                        <img src="images/twitter-logo.png" onclick="window.open('https:twitter.com', 'blank')">
-                    </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <div class="twitter-container-bottom">
-                        <a href=""><img src="images/twitter-reply.png"></a>
-                        <a href=""><img src="images/twitter-retweet.png"></a>
-                        <a href=""><img src="images/twitter-like.png"></a>
+                        <p>Provide learners with a safe, provisioned environment where they can develop and test skills without the risk. By completing tasks similar to common ones tech teams tackle every day, your team members can get comfortable applying their skills in real-world scenarios and get feedback that helps them improve.</p>
+                        <h5>*Available for Enterprise and Professional plans. Terms and conditions apply.</h5>
+                        <a href="labs.html">Explore labs <i class="fa fa-angle-right purple-arrow-right"></i></a>
                     </div>
                 </div>
-                <div class="twitter-container" id="twitter-container2">
-                    <div class="twitter-container-top">
-                        <div class="twitter-profile">
-                            <img src="images/empty-profile-picture.jpg" onclick="window.open('https:twitter.com', 'blank')">
-                            <div class="twitter-profile-text">
-                                <h3 onclick="window.open('https:twitter.com', 'blank')">Lorem Ipsum</h3>
-                                <span onclick="window.open('https:twitter.com', 'blank')">@Lorem</span>
-                            </div>
+                <div class="individuals-overview-row">
+                    <div class="individuals-overview-row-text hands-on-overview-row-text">
+                        <div class="hands-on-overview-heading">
+                            <img src="images/sandboxes-icon.png">
+                            <h4>Sandboxes</h4>
                         </div>
-                        <img src="images/twitter-logo.png" onclick="window.open('https:twitter.com', 'blank')">
+                        <p>Provide learners with safe, provisioned environments where they can deepen their skills through more advanced, independent practice. With no limitations to what they can explore, your team can practice completing tasks just like the ones they'll be tackling on the job.</p>
+                        <h5>*Available for Enterprise and Professional plans. Terms and conditions apply.</h5>
                     </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <div class="twitter-container-bottom">
-                        <a href=""><img src="images/twitter-reply.png"></a>
-                        <a href=""><img src="images/twitter-retweet.png"></a>
-                        <a href=""><img src="images/twitter-like.png"></a>
-                    </div>
+                    <img src="images/hands-on-overview2.png">
                 </div>
-                <div class="twitter-container" id="twitter-container3">
-                    <div class="twitter-container-top">
-                        <div class="twitter-profile">
-                            <img src="images/empty-profile-picture.jpg" onclick="window.open('https:twitter.com', 'blank')">
-                            <div class="twitter-profile-text">
-                                <h3 onclick="window.open('https:twitter.com', 'blank')">Lorem Ipsum</h3>
-                                <span onclick="window.open('https:twitter.com', 'blank')">@Lorem</span>
-                            </div>
+                <div class="individuals-overview-row">
+                    <img src="images/hands-on-overview3.png">
+                    <div class="individuals-overview-row-text hands-on-overview-row-text">
+                        <div class="hands-on-overview-heading">
+                            <img src="images/projects-icon.png">
+                            <h4>Projects</h4>
                         </div>
-                        <img src="images/twitter-logo.png" onclick="window.open('https:twitter.com', 'blank')">
-                    </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <div class="twitter-container-bottom">
-                        <a href=""><img src="images/twitter-reply.png"></a>
-                        <a href=""><img src="images/twitter-retweet.png"></a>
-                        <a href=""><img src="images/twitter-like.png"></a>
+                        <p>Learners can experience real-world scenarios and get valuable guidance to help them apply new skills in their local environment. Projects include automated validation and customized error messages of work done in their local environment, so they can easily identify and correct mistakes before they matter.</p>
+                        <h5>*Included in our Premium, Professional and Enterprise plans.</h5>
+                        <a href="">Explore projects <i class="fa fa-angle-right purple-arrow-right"></i></a>
                     </div>
                 </div>
-                <img src="images/right-arrow.png">
+                <div class="individuals-overview-row">
+                    <div class="individuals-overview-row-text hands-on-overview-row-text">
+                        <div class="hands-on-overview-heading">
+                            <img src="images/interactive-icon.png">
+                            <h4>Interactive courses</h4>
+                        </div>
+                        <p>Empower learners to take skill development into their own hands with experiences that include hands-on coding challenges and guided feedback. Learners start by watching a video to learn a concept, then test their knowledge through a series of challenges in a browser environment.</p>
+                        <h5>*Included in our Premium, Professional and Enterprise plans.</h5>
+                        <a href="">Explore interactive courses <i class="fa fa-angle-right purple-arrow-right"></i></a>
+                    </div>
+                    <img src="images/hands-on-overview4.png">
+                </div>
             </div>
-        </main>
-    </div>
-
-    <!---------------------- Pluralsight one ---------------------->
-    <div class="pluralsight-one">
-        <div class="pluralsight-one-width">
-            <img src="images/pluralsight-one.png">
-            <h1>See our growth,<br>
-                progress and evolution</h1>
-            <p>At Pluralsight, we see first-hand every day how technology makes the impossible, possible. It’s why Pluralsight One exists: To advance our mission of democratizing technology skills, challenging assumptions about solutions and create significant, lasting social impact.</p>
-            <button>FOR NONPROFITS</button>
         </div>
-    </div>
 
-    <!---------------------- Insights ---------------------->
-    <div class="insights">
-        <main>
-            <div class="insights-container">
-            <h1>Insights that give you an edge</h1>
-            <button class="rainbow-button" onclick="window.open('free-trial.html', '_self')">TRY FOR FREE</button>
+        <!---------------------- Hands-on demo ---------------------->
+        <div class="customer-stories hands-on-demo">
+            <div class="customer-stories-text hands-on-demo-text">
+                <h1>Learn, practice and apply</h1>
+                <p>Dive into our new hands-on learning experiences to help get you prepped and certified, so you can be better equipped on your quest to success.</p>
+                <button class="transparent-button" onclick="showCsVideo()">WATCH A DEMO</button>
             </div>
-        </main>
+            <img onclick="showCsVideo()" src="images/hands-on-demo.png">
+            <div id="customer-stories-video">
+                <iframe width="896" height="504" src="https://www.youtube.com/embed/N8sjXWSMqnE" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div onclick="hideCsVideo()" id="customer-stories-video-bg"></div>
+        </div>
+
+        <!---------------------- Hands-on insights ---------------------->
+        <div class="hands-on-insights">
+            <h1>Try hands-on learning today to help your team members become stronger in their roles and better equipped for the future.</h1>
+            <button class="rainbow-button" onclick="window.open('free-trial.html', '_self')">START A FREE 10-DAY TRIAL</button>
+        </div>
     </div>
 
     <!---------------------- Footer ---------------------->
@@ -553,8 +473,7 @@
             </div>
         </footer>
     </div>
-
     <script src="js/index.js"></script>
-    <script src="js/header-text-auto-change.js"></script>
+    <script src="js/hands-on-learning.js"></script>
 </body>
 </html>
