@@ -4155,6 +4155,10 @@ footer {
     .hands-on-width {
         width: 78.5%;
     }
+
+    .team-trial-window-content {
+        width: 97.5%;
+    }
 }
 
 @media only screen and (max-width: 1430px) {
@@ -4214,6 +4218,24 @@ footer {
 
     .hands-on-after-header-text {
         margin-left: 0;
+    }
+
+    .team-trial-window-content {
+        flex-direction: column-reverse;
+    }
+
+    .team-trial-window-button-container button {
+        margin-right: 0;
+        margin-bottom: 25px;
+    }
+
+    .team-trial-window-button-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .team-trial-window-content-checkout {
+        margin-bottom: 80px;
     }
 }
 
@@ -4587,5 +4609,438 @@ footer {
 
     .skill-iq-header-text {
         margin-top: 8px;
+    }
+}
+
+/* -----------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------- Cert-prep ------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------- */
+
+/* Cert-prep header */
+
+.cert-prep-header {
+    margin-top: 190px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cert-prep-skills img:first-child {
+    width: 113.69px;
+    height: 20px;
+}
+
+.cert-prep-skills img:last-child {
+    width: 24px;
+    height: 20px;
+}
+
+.cert-prep-skills h4 {
+    font-size: 15px;
+    padding-left: 8px;
+}
+
+.cert-prep-skills {
+    display: flex;
+    align-items: center;
+}
+
+.cert-prep-skills hr {
+    height: 20px;
+    margin: 0 15px;
+}
+
+.cert-prep-header-text h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin: 25px 0;
+}
+
+.cert-prep-header-text p {
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.cert-prep-header img:last-child {
+    max-width: 563px;
+    width: 100%;
+}
+
+/* Cert-prep after-header */
+
+.cert-prep-after-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cert-prep-after-header-text h1 {
+    font-size: 36px;
+    line-height: 1.2;
+    width: 90%;
+}
+
+.cert-prep-after-header-text p {
+    color: #ddd;
+    font-size: 17px;
+    line-height: 1.4;
+    margin: 20px 0;
+}
+
+.cert-prep-after-header img {
+    padding-left: 5%;
+    max-width: 721.5px;
+    width: 100%;
+}
+
+.cert-prep-after-header-text {
+    width: 40%;
+}
+
+/* Cert-prep rows */
+
+.cert-prep-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cert-prep-row h1 {
+    font-size: 36px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    width: 77%;
+}
+
+.cert-prep-row p {
+    color: #ddd;
+    font-size: 17px;
+    line-height: 1.4;
+}
+
+.cert-prep-row img {
+    padding-right: 8%;
+}
+
+.cert-prep-row-text {
+    width: 50%;
+}
+
+/* Cert-prep features */
+
+.cert-prep-features {
+    margin-top: 40px;
+}
+
+.cert-prep-features h1 {
+    font-size: 36px;
+    margin-bottom: 80px;
+}
+
+.cert-prep-features-grid-item h3 {
+    font-size: 24px;
+    font-weight: 400;
+    margin: 20px 0;
+}
+
+.cert-prep-features-grid-item p {
+    color: #ddd;
+    font-size: 17px;
+    line-height: 1.4;
+}
+
+.cert-prep-features-grid-item {
+    background: #181818;
+    padding: 30px;
+    min-height: 305px;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.cert-prep-features-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 30px;
+}
+
+/* Cert-prep courses */
+
+.cert-prep-courses {
+    margin-top: 150px;
+}
+
+.cert-prep-courses h1 {
+    text-align: center;
+    font-size: 36px;
+    line-height: 1.2;
+}
+
+.cert-prep-courses-list {
+    margin: 80px 0 210px;
+}
+
+/* Cert-prep before-footer */
+
+.cert-prep-before-footer-container h1 {
+    width: 40%;
+}
+
+.cert-prep-before-footer-container {
+    min-height: 152px;
+    background-size: contain;
+    top: -90px;
+}
+
+/* -------------------------------------------- Responsive -------------------------------------------- */
+
+@media only screen and (max-width: 1200px) {
+    .cert-prep-header img:last-child {
+        max-width: 400px;
+    }
+
+    .cert-prep-after-header img {
+        padding-left: 0;
+    }
+
+    .cert-prep-row img {
+        padding-right: 0!important;
+    }
+}
+
+@media only screen and (max-width: 1030px) {
+    .cert-prep-header {
+        flex-direction: column;
+        margin-top: 150px;
+    }
+
+    .cert-prep-header img:last-child {
+        max-width: 563px;
+        align-self: center;
+        margin-top: 20px;
+    }
+
+    .cert-prep-after-header {
+        flex-direction: column-reverse;
+        margin-top: 40px;
+    }
+
+    .cert-prep-after-header-text {
+        width: 100%;
+    }
+
+    .cert-prep-row {
+        flex-direction: column;
+        margin-top: 40px;
+    }
+
+    .cert-prep-row-text {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .cert-prep-features-grid {
+        grid-template-columns: auto;
+    }
+
+    .cert-prep-features-grid-item {
+        min-height: 235px;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .cert-prep-before-footer-container h1 {
+        width: 95%;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .cert-prep-before-footer-container {
+        min-height: 200px;
+        top: -150px;
+    }
+}
+
+/* -----------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------ Live-classes ------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------- */
+
+/* Live-classes header */
+
+.live-classes-header {
+    margin-top: 90px;
+    background: #222;
+    padding: 80px 0 50px;
+}
+
+.live-classes-skills img {
+    width: 196.66px;
+    height: auto;
+    margin-right: 45px;
+}
+
+.live-classes-skills-right img {
+    width: 24px;
+    height: 18px;
+    margin-right: 8px;
+}
+
+.live-classes-skills-right h5 {
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.live-classes-skills-right {
+    display: flex;
+}
+
+.live-classes-skills {
+    display: flex;
+}
+
+.live-classes-header-text h1 {
+    font-size: 56px;
+    margin: 40px 0 20px;
+    line-height: 100%;
+}
+
+.live-classes-header-text p {
+    font-size: 17px;
+    line-height: 1.4;
+}
+
+.live-classes-header-btn-container button {
+    font-size: 15px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    padding: 18px 34px;
+    cursor: pointer;
+    border: none;
+}
+
+.live-classes-header-btn-container button:first-child:hover {
+    box-shadow: 0 10px 30px rgb(0 0 0 / 40%);
+}
+
+.live-classes-header-btn-container button:first-child {
+    margin-right: 60px;
+}
+
+.live-classes-header-btn-container {
+    margin-top: 40px;
+}
+
+.live-classes-header-flex img:last-child {
+    max-width: 100%;
+    height: auto;
+    align-self: flex-end;
+    cursor: pointer;
+    padding-top: 40px;
+    padding-right: 5%;
+}
+
+.live-classes-header-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.live-classes-header-text {
+    width: 50%;
+}
+
+/* Live-classes after-header */
+
+.live-classes-after-header {
+    margin-top: 90px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.live-classes-after-header-text {
+    padding-left: 40px;
+}
+
+.live-classes-after-header-text h1 {
+    font-size: 32px;
+    line-height: 1.2;
+}
+
+.live-classes-after-header-text p {
+    font-size: 17px;
+    line-height: 1.4;
+    margin-top: 20px;
+}
+
+/* Live-classes features */
+
+.live-classes-features {
+    margin-top: 150px;
+}
+
+.live-classes-features h1 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+/* Live-classes insights */
+
+.live-classes-insights-container button {
+    font-size: 15px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    padding: 18px 34px;
+    height: 53px;
+    border: none;
+    cursor: pointer;
+    margin-right: 5%;
+}
+
+.live-classes-insights-container h1 {
+    width: 62.5%;
+}
+
+.live-classes-insights-container {
+    margin: 200px 0 80px;
+}
+
+/* -------------------------------------------- Responsive -------------------------------------------- */
+
+@media only screen and (max-width: 1030px) {
+    .live-classes-header-flex {
+        flex-direction: column;
+    }
+
+    .live-classes-header-flex img:last-child {
+        align-self: center;
+    }
+
+    .live-classes-header-text {
+        width: 100%;
+    }
+
+    .live-classes-after-header {
+        flex-direction: column;
+    }
+
+    .live-classes-after-header img {
+        max-width: 468px;
+        width: 100%;
+        height: auto;
+    }
+
+    .live-classes-after-header-text {
+        padding-left: 0;
+        margin-top: 20px;
+    }
+
+    .live-classes-insights-container button {
+        margin-right: 0;
+        margin-top: 30px;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    .live-classes-header-btn-container button:first-child {
+        margin-right: 0;
+        margin-bottom: 20px;
     }
 }

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Pluralsight | Hands-on learning</title>
+    <title>Pluralsight | Live Classes</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles.css">
@@ -10,55 +10,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
-    <!---------------------- Team trial window ---------------------->
-    <div id="team-trial-window-bg" onclick="hideTeamTrialWindow()"></div>
-    <div class="team-trial-window" id="team-trial-window">
-        <div class="team-trial-window-flex">
-            <div class="team-trial-window-content">
-                <div class="team-trial-window-content-text">
-                    <h3>With your 14-day pilot, you can:</h3>
-                    <div class="team-trial-window-content-text-row">
-                        <img src="images/check-icon-purple.png">
-                        <p>Give up to 10 users access to thousands of video courses</p>
-                    </div>
-                    <div class="team-trial-window-content-text-row">
-                        <img src="images/check-icon-purple.png">
-                        <p>Practice and apply skills with interactive courses and projects</p>
-                    </div>
-                    <div class="team-trial-window-content-text-row">
-                        <img src="images/check-icon-purple.png">
-                        <p>See skills, usage, and trend data for your teams</p>
-                    </div>
-                    <div class="team-trial-window-content-text-row">
-                        <img src="images/check-icon-purple.png">
-                        <p>Prepare for certifications with industry-leading practice exams</p>
-                    </div>
-                    <div class="team-trial-window-content-text-row">
-                        <img src="images/check-icon-purple.png">
-                        <p>Measure proficiency across skills and roles</p>
-                    </div>
-                    <div class="team-trial-window-content-text-row">
-                        <img src="images/check-icon-purple.png">
-                        <p>Align learning to your goals with paths and channels</p>
-                    </div>
-                </div>
-                <div class="team-trial-window-content-checkout">
-                    <h2>Ready to skill up your entire team?</h2>
-                    <div class="team-trial-window-subs">
-                        <i class="fa fa-angle-down" onclick="trialWindowSubsMinus()" id="team-trial-arrowdown"></i>
-                        <h1 id="team-trial-subs">10</h1>
-                        <i class="fa fa-angle-up" onclick="trialWindowSubsPlus()"></i>
-                    </div>
-                    <h5>SUBSCRIPTIONS</h5>
-                    <p>Need more subscriptions? <a href="">Contact sales</a>.</p>
-                    <div class="team-trial-window-button-container">
-                        <button class="rainbow-button">CONTINUE TO CHECKOUT</button>
-                        <a onclick="hideTeamTrialWindow()" style="cursor: pointer;">Cancel</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
     <!---------------------- Pre-Header ---------------------->
     <div id="mobile-navbar-bg"></div>
     <div id="search-container">
@@ -273,109 +224,73 @@
         </div>
     </div>
 
-    <!---------------------- Hands-on header ---------------------->
-    <div class="hands-on-header">
-        <div class="hands-on-width">
-            <div class="hands-on-header-flex">
-                <div class="hands-on-header-text">
-                    <div class="hands-on-skills">
+    <!---------------------- Live-classes Header ---------------------->
+    <div class="skill-iq-video">
+        <div id="customer-stories-video" style="margin-top: 50%;">
+            <iframe width="896" height="504" src="https://www.youtube.com/embed/FW3zEYlk9Gs" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div onclick="hideCsVideo()" id="customer-stories-video-bg"></div>
+    <div class="live-classes-header">
+        <main>
+            <div class="live-classes-header-flex">
+                <div class="live-classes-header-text">
+                    <div class="live-classes-skills">
                         <img src="images/skills-logo.png">
-                        <span>HANDS-ON LEARNING</span>
+                        <div class="live-classes-skills-right">
+                            <img src="images/live-classes.svg">
+                            <h5>LIVE CLASSES</h5>
+                        </div>
                     </div>
-                    <h1>Turn knowledge into skills with Pluralsight's hands-on learning</h1>
-                    <p>The best way to build, practice and apply new tech skills</p>
-                    <div class="hands-on-header-btn-container">
-                        <button class="rainbow-button" onclick="window.open('free-trial.html', '_self')">START A FREE 10 DAY TRIAL</button>
-                        <button class="transparent-button" onclick="showTeamTrialWindow()">START A TEAM TRIAL</button>
+                    <h1>Instructor-led training has never been this accessible</h1>
+                    <p>Provide access to live, expert instruction in Pluralsight Skills.</p>
+                    <div class="live-classes-header-btn-container">
+                        <button class="rainbow-button">CONTACT SALES</button>
+                        <button class="transparent-button" onclick="showCsVideo()">WATCH NOW</button>
                     </div>
                 </div>
-                <img src="images/hands-on-header.png">
+                <img src="images/live-classes-hero.png" onclick="showCsVideo()">
             </div>
-        </div>
+        </main>
     </div>
 
     <div class="hands-on-width">
-        <!---------------------- Hands-on after-header ---------------------->
-        <div class="hands-on-after-header">
-            <img src="images/hands-on-after-header.png">
-            <div class="hands-on-after-header-text">
-                <h1>Learn through practice and application</h1>
-                <p>Every tech leader should be able to feel confident in their team's ability to execute successful solutions for critical initiatives now and in the future—and it's hard to trust in your team's future skills without having made an ongoing commitment to skill development.</p>
-                <p>Pluralsight Skills offers unique, hands-on learning experiences that allow learns to build their knowledge and practice applying it before bringing it into a professional setting.</p>
-                <p>When you equip your teams for continuous learning with Pluralsight, they'll be able to build stronger skills through these four hands-on content modalities:</p>
+        <!---------------------- Live-classes after-header ---------------------->
+        <div class="live-classes-after-header">
+            <img src="images/live-classes-after-header.png">
+            <div class="live-classes-after-header-text">
+                <h1>Your learners deserve an interactive upskilling experience</h1>
+                <p>If you need to get some of your team members up to speed on a skill that's critical for their role but don't have the resources or time to send them to a conference or set up a fully customized learning program, our Live Classes are the perfect solution.</p>
+                <p>Live Classes are limited, open enrollment, virtual, instructor-led classes that focus on specific technology topics critical to your company's success. The classes incorporate a unique blended learning approach of expert-led live instruction and hands-on practice. And the best part? All Live Classes have no more than 20 attendees per class—so you know your learners will get the attention they need.</p>
             </div>
         </div>
-        <!---------------------- Hands-on overview ---------------------->
-        <div class="individuals-overview">
-            <div class="individuals-overview-width">
-                <div class="individuals-overview-row">
-                    <img src="images/hands-on-overview1.png">
-                    <div class="individuals-overview-row-text hands-on-overview-row-text">
-                        <div class="hands-on-overview-heading">
-                            <img src="images/labs-icon.png">
-                            <h4>Labs</h4>
-                        </div>
-                        <p>Provide learners with a safe, provisioned environment where they can develop and test skills without the risk. By completing tasks similar to common ones tech teams tackle every day, your team members can get comfortable applying their skills in real-world scenarios and get feedback that helps them improve.</p>
-                        <h5>*Available for Enterprise and Professional plans. Terms and conditions apply.</h5>
-                        <a href="labs.html">Explore labs <i class="fa fa-angle-right purple-arrow-right"></i></a>
-                    </div>
+
+        <!---------------------- Live-classes features ---------------------->
+        <div class="cert-prep-features live-classes-features">
+            <h1>Unique benefits of Live Classes</h1>
+            <div class="cert-prep-features-grid">
+                <div class="cert-prep-features-grid-item">
+                    <img src="images/tracker.png">
+                    <h3>Flexible training</h3>
+                    <p>You don't have to commit entire teams to attending skill building classes, just those who need them. And with multiple sessions for every class, they can find the day and time that works best for their schedule.</p>
                 </div>
-                <div class="individuals-overview-row">
-                    <div class="individuals-overview-row-text hands-on-overview-row-text">
-                        <div class="hands-on-overview-heading">
-                            <img src="images/sandboxes-icon.png">
-                            <h4>Sandboxes</h4>
-                        </div>
-                        <p>Provide learners with safe, provisioned environments where they can deepen their skills through more advanced, independent practice. With no limitations to what they can explore, your team can practice completing tasks just like the ones they'll be tackling on the job.</p>
-                        <h5>*Available for Enterprise and Professional plans. Terms and conditions apply.</h5>
-                    </div>
-                    <img src="images/hands-on-overview2.png">
+                <div class="cert-prep-features-grid-item">
+                    <img src="images/icon2-code.png">
+                    <h3>Blended learning</h3>
+                    <p>Pluralsight's expert instructors leverage live instruction and hands-on learning to give your team a clear picture of where their skill gaps lie and what they need to work on the most.</p>
                 </div>
-                <div class="individuals-overview-row">
-                    <img src="images/hands-on-overview3.png">
-                    <div class="individuals-overview-row-text hands-on-overview-row-text">
-                        <div class="hands-on-overview-heading">
-                            <img src="images/projects-icon.png">
-                            <h4>Projects</h4>
-                        </div>
-                        <p>Learners can experience real-world scenarios and get valuable guidance to help them apply new skills in their local environment. Projects include automated validation and customized error messages of work done in their local environment, so they can easily identify and correct mistakes before they matter.</p>
-                        <h5>*Included in our Premium, Professional and Enterprise plans.</h5>
-                        <a href="">Explore projects <i class="fa fa-angle-right purple-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="individuals-overview-row">
-                    <div class="individuals-overview-row-text hands-on-overview-row-text">
-                        <div class="hands-on-overview-heading">
-                            <img src="images/interactive-icon.png">
-                            <h4>Interactive courses</h4>
-                        </div>
-                        <p>Empower learners to take skill development into their own hands with experiences that include hands-on coding challenges and guided feedback. Learners start by watching a video to learn a concept, then test their knowledge through a series of challenges in a browser environment.</p>
-                        <h5>*Included in our Premium, Professional and Enterprise plans.</h5>
-                        <a href="">Explore interactive courses <i class="fa fa-angle-right purple-arrow-right"></i></a>
-                    </div>
-                    <img src="images/hands-on-overview4.png">
+                <div class="cert-prep-features-grid-item">
+                    <img src="images/icon3-people.png">
+                    <h3>Cost-effective</h3>
+                    <p>Virtual classes are less expensive, because you're not paying travel expenses. And, the open enrollment format means you only pay for the spots you need, you're not paying to create an entire custom learning program.</p>
                 </div>
             </div>
         </div>
 
-        <!---------------------- Hands-on demo ---------------------->
-        <div class="customer-stories hands-on-demo">
-            <div class="customer-stories-text hands-on-demo-text">
-                <h1>Learn, practice and apply</h1>
-                <p>Dive into our new hands-on learning experiences to help get you prepped and certified, so you can be better equipped on your quest to success.</p>
-                <button class="transparent-button" onclick="showCsVideo()">WATCH A DEMO</button>
-            </div>
-            <img onclick="showCsVideo()" src="images/hands-on-demo.png">
-            <div id="customer-stories-video">
-                <iframe width="896" height="504" src="https://www.youtube.com/embed/N8sjXWSMqnE" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <div onclick="hideCsVideo()" id="customer-stories-video-bg"></div>
-        </div>
-
-        <!---------------------- Hands-on insights ---------------------->
-        <div class="hands-on-insights">
-            <h1>Try hands-on learning today to help your team members become stronger in their roles and better equipped for the future.</h1>
-            <button class="rainbow-button" onclick="window.open('free-trial.html', '_self')">START A FREE 10-DAY TRIAL</button>
+        <!---------------------- live-classes Insights ---------------------->
+        <div class="insights-container live-classes-insights-container">
+            <h1>Give your learners access to live training and expert instructors on in-demand tech topics today!</h1>
+            <button class="rainbow-button" onclick="window.open('', '_self')">CONTACT SALES</button>
         </div>
     </div>
 
@@ -473,7 +388,8 @@
             </div>
         </footer>
     </div>
+
     <script src="js/index.js"></script>
-    <script src="js/hands-on-learning.js"></script>
+    <script src="js/live-classes.js"></script>
 </body>
 </html>
